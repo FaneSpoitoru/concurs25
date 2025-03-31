@@ -1,0 +1,215 @@
+
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie Restaurant</title>
+    <link rel="stylesheet" href="galerie.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/png" href="C:\xampp\htdocs\site090909-main\site090909-main\Screenshot 2025-03-30 114615.png">
+
+</head>
+<body>
+    <section id="welcome">
+        <img src="pizzajpg.jpg" alt="Delicious Italian Cuisine" class="welcome-image">
+    </section>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nava">
+        <div class="container">
+            <a class="navbar-brand" href="#">D` Amici</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="meniu.html">Meniu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="galerie.html">Galerie</a></li>
+                    <li class="nav-item"><a class="nav-link" href="rezervari.html">Rezervari</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+       <!-- Hero Section ceva adica binevenit -->
+    <section class="hero">
+        <h1>GALERIE</h1>
+        
+        
+    </section>
+
+    
+    <div class="galerie">
+        <img src="ok.jpg" alt="Interior restaurant" onclick="openLightbox(this)">
+        <img src="ok.jpg" alt="Fel de mâncare" onclick="openLightbox(this)">
+        <img src="ok.jpg" alt="Vin și pahare" onclick="openLightbox(this)">
+        <img src="ok.jpg" alt="Desert delicios" onclick="openLightbox(this)">
+        <img src="ok.jpg" alt="Terasa restaurantului" onclick="openLightbox(this)">
+        <img src="ok.jpg" alt="Bucătăria restaurantului" onclick="openLightbox(this)">
+        <img src="ok.jpg" alt="Interior restaurant" onclick="openLightbox(this)">
+        <img src="ok.jpg" alt="Fel de mâncare" onclick="openLightbox(this)">
+        <img src="ok.jpg" alt="Vin și pahare" onclick="openLightbox(this)">
+        <img src="ok.jpg" alt="Desert delicios" onclick="openLightbox(this)">
+        <img src="ok.jpg" alt="Terasa restaurantului" onclick="openLightbox(this)">
+        <img src="ok.jpg" alt="Bucătăria restaurantului" onclick="openLightbox(this)">
+        <img src="ok.jpg" alt="Interior restaurant" onclick="openLightbox(this)">
+        <img src="ok.jpg" alt="Interior restaurant" onclick="openLightbox(this)">
+        <img src="ok.jpg" alt="Fel de mâncare" onclick="openLightbox(this)">
+        <img src="ok.jpg" alt="Vin și pahare" onclick="openLightbox(this)">
+        <img src="ok.jpg" alt="Desert delicios" onclick="openLightbox(this)">
+        <img src="ok.jpg" alt="Terasa restaurantului" onclick="openLightbox(this)">
+        <img src="ok.jpg" alt="Bucătăria restaurantului" onclick="openLightbox(this)">
+        <img src="ok.jpg" alt="Interior restaurant" onclick="openLightbox(this)">
+    </div>
+
+
+
+
+
+    <h2>Lasă un review</h2>
+    <form id="reviewForm">
+        <input type="text" id="name" placeholder="Nume" required>
+        <br>
+        <textarea id="message" placeholder="Scrie recenzia ta..." required></textarea>
+        <br>
+        <!-- From Uiverse.io by doniaskima --> 
+<button type="submit" class="btn-53">
+    <div class="original">Trimite</div>
+    <div class="letters">
+      
+      <span>T</span>
+      <span>R</span>
+      <span>I</span>
+      <span>M</span>
+      <span>I</span>
+      <span>T</span>
+      <span>E</span>
+    </div>
+  </button>
+  
+    </form>
+
+    <h2>Recenzii</h2>
+    <div id="reviews"></div>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.5.0/firebase-app.js";
+        import { getFirestore, collection, addDoc, query, orderBy, onSnapshot,limit } from "https://www.gstatic.com/firebasejs/11.5.0/firebase-firestore.js";
+
+        // 🔹 1. Configurare Firebase
+        const firebaseConfig = {
+            apiKey: "AIzaSyBxhyUYPzt8SE_LFv4A_svzswxnhbSyCmM",
+            authDomain: "review-50f0b.firebaseapp.com",
+            projectId: "review-50f0b",
+            storageBucket: "review-50f0b.firebasestorage.com",
+            messagingSenderId: "201117735805",
+            appId: "1:201117735805:web:41dde2b142214f42dfca14",
+            measurementId: "G-KQKKZF8XFX"
+          };
+
+        // Inițializarea Firebase
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app); // Definim Firestoreconst app = initializeApp(firebaseConfig);
+        
+
+        // 🔹 2. Salvarea recenziei în Firestore
+        document.getElementById('reviewForm').addEventListener('submit', async function(event) {
+            event.preventDefault();
+
+            let name = document.getElementById('name').value;
+            let message = document.getElementById('message').value;
+
+            try {
+                await addDoc(collection(db, "Review"), {
+                    name: name,
+                    message: message,
+                    timestamp: new Date()
+                });
+
+                console.log("Recenzia a fost salvată!");
+                
+                document.getElementById('reviewForm').reset();
+            } catch (error) {
+                console.error("Eroare la salvarea recenziei:", error);
+                alert("Eroare la salvarea recenziei. Verifică consola.");
+            }
+        });
+
+        // 🔹 3. Afișarea recenziilor în timp real
+        function loadReviews() {
+            const q = query(collection(db, "Review"), orderBy("timestamp", "desc"), limit(3)); // 🔹 Afișează doar ultimele 3 recenzii
+        
+            onSnapshot(q, (snapshot) => {
+                let reviewsDiv = document.getElementById('reviews');
+                reviewsDiv.innerHTML = '';
+        
+                snapshot.forEach((doc) => {
+                    let review = doc.data();
+                    let div = document.createElement('div');
+                    div.className = 'review';
+                    div.innerHTML = `<strong>${review.name}</strong><p>${review.message}</p>`;
+                    reviewsDiv.appendChild(div);
+                });
+            });
+        }
+        
+        // Încarcă recenziile imediat ce pagina este deschisă
+        loadReviews();
+        
+    </script>
+
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img">
+</div>
+
+<script>
+    function openLightbox(img) {
+        document.getElementById("lightbox-img").src = img.src;
+        document.getElementById("lightbox").style.display = "flex";
+    }
+
+    function closeLightbox() {
+        document.getElementById("lightbox").style.display = "none";
+    }
+</script>
+
+<footer>
+    <div class="footer-container">
+        <div id="low2"> <!-- Eliminăm class="container" -->
+            <a href="https://www.instagram.com/fane02532?igsh=MXB5cWFnaHJpbzJubg==" target="_blank" id="ig">
+                <i class="fa-brands fa-facebook" style="font-size: 10px; color: #1877F2;">Mihai Sigma</i>
+            </a>
+            <br><br>
+            <a href="https://www.instagram.com/fane02532?igsh=MXB5cWFnaHJpbzJubg==" target="_blank" id="ig">
+                <i class="fa-brands fa-tiktok" style="font-size: 10px; color: #000000;">GiovanniCioacaGroasa</i>
+            </a>
+            <br><br>
+            <a href="https://www.instagram.com/fane02532?igsh=MXB5cWFnaHJpbzJubg==" target="_blank" id="ig">
+                <i class="fab fa-instagram" style="font-size: 10px; color: #E1306C;">Sefu</i>
+            </a>
+        </div>
+
+        <div id="low"> <!-- Eliminăm class="container" -->
+            <a target="_blank" id="mail">
+                <i class="fa-solid fa-envelope" style="color: #1c1d38b5;">Italy@d-amici.de</i>
+            </a>
+            <br><br>
+            <a target="_blank" id="mail">
+                <i class="fa-solid fa-phone" style="color: #1c1d38b5;">0769842498</i>
+            </a>
+        </div>
+    </div>
+
+    <p>© <span id="year"></span> D` Amici. Alle Rechte vorbehalten.</p>
+</footer>
+
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

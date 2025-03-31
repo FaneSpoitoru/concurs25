@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CONTACT</title>
+    <link rel="stylesheet" href="contact.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <section id="welcome">
+        <img src="pizzajpg.jpg" alt="Delicious Italian Cuisine" class="welcome-image">
+    </section>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">D` Amici</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="meniu.html">Meniu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="galerie.html">Galerie</a></li>
+                    <li class="nav-item"><a class="nav-link" href="rezervari.html">Rezervari</a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--<script>
+        document.querySelector(".menu-toggle").addEventListener("click", function() {
+            document.querySelector(".menu-items").classList.toggle("show");
+        });
+    </script>-->
+
+
+
+
+<div class="map-container">
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d805.4779525843168!2d6.884592793803433!3d51.42932421353568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b8c14a229fc13d%3A0x6a8fe5f6f05d1401!2sPizzeria%20D&#39;amici!5e0!3m2!1sen!2sro!4v1740420062684!5m2!1sen!2sro"
+        width="100"
+        height="600"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+</div>
+
+ 
+
+
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+
+
+<!-- Bootstrap trebuie să fie adăugat în proiect -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+<div class="container my-5">
+    <div class="text-center">
+        <h2 class="mb-3">Orar</h2>
+        <p id="status" class="fw-bold text-primary">da</p>
+    </div>
+
+    <!-- Tabel responsive -->
+    <div class="table-responsive">
+        <table class="table table-bordered table- hover">
+            <thead class="table-dark">
+                <tr>
+                    <th>Zi</th>
+                    <th>Ore</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Luni</td><td>12:00 - 22:00</td></tr>
+                <tr><td>Marti</td><td>12:00 - 22:00</td></tr>
+                <tr><td>Miercuri</td><td>12:00 - 22:00</td></tr>
+                <tr><td>Joi</td><td class="text-danger fw-bold">Inchis</td></tr>
+                <tr><td>Vineri</td><td>12:00 - 22:00</td></tr>
+                <tr><td>Sambata</td><td>12:00 - 22:00</td></tr>
+                <tr><td>Duminica</td><td>17:00 - 21:00</td></tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+
+
+<footer>
+    <div class="footer-container">
+        <div class="container" id="low2">
+            <a href="https://www.instagram.com/fane02532?igsh=MXB5cWFnaHJpbzJubg==" target="_blank" id="ig">
+                <i class="fa-brands fa-facebook" style="font-size: 10px; color: #1877F2;">Mihai Sigma</i>
+            </a>
+            <br><br>
+            <a href="https://www.instagram.com/fane02532?igsh=MXB5cWFnaHJpbzJubg==" target="_blank" id="ig">
+                <i class="fa-brands fa-tiktok" style="font-size: 10px; color: #000000;">GiovanniCioacaGroasa</i>
+            </a>
+            <br><br>
+            <a href="https://www.instagram.com/fane02532?igsh=MXB5cWFnaHJpbzJubg==" target="_blank" id="ig">
+                <i class="fab fa-instagram" style="font-size: 10px; color: #E1306C;">Sefu</i>
+            </a>
+        </div>
+
+        <div class="container" id="low">
+            <a target="_blank" id="mail">
+                <i class="fa-solid fa-envelope" style="color: #1c1d38b5;">Italy@d-amici.de</i>
+            </a>
+            <br><br>
+            <a target="_blank" id="mail">
+                <i class="fa-solid fa-phone" style="color: #1c1d38b5;">0769842498</i>
+            </a>
+        </div>
+    </div>
+
+    <p>© <span id="year"></span> D` Amici. Alle Rechte vorbehalten.</p>
+</footer>
+
+
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

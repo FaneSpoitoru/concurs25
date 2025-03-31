@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program restaurant</title>
+</head>
+<body>
+
+    <h2>program Restaurant D`Amici: </h2>
+    <p id="status">Verificare...</p>
+
+    <script>
+    function verificaStatus() {
+        let acum = new Date();
+        let ziua = acum.getDay(); // 0 = Duminică, 1 = Luni, ..., 6 = Sâmbătă
+        let ora = acum.getHours();
+        let minute = acum.getMinutes();
+        let status = document.getElementById("status");
+
+        if (!status) return; // Verificăm dacă elementul există
+
+        // Definirea programului
+        const orar = {
+            0: [[11, 30, 23, 30]], // Duminică
+            1: [[11, 30, 14, 30], [17, 30, 23, 30]], // Luni
+            2: [[11, 30, 14, 30], [17, 30, 23, 30]], // Marți
+            3: [[11, 30, 14, 30], [17, 30, 23, 30]], // Miercuri
+            4: [], // Joi - Închis
+            5: [[11, 30, 14, 30], [17, 30, 23, 30]], // Vineri
+            6: [[17, 0, 23, 30]]  // Sâmbătă
+        };
+
+        let deschis = false;
+
+        if (orar[ziua].length > 0) { // Evităm eroarea de accesare a array-ului gol
+            for (let interval of orar[ziua]) {
+                let [startH, startM, endH, endM] = interval;
+
+                let start = startH * 60 + startM;
+                let end = endH * 60 + endM;
+                let current = ora * 60 + minute;
+
+                if (current >= start && current <= end) {
+                    deschis = true;
+                    break;
+                }
+            }
+        }
+
+        status.innerHTML = deschis ? "✅ Acum deschis" : "❌ Închis";
+        status.style.color = deschis ? "green" : "red";
+    }
+
+    verificaStatus();
+    setInterval(verificaStatus, 60000); // Verifică din nou la fiecare minut
+    </script>
+
+</body>
+</html>

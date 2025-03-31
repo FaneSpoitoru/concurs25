@@ -1,0 +1,122 @@
+
+.welcome-image {
+  width: 100vw;         /* Ocupă toată lățimea ecranului */
+  max-width: 100%;      /* Se asigură că nu depășește containerul */
+  height: 500px /*auto*/;         /* Păstrează proporțiile */
+  object-fit: cover;    /* Evită distorsiuni */
+  display: block;       /* Elimină spațiile goale sub imagine */
+}
+
+body {   
+  font-family: Arial, sans-serif; /* Fontul principal pentru conținut */
+  margin: 0;      /* Fără margini implicite */
+  padding: 0;     /* Fără padding */
+  text-align: center;  /* Centrează textul în pagină */
+  background: url('more-leaves.png') no-repeat center center/cover;
+}
+
+
+footer {    
+  color: rgb(0, 0, 0);      /* Culoare text specifică */
+  text-align: center;         /* Text centrat */
+  padding: 20px;              /* Spațiere internă */
+  font-family: "Times New Roman", Times, serif;  /* Font clasic */
+  font-style: italic;  
+}
+
+#rezervare-form{
+  border-radius: 30px;
+  background-color: #fcfcfc7e;
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  text-align: left;
+  width: 350px;
+  margin-left: 50px;
+  align-items: center;
+  text-align: center;
+  margin-left:40% ;
+}
+#name{
+  border-radius: 30px;
+  background-color: #fcfcfc7e;
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  margin: 10%;
+  padding-top: 0%;
+  width: 150px;
+  text-align: center;
+  height: 50px;
+}
+#date{
+  border-radius: 30px;
+  background-color: #fcfcfc7e;
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  margin: 10%;
+  padding-top: 0%;
+  width: 150px;
+  text-align: center;
+  height: 50px;
+}
+#time{
+  border-radius: 30px;
+  background-color: #fcfcfc7e;
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  margin: 10%;
+  padding-top: 0%;
+  width: 150px;
+  text-align: center;
+  height: 50px;
+}
+#phone{
+  border-radius: 30px;
+  background-color: #fcfcfc7e;
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  margin: 10%;
+  padding-top: 0%;
+  width: 150px;
+  text-align: center;
+  height: 50px;
+}
+h2{
+  text-align: center;
+  font-family: "Brush Script MT", cursive;
+  margin: 0%;
+  
+}
+.navbar-brand{
+  font-family: "Dancing Script", cursive;
+}
+
+
+#disponibilitate{
+  text-align: center;
+  font-family: "Brush Script MT", cursive;
+  
+}
+
+#rezbtn{
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+#rezbtn:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}

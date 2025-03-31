@@ -1,0 +1,84 @@
+
+
+body {
+    font-family: Arial, sans-serif; /* Fontul principal pentru conținut */
+    margin: 0;      /* Fără margini implicite */
+    padding: 0;     /* Fără padding */
+    text-align: center;  /* Centrează textul în pagină */
+    background-color: ffffff;
+    background: url('more-leaves.png') no-repeat center center/cover;
+}
+
+h1 {
+    font-family: "Times New Roman", Times, serif;  /* Font clasic */
+    font-style: italic;                              /* Stil italic */
+}
+
+
+p {
+    font-family: "Times New Roman", Times, serif;  /* Font clasic */
+    font-style: italic;                              /* Stil italic */
+}
+
+.welcome-image {
+    width: 100%;           /* Imaginea se întinde pe 100% din container (responsive) */
+    max-width: 100%;      /* Lățime maximă de 600px */
+    /*height: ;*/         /* Înălțimea nu este specificată, astfel încât se păstrează raportul original */
+    display: block;        /* Afișare ca element bloc */
+    margin: 0px auto;      /* Centrează imaginea orizontal */
+    /*align-items: center;*/ /* Comentariu: proprietate nefolosită aici */
+}
+/*-------------------- Footer --------------------*/
+/* Stilizarea subsolului paginii */
+footer {
+    color: rgba(13, 12, 12, 0.589);
+    text-align: center;
+    padding: 20px;
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic;
+    background-color: #ccc;
+    p{
+       padding-top: 3%;
+    }
+  }
+  
+.footer-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    flex-wrap: wrap; 
+    width: 100%;
+  }
+  
+#low {
+    text-align: right;
+    font-size: xx-small;
+  }
+  
+#low2 {
+    text-align: left;
+    font-size: xx-small;
+    height: 5px;
+  }
+
+
+/*-------------------- Secțiunea Hero (Bine ai venit) --------------------*/
+/* Secțiunea cu imagine de fundal și text de întâmpinare */
+.hero {
+  background: url('more-leaves.png') no-repeat center center/cover; /* Imagine de fundal, centrată și acoperind complet zona */
+  color: rgb(0, 0, 0);      /* Culoarea textului din secțiune */
+  text-align: center;         /* Text centrat */
+/* Spațiere mare pentru a crea un impact vizual */
+}
+
+/* Titlul din secțiunea Hero */
+.hero h1 {
+  font-size: 48px;            /* Dimensiune mare pentru titlu */
+}
+
+/* Paragrafele din secțiunea Hero */
+.hero p {
+  font-size: 24px;            /* Dimensiune font pentru paragrafe */
+          /* Spațiere sub paragrafe */
+}
+

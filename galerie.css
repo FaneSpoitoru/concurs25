@@ -1,0 +1,297 @@
+
+.welcome-image {
+  width: 100vw;         /* Ocupă toată lățimea ecranului */
+  max-width: 100%;      /* Se asigură că nu depășește containerul */
+  height: 500px /*auto*/;         /* Păstrează proporțiile */
+  object-fit: cover;    /* Evită distorsiuni */
+  display: block;       /* Elimină spațiile goale sub imagine */
+}
+
+
+
+
+.galerie {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+.galerie img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.galerie img:hover {
+  transform: scale(1.05);
+}
+
+/* Lightbox */
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.lightbox img {
+  max-width: 80%;
+  max-height: 80%;
+  border-radius: 5px;
+}
+
+header {
+  background-color: #333;
+  color: rgb(255, 255, 255);
+  padding: 15px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.btn {
+  background: #ff6600;
+  color: white;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+
+
+/*-------------------- Stilizare pentru body --------------------*/
+/* Setează stilurile de bază pentru pagina */
+body {
+  font-family: Arial, sans-serif; /* Fontul principal pentru conținut */
+  margin: 0;      /* Fără margini implicite */
+  padding: 0;     /* Fără padding */
+  text-align: center;  /* Centrează textul în pagină */
+  background: url('more-leaves.png') no-repeat center center/cover;
+}
+
+#preview img {
+  max-width: 150px;
+  max-height: 150px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+#copy{
+  text-align: center;
+}
+#name{
+  border-radius: 30px;
+  background-color: #fcfcfc7e;
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  margin: 5%;
+  padding-top: 0%;
+  width: 150px;
+  text-align: center;
+}
+#message{
+  padding: 0%;
+  margin-left: 5%;
+  border-radius: 30px;
+  background-color: #fcfcfc7e;
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  text-align: center;
+  width: 150px;
+}
+/* From Uiverse.io by doniaskima */
+.btn-53,
+.btn-53 * ,
+.btn-53 :after,
+.btn-53 :before,
+.btn-53:after,
+.btn-53:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+
+.btn-53 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fcfcfc;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 0.7rem;  /* Dimensiune mai mică pentru text */
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0.5rem 2rem;  /* Diminuarea paddingului pentru un buton mai mic */
+  height: auto;  /* Permite ajustarea automată a înălțimii pe baza conținutului */
+  width: auto;  /* Permite ajustarea automată a lățimii pe baza conținutului */
+  margin-left: 30px;
+  text-align: left;  /* Asigură alinierea la stânga a textului */
+}
+
+.btn-53:disabled {
+  cursor: default;
+}
+
+.btn-53:-moz-focusring {
+  outline: auto;
+}
+
+.btn-53 svg {
+  display: block;
+  vertical-align: middle;
+}
+
+.btn-53 [hidden] {
+  display: none;
+}
+
+.btn-53 {
+  border: 1px solid;
+  border-radius: 999px;
+  box-sizing: border-box;
+  display: block;
+  font-weight: 900;
+  overflow: hidden;
+  position: relative;
+  text-transform: uppercase;
+  height: auto;  /* Permite ajustarea automată a înălțimii pe baza conținutului */
+  width: auto;  /* Permite ajustarea automată a lățimii pe baza conținutului */
+}
+
+.btn-53 .original {
+  background: #fff;
+  color: #000;
+  display: grid;
+  inset: 0;
+  place-content: center;
+  position: absolute;
+  transition: transform 0.2s cubic-bezier(0.87, 0, 0.13, 1);
+  text-align: left;  /* Aliniere text la stânga */
+}
+
+.btn-53:hover .original {
+  transform: translateY(100%);
+}
+
+.btn-53 .letters {
+  display: inline-flex;
+  text-align: left;  /* Aliniere text la stânga */
+}
+
+.btn-53 span {
+  opacity: 0;
+  transform: translateY(-15px);
+  transition: transform 0.2s cubic-bezier(0.87, 0, 0.13, 1), opacity 0.2s;
+}
+
+.btn-53 span:nth-child(2n) {
+  transform: translateY(15px);
+}
+
+.btn-53:hover span {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.btn-53:hover span:nth-child(2) {
+  transition-delay: 0.1s;
+}
+
+.btn-53:hover span:nth-child(3) {
+  transition-delay: 0.2s;
+}
+
+.btn-53:hover span:nth-child(4) {
+  transition-delay: 0.3s;
+}
+
+.btn-53:hover span:nth-child(5) {
+  transition-delay: 0.4s;
+}
+
+.btn-53:hover span:nth-child(6) {
+  transition-delay: 0.5s;
+}
+
+
+#reviewForm{
+  border-radius: 30px;
+  background-color: #fcfcfc7e;
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  text-align: left;
+  width: 170px;
+  margin-left: 50px;
+  
+}
+#reviews{
+  border-radius: 30px;
+  background-color: #fcfcfc7e;
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  width: 300px;
+  margin-left:50px ;
+  text-align: center;
+}
+h2{
+  position: relative;
+  left: 50px;
+}
+body{
+  cursor: url("https://cdn.custom-cursor.com/db/cursor/pointer_1426.png"),auto;
+}
+body:hover{
+  cursor: url("https://cdn.custom-cursor.com/db/cursor/pointer_1426.png"),pointer;
+}
+
+* {
+  cursor: url('https://cdn.custom-cursor.com/db/cursor/pointer_1426.png'), auto;
+}
+
+/*-------------------- Footer --------------------*/
+/* Stilizarea subsolului paginii */
+footer {
+  color: rgba(13, 12, 12, 0.589);
+  text-align: center;
+  padding: 20px;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  background-color: #ccc;
+  p{
+     padding-top: 3%;
+  }
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  flex-wrap: wrap; 
+  width: 100%;
+}
+
+#low {
+  text-align: right;
+  font-size: xx-small;
+}
+
+#low2 {
+  text-align: left;
+  font-size: xx-small;
+  height: 5px;
+}
