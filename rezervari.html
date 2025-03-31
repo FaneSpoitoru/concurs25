@@ -36,9 +36,29 @@
         <input type="date" id="date" required>
         <input type="time" id="time" required>
         <input type="tel" id="phone" placeholder="Număr de telefon" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="number" id="persoane" placeholder="Număr persoane" required min="1" max="12">
         <p id="disponibilitate">Verificare disponibilitate...</p>
         <button type="submit" id="rezbtn">Rezervă</button>
     </form>
+    
+
+<script>
+    document.getElementById("persoane").addEventListener("input", function () {
+        let value = this.value;
+
+        // Elimină orice caracter care nu este cifră (0-9)
+        this.value = value.replace(/[^0-9]/g, '');
+
+        // Se asigură că numărul rămâne între 1 și 12
+        if (this.value !== "") {
+            let num = parseInt(this.value, 10);
+            if (num < 1) this.value = "1";
+            if (num > 12) this.value = "12";
+        }
+    });
+</script>
+
 
     <script type="module">
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-app.js";
