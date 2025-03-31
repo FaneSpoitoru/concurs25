@@ -95,6 +95,7 @@ body {
   border-radius: 30px;
   background-color: #fcfcfc7e;
   -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   margin: 5%;
   padding-top: 0%;
@@ -107,6 +108,7 @@ body {
   border-radius: 30px;
   background-color: #fcfcfc7e;
   -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   text-align: center;
   width: 150px;
@@ -125,6 +127,7 @@ body {
 .btn-53 {
   -webkit-tap-highlight-color: transparent;
   -webkit-appearance: button;
+  appearance: button(20px);
   background-color: #000;
   background-image: none;
   color: #fcfcfc;
@@ -136,6 +139,7 @@ body {
   line-height: 1.5;
   margin: 0;
   -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  mask-image: -webkit-radial-gradient(#000, #fff);
   padding: 0.5rem 2rem;  /* Diminuarea paddingului pentru un buton mai mic */
   height: auto;  /* Permite ajustarea automată a înălțimii pe baza conținutului */
   width: auto;  /* Permite ajustarea automată a lățimii pe baza conținutului */
@@ -153,7 +157,7 @@ body {
 
 .btn-53 svg {
   display: block;
-  vertical-align: middle;
+  
 }
 
 .btn-53 [hidden] {
@@ -233,6 +237,7 @@ body {
   border-radius: 30px;
   background-color: #fcfcfc7e;
   -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   text-align: left;
   width: 170px;
@@ -243,6 +248,7 @@ body {
   border-radius: 30px;
   background-color: #fcfcfc7e;
   -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   width: 300px;
   margin-left:50px ;
