@@ -1,0 +1,122 @@
+
+h1{
+  font-size: 45px;
+
+}
+
+.navbar-brand{
+  font-family: "Comfortaa", sans-serif;
+}
+
+.semnatura {
+  font-family: "Delius", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 23px;
+}
+
+.nav-item {
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300px;
+  font-size: 12px;
+  font-style: normal;
+}
+
+.body-text{
+  font-size: 27px;
+  word-spacing: 5px;
+  margin-right: 10px;
+  text-align: left;
+}
+
+
+.body-text,h1 {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700px;
+  font-style: normal;
+}
+
+/*********************************************************************************/
+body {
+    font-family: Arial, sans-serif; /* Fontul principal pentru conținut */
+    margin: 0;      /* Fără margini implicite */
+    padding: 0;     /* Fără padding */
+    text-align: center;  /* Centrează textul în pagină */
+    background-color: ffffff;
+    background: url('floor-tile.png') no-repeat center center/cover;
+    background-size: 200px; /* Ajustează dimensiunea dorită */
+    background-repeat: repeat;
+  
+  }
+  
+
+    
+  .welcome-image {
+    width: 100%;           /* Imaginea se întinde pe 100% din container (responsive) */
+    max-width: 100%;      /* Lățime maximă de 600px */
+    /*height: ;*/         /* Înălțimea nu este specificată, astfel încât se păstrează raportul original */
+    display: block;        /* Afișare ca element bloc */
+    margin: 0px auto;      /* Centrează imaginea orizontal */
+    /*align-items: center;*/ /* Comentariu: proprietate nefolosită aici */
+  }
+  
+/************************************************************************************/  
+  
+
+
+/* Stilizarea footer-ului */
+footer {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Stilizare pentru iconițele de social media */
+#low2 a, #low a {
+  font-size: 10px; /* Dimensiune mai mică pentru text */
+  display: inline-block;
+  margin: 5px 10px;
+}
+
+/* Stilizare pentru iconițele fa */
+#low2 i, #low i {
+  font-size: 18px; /* Iconițele vor fi mai mici */
+  margin-right: 8px;
+}
+
+/* Stilizare pentru email și telefon */
+#mail i {
+  font-size: 14px; /* Dimensiune mai mică pentru iconițele de email și telefon */
+  margin-right: 8px;
+}
+
+#low {
+  
+  text-align: right;
+  font-size: xx-small;
+}
+
+#low2 {
+  height: 5px;
+  text-align: left;
+  font-size: xx-small;
+}
+
+#year {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Responsive pentru dispozitive mici */
+@media (max-width: 768px) {
+  #low2 i, #low i {
+      font-size: 13px; /* Mărimea iconițelor pe mobil */
+  }
+  
+  #low a, #low2 a {
+      font-size: 12px; /* Mărimea textului pe mobil */
+  }
+}

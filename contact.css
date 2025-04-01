@@ -32,14 +32,21 @@ body {
   margin: 0;      /* Fără margini implicite */
   padding: 0;     /* Fără padding */
   text-align: center;  /* Centrează textul în pagină */
+  background: url('floor-tile.png') no-repeat center center/cover;
+  background-size: 200px; /* Ajustează dimensiunea dorită */
+  background-repeat: repeat;
   cursor: url("https://cdn.custom-cursor.com/db/cursor/pointer_1426.png"),auto;
   
 }
 body:hover{
   cursor: url("https://cdn.custom-cursor.com/db/cursor/pointer_1426.png"),auto;
-
 }
  
+::selection {
+  background: rgba(255, 255, 0, 0.5); /* Fundal galben transparent la selecție */
+  color: black; /* Text negru */
+  cursor:  url("https://cdn.custom-cursor.com/db/cursor/pointer_1426.png"),auto, auto; /* Cursor personalizat și la selecție */
+}
 .navbar-nav ms-auto {
   text-align: center;
   align-items: center;

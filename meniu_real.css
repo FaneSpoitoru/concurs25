@@ -1,9 +1,3 @@
-
-
-
-
-
-/*********************************************************************************/
 body {
   font-family: Arial, sans-serif; /* Fontul principal pentru conținut */
   margin: 0;      /* Fără margini implicite */
@@ -38,34 +32,57 @@ p {
 
 
 
+/* Stilizarea footer-ului */
 footer {
-  color: rgba(13, 12, 12, 0.589);
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  padding: 10px;
   text-align: center;
-  padding: 20px;
-  font-family: "Times New Roman", Times, serif;
-  font-style: italic;
-  background-color: #ccc;
-  p{
-     padding-top: 3%;
-  }
 }
 
-.footer-container {
-  display: flex;
-  justify-content: space-between; 
-  align-items: center; 
-  flex-wrap: wrap; 
-  width: 100%;
+/* Stilizare pentru iconițele de social media */
+#low2 a, #low a {
+  font-size: 10px; /* Dimensiune mai mică pentru text */
+  display: inline-block;
+  margin: 5px 10px;
+}
+
+/* Stilizare pentru iconițele fa */
+#low2 i, #low i {
+  font-size: 18px; /* Iconițele vor fi mai mici */
+  margin-right: 8px;
+}
+
+/* Stilizare pentru email și telefon */
+#mail i {
+  font-size: 14px; /* Dimensiune mai mică pentru iconițele de email și telefon */
+  margin-right: 8px;
 }
 
 #low {
+  
   text-align: right;
   font-size: xx-small;
 }
 
 #low2 {
+  height: 5px;
   text-align: left;
   font-size: xx-small;
-  height: 5px;
 }
 
+#year {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Responsive pentru dispozitive mici */
+@media (max-width: 768px) {
+  #low2 i, #low i {
+      font-size: 13px; /* Mărimea iconițelor pe mobil */
+  }
+  
+  #low a, #low2 a {
+      font-size: 12px; /* Mărimea textului pe mobil */
+  }
+}
