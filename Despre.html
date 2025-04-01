@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Despre</title>
+    <link rel="stylesheet" href="Despre.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Imaginea de bun venit -->
+    <section id="welcome" class="text-center">
+        <img src="pizzajpg.jpg" alt="Delicious Italian Cuisine" class="img-fluid">
+    </section>
+
+    <!-- Navbar Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">D` Amici</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="meniu.html">Meniu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="galerie.html">Galerie</a></li>
+                    <li class="nav-item"><a class="nav-link" href="rezervari.html">Rezervari</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Despre.html">Despre</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <h1>Povestea noastra</h1>
+    <br>
+    <br>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, velit necessitatibus maiores dolorem perspiciatis doloribus aperiam provident ut porro quia culpa exercitationem id architecto odio quos laudantium delectus aliquid praesentium.</p>
+
+
+    <h1>Echipa</h1>
+    <br>
+    <br>
+    <div class="galerie">
+        <a target="_blank" href="ok.jpg">
+          <img src="bv2.png" alt="Cinque Terre" width="600" height="400">
+        </a>
+        <div class="desc"><h2>Si senior</h2>
+        <p>Nu face multe mananca si doarme</p></div>
+      </div>
+      
+      <div class="galerie">
+        <a target="_blank" href="ok.jpg">
+          <img src="DANI.jpg" alt="Cinque Terre" width="600" height="400">
+        </a>
+        <div class="desc"><h2>Regele</h2>
+        <p>Regele peste</p></div>
+      </div>
+      
+      <div class="galerie">
+        <a target="_blank" href="ok.jpg">
+          <img src="ok.jpg" alt="Cinque Terre" width="600" height="400">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+      
+      <div class="galerie-container clearfix">
+        
+      </div>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="container" id="low2">
+                <a href="https://www.instagram.com/fane02532?igsh=MXB5cWFnaHJpbzJubg==" target="_blank" id="ig">
+                    <i class="fa-brands fa-facebook" style="font-size: 10px; color: #1877F2;">Mihai Sigma</i>
+                </a>
+                <br><br>
+                <a href="https://www.instagram.com/fane02532?igsh=MXB5cWFnaHJpbzJubg==" target="_blank" id="ig">
+                    <i class="fa-brands fa-tiktok" style="font-size: 10px; color: #000000;">GiovanniCioacaGroasa</i>
+                </a>
+                <br><br>
+                <a href="https://www.instagram.com/fane02532?igsh=MXB5cWFnaHJpbzJubg==" target="_blank" id="ig">
+                    <i class="fab fa-instagram" style="font-size: 10px; color: #E1306C;">Sefu</i>
+                </a>
+            </div>
+    
+            <div class="container" id="low">
+                <a target="_blank" id="mail">
+                    <i class="fa-solid fa-envelope" style="color: #1c1d38b5;">Italy@d-amici.de</i>
+                </a>
+                <br><br>
+                <a target="_blank" id="mail">
+                    <i class="fa-solid fa-phone" style="color: #1c1d38b5;">0769842498</i>
+                </a>
+            </div>
+        </div>
+    
+        <p>© <span id="year"></span> D` Amici. Alle Rechte vorbehalten.</p>
+    </footer>
+    
+    
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+      
+</body>
+</html>
