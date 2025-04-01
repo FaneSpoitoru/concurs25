@@ -12,7 +12,9 @@ body {
   margin: 0;      /* Fără margini implicite */
   padding: 0;     /* Fără padding */
   text-align: center;  /* Centrează textul în pagină */
-  background: url('more-leaves.png') no-repeat center center/cover;
+  background: url('floor-tile.png') no-repeat center center/cover;
+  background-size: 200px; /* Ajustează dimensiunea dorită */
+  background-repeat: repeat;
 }
 
 
@@ -24,19 +26,31 @@ footer {
   font-style: italic;  
 }
 
-#rezervare-form{
+#rezervare-form {
   border-radius: 30px;
-  background-color: #fcfcfc7e;
-  -webkit-backdrop-filter: blur(20px);
+  background-color: rgba(252, 252, 252, 0.5); 
   backdrop-filter: blur(20px);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-  text-align: left;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
   width: 350px;
-  margin-left: 50px;
+  padding: 20px; 
+  
+  
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  text-align: center;
-  margin-left:40% ;
+  justify-content: center;
+
+  
+  margin: 50px auto;
 }
+
+/* Pentru ecrane mici (mobile) */
+@media (max-width: 768px) {
+  #rezervare-form {
+      width: 70%; /* Se adaptează mai bine pe ecrane mici */
+  }
+}
+
 #name{
   border-radius: 30px;
   background-color: #fcfcfc7e;
@@ -74,6 +88,32 @@ footer {
   height: 50px;
 }
 #phone{
+  border-radius: 30px;
+  background-color: #fcfcfc7e;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  margin: 10%;
+  padding-top: 0%;
+  width: 150px;
+  text-align: center;
+  height: 50px;
+}
+
+#email{
+  border-radius: 30px;
+  background-color: #fcfcfc7e;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  margin: 10%;
+  padding-top: 0%;
+  width: 150px;
+  text-align: center;
+  height: 50px;
+}
+
+#persoane{
   border-radius: 30px;
   background-color: #fcfcfc7e;
   -webkit-backdrop-filter: blur(20px);

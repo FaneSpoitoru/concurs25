@@ -78,7 +78,9 @@ body {
   margin: 0;      /* Fără margini implicite */
   padding: 0;     /* Fără padding */
   text-align: center;  /* Centrează textul în pagină */
-  background: url('more-leaves.png') no-repeat center center/cover;
+  background: url('floor-tile.png') no-repeat center center/cover;
+  background-size: 200px; /* Ajustează dimensiunea dorită */
+  background-repeat: repeat;
 }
 
 #preview img {
