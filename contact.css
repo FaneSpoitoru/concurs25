@@ -1,4 +1,6 @@
-
+* {
+  text-align: center;
+}
 .hero p {
   font-size: 24px;            /* Dimensiune font pentru paragrafe */
   margin-bottom: 20px;        /* Spațiere sub paragrafe */

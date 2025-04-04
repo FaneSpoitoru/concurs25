@@ -1,3 +1,7 @@
+* {
+  text-align: center;
+}
+
 
 .welcome-image {
   width: 100vw;         /* Ocupă toată lățimea ecranului */

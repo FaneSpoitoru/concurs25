@@ -1,10 +1,15 @@
+*{
+    text-align: center;
+}
 body {
     font-family: Arial, sans-serif; /* Fontul principal pentru conținut */
     margin: 0;      /* Fără margini implicite */
     padding: 0;     /* Fără padding */
     text-align: center;  /* Centrează textul în pagină */
     background-color: #ffffff;
-    background: url('more-leaves.png') no-repeat center center/cover;
+    background: url('floor-tile.png') no-repeat center center/cover;
+    background-size: 200px; /* Ajustează dimensiunea dorită */
+    background-repeat: repeat;
 }
 /* Stilizarea imaginii din secțiunea de bun venit */
 .welcome-image {

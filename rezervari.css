@@ -1,4 +1,6 @@
-
+*{
+  text-align: center;
+}
 .welcome-image {
   width: 100vw;         /* Ocupă toată lățimea ecranului */
   max-width: 100%;      /* Se asigură că nu depășește containerul */
