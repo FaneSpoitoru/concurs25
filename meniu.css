@@ -1,5 +1,7 @@
-
-
+.navbar-toggler {
+    box-shadow: none !important;
+  }
+    
 body {
     font-family: Arial, sans-serif; /* Fontul principal pentru conținut */
     margin: 0;      /* Fără margini implicite */
@@ -100,3 +102,24 @@ footer {
     height: 5px;
   }
   
+  .footer-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px; /* spațiu între pictograme */
+    padding: 20px;
+    background-color: #f5f5f5; /* schimbă după cum vrei */
+}
+ 
+.footer-icons a {
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-icons a:hover {
+    color: #c0392b; /* culoare la hover */
+}
+
+

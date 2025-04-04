@@ -175,12 +175,12 @@ h2{
 footer {
   color: rgba(13, 12, 12, 0.589);
   text-align: center;
-  padding: 20px;
+  padding: 10px;
   font-family: "Times New Roman", Times, serif;
   font-style: italic;
   background-color: #ccc;
   p{
-     padding-top: 5%;
+     padding-top: 10%;
   }
 }
 
@@ -201,4 +201,45 @@ footer {
   text-align: left;
   font-size: xx-small;
   height: 5px;
+}
+
+
+/* Stil personalizat pentru input */
+.calendar {
+  font-size: 16px;
+  padding: 12px 18px;
+  border: 2px solid #1c1d38b5;
+  border-radius: 12px;
+  background-color: #f4f6fb;
+  color: #1c1d38;
+  width: 100%;
+  max-width: 300px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+}
+
+.calendar:focus {
+  outline: none;
+  border-color: #e1306c;
+  box-shadow: 0 0 0 3px rgba(225, 48, 108, 0.2);
+}
+
+#phone {
+  width: 300px;
+}
+
+#persoane {
+  width: 300px;
+}
+
+#email {
+  width: 300px;
+}
+
+#time {
+  width: 300px;
+}
+
+#name {
+  width: 300px;
 }

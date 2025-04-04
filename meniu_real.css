@@ -1,38 +1,45 @@
+/*welcomeimage*/
+.welcome-image {
+  width: 100%;         
+  max-width: 100%;               
+  display: block;        
+  margin: 0px auto;      
+}
+/*/welcomeimage*/
+
+
+
+/*navbar*/
+/*/navbar*/
+
+
+
+/*body*/
 body {
-  font-family: Arial, sans-serif; /* Fontul principal pentru conținut */
-  margin: 0;      /* Fără margini implicite */
-  padding: 0;     /* Fără padding */
-  text-align: center;  /* Centrează textul în pagină */
+  font-family: Arial, sans-serif;
+  margin: 0;      
+  padding: 0;     
+  text-align: center;  
   background-color: ffffff;
   background: url('floor-tile.png') no-repeat center center/cover;
-  background-size: 200px; /* Ajustează dimensiunea dorită */
+  background-size: 200px; 
   background-repeat: repeat;
-
 }
 
 h1 {
-  font-family: "Times New Roman", Times, serif;  /* Font clasic */
-  font-style: italic;                              /* Stil italic */
+  font-family: "Times New Roman", Times, serif;  
+  font-style: italic;                              
 }
-
 
 p {
-  font-family: "Times New Roman", Times, serif;  /* Font clasic */
-  font-style: italic;                              /* Stil italic */
+  font-family: "Times New Roman", Times, serif;  
+  font-style: italic;                              
 }
-
-.welcome-image {
-  width: 100%;           /* Imaginea se întinde pe 100% din container (responsive) */
-  max-width: 100%;      /* Lățime maximă de 600px */
-  /*height: ;*/         /* Înălțimea nu este specificată, astfel încât se păstrează raportul original */
-  display: block;        /* Afișare ca element bloc */
-  margin: 0px auto;      /* Centrează imaginea orizontal */
-  /*align-items: center;*/ /* Comentariu: proprietate nefolosită aici */
-}
+/*/body*/
 
 
 
-/* Stilizarea footer-ului */
+/*footer*/
 footer {
   font-family: Arial, sans-serif;
   background-color: #f8f8f8;
@@ -40,27 +47,23 @@ footer {
   text-align: center;
 }
 
-/* Stilizare pentru iconițele de social media */
 #low2 a, #low a {
-  font-size: 10px; /* Dimensiune mai mică pentru text */
+  font-size: 10px; 
   display: inline-block;
   margin: 5px 10px;
 }
 
-/* Stilizare pentru iconițele fa */
 #low2 i, #low i {
-  font-size: 18px; /* Iconițele vor fi mai mici */
+  font-size: 18px; 
   margin-right: 8px;
 }
 
-/* Stilizare pentru email și telefon */
 #mail i {
-  font-size: 14px; /* Dimensiune mai mică pentru iconițele de email și telefon */
+  font-size: 14px; 
   margin-right: 8px;
 }
 
 #low {
-  
   text-align: right;
   font-size: xx-small;
 }
@@ -75,14 +78,127 @@ footer {
   font-weight: bold;
   color: #333;
 }
+/*/footer*/
 
-/* Responsive pentru dispozitive mici */
+
+
+/*chatbot*/
+#chatButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  background-color: #c1c6cc;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out;
+}
+
+#chatButton:hover {
+  transform: scale(1.1);
+  background-color: #c1c6cc;
+}
+
+#chatContainer {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 300px;
+  height: 400px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  display: none; 
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid #ccc;
+}
+
+#chatHeader {
+  background: #c1c6cc;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#closeChat {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#closeChat:hover {
+  color: #ddd;
+}
+
+
+#chatBody {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  font-size: 14px;
+}
+
+#chatInput {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-top: 1px solid #ccc;
+ outline: none;
+}
+
+.message {
+max-width: 70%;
+padding: 10px 15px;
+margin: 5px 10px;
+border-radius: 18px;
+font-size: 14px;
+word-wrap: break-word;
+display: inline-block;
+}
+
+.user-message {
+background: #007aff; 
+color: white;
+align-self: flex-end;
+text-align: right;
+margin-left: auto;
+}
+
+.bot-message {
+background: #e5e5ea; 
+color: black;
+align-self: flex-start;
+text-align: left;
+margin-right: auto;
+}
+
+#chatBody {
+display: flex;
+flex-direction: column;
+}
+/*/chatbot*/
+
+
+
+/*media*/
 @media (max-width: 768px) {
   #low2 i, #low i {
-      font-size: 13px; /* Mărimea iconițelor pe mobil */
+      font-size: 13px;
   }
-  
   #low a, #low2 a {
-      font-size: 12px; /* Mărimea textului pe mobil */
+      font-size: 12px;
   }
 }
+/*/media*/

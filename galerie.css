@@ -209,7 +209,7 @@ body {
 }
 
 .btn-53:hover .original {
-  transform: translateY(100%);
+  transform: translateY(100%); 
 }
 
 .btn-53 .letters {
