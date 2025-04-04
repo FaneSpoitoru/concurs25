@@ -12,8 +12,6 @@
 }
 
 
-
-
 .galerie {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -29,6 +27,22 @@
   border-radius: 5px;
   cursor: pointer;
   transition: transform 0.3s ease;
+}
+
+.galerie {
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  gap: 10px;
+}
+
+.galerie img {
+ 
+  width: calc(33.33% - 10px); /* 3 imagini pe rând */
+  min-width: 120px; /* Se micșorează, dar nu mai mic de 120px */
+  height: auto;
+  object-fit: cover;
 }
 
 .galerie img:hover {
@@ -245,7 +259,7 @@ body {
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-  text-align: left;
+  text-align: center;
   width: 170px;
   margin-left: 50px;
   
@@ -265,14 +279,14 @@ h2{
   left: 50px;
 }
 body{
-  cursor: url("https://cdn.custom-cursor.com/db/cursor/pointer_1426.png"),auto;
+  cursor: url("cursor.png"),auto;
 }
 body:hover{
-  cursor: url("https://cdn.custom-cursor.com/db/cursor/pointer_1426.png"),pointer;
+  cursor: url("cursor.png"),pointer;
 }
 
 * {
-  cursor: url('https://cdn.custom-cursor.com/db/cursor/pointer_1426.png'), auto;
+  cursor: url('cursor.png'), auto;
 }
 
 /*-------------------- Footer --------------------*/
