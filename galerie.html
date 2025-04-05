@@ -71,6 +71,10 @@
         <img src="ok.jpg" alt="Bucătăria restaurantului" onclick="openLightbox(this)">
         <img src="ok.jpg" alt="Interior restaurant" onclick="openLightbox(this)">
     </div>
+    
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img">
+    </div>
 
 
 
@@ -99,47 +103,40 @@
 
 
 
-<div id="lightbox" class="lightbox" onclick="closeLightbox()">
-    <img id="lightbox-img">
-</div>
+    <footer>
+        <div class="footer-container">
+            <div id="low2"> 
+                <a href="https://www.instagram.com/fane02532?igsh=MXB5cWFnaHJpbzJubg==" target="_blank" id="ig">
+                    <i class="fa-brands fa-facebook" style="font-size: 10px; color: #1877F2;">Mihai Sigma</i>
+                </a>
+                <br><br>
+                <a href="https://www.instagram.com/fane02532?igsh=MXB5cWFnaHJpbzJubg==" target="_blank" id="ig">
+                    <i class="fa-brands fa-tiktok" style="font-size: 10px; color: #000000;">Giovanni<!--CioacaGroasa--></i>
+                </a>
+                <br><br>
+                <a href="https://www.instagram.com/fane02532?igsh=MXB5cWFnaHJpbzJubg==" target="_blank" id="ig">
+                    <i class="fab fa-instagram" style="font-size: 10px; color: #E1306C;">Sefu</i>
+                </a>
+            </div>
 
-
-
-
-<footer>
-    <div class="footer-container">
-        <div id="low2"> 
-            <a href="https://www.instagram.com/fane02532?igsh=MXB5cWFnaHJpbzJubg==" target="_blank" id="ig">
-                <i class="fa-brands fa-facebook" style="font-size: 10px; color: #1877F2;">Mihai Sigma</i>
-            </a>
-            <br><br>
-            <a href="https://www.instagram.com/fane02532?igsh=MXB5cWFnaHJpbzJubg==" target="_blank" id="ig">
-                <i class="fa-brands fa-tiktok" style="font-size: 10px; color: #000000;">GiovanniCioacaGroasa</i>
-            </a>
-            <br><br>
-            <a href="https://www.instagram.com/fane02532?igsh=MXB5cWFnaHJpbzJubg==" target="_blank" id="ig">
-                <i class="fab fa-instagram" style="font-size: 10px; color: #E1306C;">Sefu</i>
-            </a>
+            <div id="low"> 
+                <a target="_blank" id="mail">
+                    <i class="fa-solid fa-envelope" style="color: #1c1d38b5;">Italy@d-amici.de</i>
+                </a>
+                <br><br>
+                <a target="_blank" id="mail">
+                    <i class="fa-solid fa-phone" style="color: #1c1d38b5;">0769842498</i>
+                </a>
+            </div>
         </div>
 
-        <div id="low"> 
-            <a target="_blank" id="mail">
-                <i class="fa-solid fa-envelope" style="color: #1c1d38b5;">Italy@d-amici.de</i>
-            </a>
-            <br><br>
-            <a target="_blank" id="mail">
-                <i class="fa-solid fa-phone" style="color: #1c1d38b5;">0769842498</i>
-            </a>
-        </div>
-    </div>
-
-    <p>© <span id="year"></span> D` Amici. Alle Rechte vorbehalten.</p>
-</footer>
+        <p>© <span id="year"></span> D` Amici. Alle Rechte vorbehalten.</p>
+    </footer>
 
 
 
-<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
-<script src="galerie.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+    <script type= "module" src="galerie.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

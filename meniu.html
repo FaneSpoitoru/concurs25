@@ -69,17 +69,51 @@
     
 
 
-    <button id="chatButton">💬</button>    
-    <div id="chatContainer">
-        <div id="chatHeader">
-            alex
-            <button id="closeChat">✖</button>
-        </div>
-        <div id="chatBody">
-            <p>cu ce te ajut</p>
-        </div>
-        <input type="text" id="chatInput" placeholder="..." />
-    </div>
+<button id="menuButton" style="position: fixed; bottom: 20px; right: 20px; width: 50px; height: 50px; border-radius: 50%; background-color: #ffffff; color: white; font-size: 30px; border: none; display: flex; justify-content: center; align-items: center; cursor: pointer; z-index: 1001;">
+    💬
+  </button>
+  
+
+  <div id="menuPopup" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: white; border: 2px solid #333; padding: 20px; width: 80%; max-width: 500px; z-index: 1000;">
+
+<button id="closeBtn" style="position: absolute; top: 10px; right: 10px; background-color: red; color: white; border: none; width: 30px; height: 30px; font-size: 18px; display: flex; justify-content: center; align-items: center; cursor: pointer;">X</button>
+
+  
+
+    <iframe src="https://www.stack-ai.com/chat/67e8112f91b55a6611b0a192-6vGKGug1tpQiMzfl8PgYMt" width="100%" height="400px" frameborder="0"></iframe>
+  </div>
+  
+
+  <div id="overlay" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.7); z-index: 999;"></div>
+  
+  <script>
+
+    const menuButton = document.getElementById('menuButton');
+    const menuPopup = document.getElementById('menuPopup');
+    const closeBtn = document.getElementById('closeBtn');
+    const overlay = document.getElementById('overlay');
+  
+
+    menuButton.onclick = function() {
+      menuPopup.style.display = 'block';
+      overlay.style.display = 'block';
+    };
+  
+
+    closeBtn.onclick = function() {
+      menuPopup.style.display = 'none';
+      overlay.style.display = 'none';
+    };
+  
+
+    overlay.onclick = function() {
+      menuPopup.style.display = 'none';
+      overlay.style.display = 'none';
+    };
+  </script>
+  
+
+    
 
 
     

@@ -40,32 +40,36 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/11.5.0/firebas
             }
         });
 
-        // 🔹 3. Afișarea recenziilor în timp real
-        function loadReviews() {
-            const q = query(collection(db, "Review"), orderBy("timestamp", "desc"), limit(3)); // 🔹 Afișează doar ultimele 3 recenzii
-        
-            onSnapshot(q, (snapshot) => {
-                let reviewsDiv = document.getElementById('reviews');
-                reviewsDiv.innerHTML = '';
-        
-                snapshot.forEach((doc) => {
-                    let review = doc.data();
-                    let div = document.createElement('div');
-                    div.className = 'review';
-                    div.innerHTML = `<strong>${review.name}</strong><p>${review.message}</p>`;
-                    reviewsDiv.appendChild(div);
-                });
-            });
-        }
-        
-        // Încarcă recenziile imediat ce pagina este deschisă
-        loadReviews();
-        
-        function openLightbox(img) {
-            document.getElementById("lightbox-img").src = img.src;
-            document.getElementById("lightbox").style.display = "flex";
-        }
-    
-        function closeLightbox() {
-            document.getElementById("lightbox").style.display = "none";
-        }
+
+         // 🔹 3. Afișarea recenziilor în timp real
+ function loadReviews() {
+    const q = query(collection(db, "Review"), orderBy("timestamp", "desc"), limit(3)); // 🔹 Afișează doar ultimele 3 recenzii
+
+    onSnapshot(q, (snapshot) => {
+        let reviewsDiv = document.getElementById('reviews');
+        reviewsDiv.innerHTML = '';
+
+        snapshot.forEach((doc) => {
+            let review = doc.data();
+            let div = document.createElement('div');
+            div.className = 'review';
+            div.innerHTML = `<strong>${review.name}</strong><p>${review.message}</p>`;
+            reviewsDiv.appendChild(div);
+        });
+   });
+}
+
+// Încarcă recenziile imediat ce pagina este deschisă
+loadReviews();
+
+function openLightbox(img) {
+    document.getElementById("lightbox-img").src = img.src;
+    document.getElementById("lightbox").style.display = "flex";
+}
+
+function closeLightbox() {
+    document.getElementById("lightbox").style.display = "none";
+}
+
+
+       
