@@ -48,7 +48,7 @@ body {
   
   .galerie img {
     width: 100%;
-    height: auto;
+    height: auto; 
     border-radius: 5px;
     cursor: pointer;
     transition: transform 0.3s ease;

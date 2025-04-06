@@ -26,14 +26,25 @@ body {
   background-repeat: repeat;
 }
 
-h1 {
-  font-family: "Times New Roman", Times, serif;  
-  font-style: italic;                              
+.menu-item-types{
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 30px;
+  font-style: normal;
 }
 
-p {
-  font-family: "Times New Roman", Times, serif;  
-  font-style: italic;                              
+.menu-item{
+  font-family: "Cormorant Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 30px;
+  font-style: normal;
+}
+
+.menu-section{
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700px;
+  font-style: normal;
 }
 /*/body*/
 

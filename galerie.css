@@ -1,4 +1,11 @@
 /*welcomeimage*/
+.welcome-image {
+  width: 100vw;         /* Ocupă toată lățimea ecranului */
+  max-width: 100%;      /* Se asigură că nu depășește containerul */
+  height: 500px /*auto*/;         /* Păstrează proporțiile */
+  object-fit: cover;    /* Evită distorsiuni */
+  display: block;       /* Elimină spațiile goale sub imagine */
+}
 /*/welcomeimage*/
 
 
@@ -10,6 +17,8 @@
 
 
 
+/*navbar*/
+/*/navbar*/
 
 
 
@@ -20,99 +29,43 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
+/*body*/
+body {
+  font-family: Arial, sans-serif; 
+  margin: 0;      
+  padding: 0;     
+  text-align: center;  
+  background: url('floor-tile.png') center center/cover;
+  background-size: 200px; 
+  background-repeat: repeat; 
+}
 
 * {
   text-align: center;
 }
 
-
-.welcome-image {
-  width: 100vw;         /* Ocupă toată lățimea ecranului */
-  max-width: 100%;      /* Se asigură că nu depășește containerul */
-  height: 500px /*auto*/;         /* Păstrează proporțiile */
-  object-fit: cover;    /* Evită distorsiuni */
-  display: block;       /* Elimină spațiile goale sub imagine */
+body{
+  cursor: url("https://cdn.custom-cursor.com/db/cursor/pointer_1426.png"),auto;
+}
+body:hover{
+  cursor: url("https://cdn.custom-cursor.com/db/cursor/pointer_1426.png"),auto;
 }
 
+* {
+  cursor: url("https://cdn.custom-cursor.com/db/cursor/pointer_1426.png"),auto;
+}
+/*/body*/
 
+
+
+
+
+
+
+
+
+
+/*galerie*/
 .galerie {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -187,21 +140,18 @@ header {
   font-size: 20px;
   border-radius: 5px;
 }
+/*/galerie*/
 
 
 
-/*-------------------- Stilizare pentru body --------------------*/
-/* Setează stilurile de bază pentru pagina */
-body {
-  font-family: Arial, sans-serif; /* Fontul principal pentru conținut */
-  margin: 0;      /* Fără margini implicite */
-  padding: 0;     /* Fără padding */
-  text-align: center;  /* Centrează textul în pagină */
-  background: url('floor-tile.png') no-repeat center center/cover;
-  background-size: 200px; /* Ajustează dimensiunea dorită */
-  background-repeat: repeat;
-}
 
+
+
+
+
+
+
+/*recenzi*/
 #preview img {
   max-width: 150px;
   max-height: 150px;
@@ -234,6 +184,45 @@ body {
   text-align: center;
   width: 150px;
 }
+
+
+#reviewForm{
+  border-radius: 30px;
+  background-color: #fcfcfc7e;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  text-align: center;
+  width: 170px;
+  margin-left: 50px;
+  
+}
+#reviews{
+  border-radius: 30px;
+  background-color: #fcfcfc7e;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  width: 300px;
+  margin-left:50px ;
+  text-align: center;
+}
+h2{
+  position: relative;
+  left: 50px;
+}
+/*/recenzi*/
+
+
+
+
+
+
+
+
+
+
+/*buton*/
 /* From Uiverse.io by doniaskima */
 .btn-53,
 .btn-53 * ,
@@ -352,46 +341,18 @@ body {
 .btn-53:hover span:nth-child(6) {
   transition-delay: 0.5s;
 }
+/*/buton*/
 
 
-#reviewForm{
-  border-radius: 30px;
-  background-color: #fcfcfc7e;
-  -webkit-backdrop-filter: blur(20px);
-  backdrop-filter: blur(20px);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-  text-align: center;
-  width: 170px;
-  margin-left: 50px;
-  
-}
-#reviews{
-  border-radius: 30px;
-  background-color: #fcfcfc7e;
-  -webkit-backdrop-filter: blur(20px);
-  backdrop-filter: blur(20px);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-  width: 300px;
-  margin-left:50px ;
-  text-align: center;
-}
-h2{
-  position: relative;
-  left: 50px;
-}
-body{
-  cursor: url("cursor.png"),auto;
-}
-body:hover{
-  cursor: url("cursor.png"),pointer;
-}
 
-* {
-  cursor: url('cursor.png'), auto;
-}
 
-/*-------------------- Footer --------------------*/
-/* Stilizarea subsolului paginii */
+
+
+
+
+
+
+/*footer*/
 footer {
   color: rgba(13, 12, 12, 0.589);
   text-align: center;
@@ -422,3 +383,4 @@ footer {
   font-size: xx-small;
   height: 5px;
 }
+/*/footer*/

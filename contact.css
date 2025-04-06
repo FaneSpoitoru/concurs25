@@ -6,7 +6,7 @@
   margin-bottom: 20px;        /* Spațiere sub paragrafe */
 }
 
-
+ 
 .hero {
   background: url('hero.jpg') no-repeat center center/cover; /* Imagine de fundal, centrată și acoperind complet zona */
   color: rgb(0, 0, 0);      /* Culoarea textului din secțiune */ 

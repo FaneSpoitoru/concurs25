@@ -8,7 +8,7 @@
   object-fit: cover;    /* Evită distorsiuni */
   display: block;       /* Elimină spațiile goale sub imagine */
 }
-
+ 
 body {   
   font-family: Arial, sans-serif; /* Fontul principal pentru conținut */
   margin: 0;      /* Fără margini implicite */
@@ -50,6 +50,25 @@ footer {
 @media (max-width: 768px) {
   #rezervare-form {
       width: 70%; /* Se adaptează mai bine pe ecrane mici */
+  }
+
+  .calendar {
+    font-size: 16px;
+    padding: 12px 18px;
+    border: 2px solid #1c1d38b5;
+    border-radius: 12px;
+    background-color: #f4f6fb;
+    color: #1c1d38;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+  }
+  
+  .calendar:focus {
+    outline: none;
+    border-color: #e1306c;
+    box-shadow: 0 0 0 3px rgba(225, 48, 108, 0.2);
   }
 }
 
