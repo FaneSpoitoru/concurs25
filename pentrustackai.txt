@@ -188,7 +188,7 @@ Bruschette (Bruschetta Classica, Bruschetta Birne)
 Unele paste (verifică ce nu conțin carne sau pește)
 
 Rezervări
-Rezervările se fac pe [pagina noastră de rezervări](URL-ul tău pentru rezervări).
+Rezervările se fac pe pagina noastră de rezervări https://fanespoitoru.github.io/concurs25/rezervari.html.
 
 Alergeni
 Produsele și băuturile noastre pot conține următoarele alergene:

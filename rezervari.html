@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html lang="ro,ger,eng">
+<html lang="ro">
 
 <head>
-
     <title>Rezervari</title>
     <link rel="stylesheet" href="rezervari.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -10,20 +9,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="icon" href="logo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/themes/material_blue.css">
-        
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 </head>
 
 <body>
 
-    
-
     <section id="welcome">
         <img src="pizzajpg.jpg" alt="Delicious Italian Cuisine" class="welcome-image">
     </section>
-
-
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nava">
         <div class="container">
@@ -42,8 +36,6 @@
         </div>
     </nav>
 
-
-    
     <form id="rezervare-form">
         <h2>Fă o rezervare</h2>
         <input type="text" id="name" placeholder="Numele tău" required>
@@ -53,36 +45,30 @@
         <input type="email" id="email" placeholder="Email" required>
         <input type="number" id="persoane" placeholder="Număr persoane" required min="1" max="12">
         <p id="disponibilitate">Verificare disponibilitate...</p>
-        <button type="submit" id="rezbtn">Rezervă</button>
+        <button type="submit" id="rezbtn" class="btn btn-primary">Rezervă</button>
     </form>
-    
 
-<script>
-    document.getElementById("persoane").addEventListener("input", function () {
-        let value = this.value;
-
-        // Elimină orice caracter care nu este cifră (0-9)
-        this.value = value.replace(/[^0-9]/g, '');
-
-        // Se asigură că numărul rămâne între 1 și 12
-        if (this.value !== "") {
-            let num = parseInt(this.value, 10);
-            if (num < 1) this.value = "1";
-            if (num > 12) this.value = "12";
-        }
-    });
-</script>
-
+    <script>
+        document.getElementById("persoane").addEventListener("input", function () {
+            let value = this.value;
+            this.value = value.replace(/[^0-9]/g, '');
+            if (this.value !== "") {
+                let num = parseInt(this.value, 10);
+                if (num < 1) this.value = "1";
+                if (num > 12) this.value = "12";
+            }
+        });
+    </script>
 
     <script type="module">
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-app.js";
-        import { getFirestore, collection, addDoc, query, where, getDocs, deleteDoc, doc, onSnapshot } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-firestore.js";
+        import { getFirestore, collection, addDoc, query, where, getDocs } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-firestore.js";
 
         const firebaseConfig = {
             apiKey: "AIzaSyAt696xzBxkm92IfeCB5Ck0EMNjlSjTbZ0",
             authDomain: "rezervari-442f0.firebaseapp.com",
             projectId: "rezervari-442f0",
-            storageBucket: "rezervari-442f0.firebasestorage.app",
+            storageBucket: "rezervari-442f0.appspot.com",
             messagingSenderId: "460011707968",
             appId: "1:460011707968:web:08d644f34fa67bf3e6c9a5"
         };
@@ -97,48 +83,57 @@
 
         async function checkAvailability(date, time) {
             const roundedTime = roundToHour(time);
-            const rezervariRef = collection(db, "rezervari");
+            const rezervariRef = collection(db, "rezervariReal");
             const q = query(rezervariRef, where("date", "==", date), where("time", "==", roundedTime));
             const querySnapshot = await getDocs(q);
             const locuriRamase = MAX_REZERVARI - querySnapshot.size;
-            document.getElementById("disponibilitate").innerText = locuriRamase > 0 
-                ? `Mai sunt ${locuriRamase} mese disponibile.` 
+            document.getElementById("disponibilitate").innerText = locuriRamase > 0
+                ? `Mai sunt ${locuriRamase} mese disponibile.`
                 : "Nu mai sunt mese disponibile.";
             return locuriRamase > 0;
         }
 
-        async function addReservation(name, phone, date, time) {
+        async function addReservation(name, phone, email, persoane, date, time) {
             const roundedTime = roundToHour(time);
             const isAvailable = await checkAvailability(date, roundedTime);
             if (isAvailable) {
                 try {
-                    await addDoc(collection(db, "rezervari"), { name, phone, date, time: roundedTime });
-                    Swal.fire('Rezvervare realizata cu succes!', 'Te asteptam!', 'success');
+                    await addDoc(collection(db, "rezervariReal"), {
+                        name,
+                        phone,
+                        email,
+                        persoane: parseInt(persoane),
+                        date,
+                        time: roundedTime
+                    });
+                    Swal.fire('Rezervare realizată cu succes!', 'Te așteptăm!', 'success');
                 } catch (e) {
                     console.error("Eroare la rezervare: ", e);
                 }
             } else {
-                Swal.fire('Nu mai sunt locuri😞!', 'Incearca alta ora!', 'error');
+                Swal.fire('Nu mai sunt locuri 😞!', 'Încearcă altă oră!', 'error');
             }
         }
 
-        document.getElementById("rezervare-form").addEventListener("submit", async function(event) {
+        document.getElementById("rezervare-form").addEventListener("submit", async function (event) {
             event.preventDefault();
             let name = document.getElementById("name").value;
             let phone = document.getElementById("phone").value;
-            let date = document.getElementById("date").value;
+            let email = document.getElementById("email").value;
+            let persoane = document.getElementById("persoane").value;
+            let date = document.getElementById("calendar-modern").value;
             let time = document.getElementById("time").value;
-            await addReservation(name, phone, date, time);
+            await addReservation(name, phone, email, persoane, date, time);
         });
 
-        document.getElementById("date").addEventListener("change", async () => {
-            let date = document.getElementById("date").value;
+        document.getElementById("calendar-modern").addEventListener("change", async () => {
+            let date = document.getElementById("calendar-modern").value;
             let time = document.getElementById("time").value;
             if (date && time) await checkAvailability(date, time);
         });
 
         document.getElementById("time").addEventListener("change", async () => {
-            let date = document.getElementById("date").value;
+            let date = document.getElementById("calendar-modern").value;
             let time = document.getElementById("time").value;
             if (date && time) await checkAvailability(date, time);
         });
@@ -146,21 +141,21 @@
 
     <footer>
         <div class="footer-container">
-            <div id="low2"> <!-- Eliminăm class="container" -->
+            <div id="low2">
                 <a href="https://www.instagram.com/fane02532?igsh=MXB5cWFnaHJpbzJubg==" target="_blank" id="ig">
                     <i class="fa-brands fa-facebook" style="font-size: 10px; color: #1877F2;">Mihai Sigma</i>
                 </a>
                 <br><br>
                 <a href="https://www.instagram.com/fane02532?igsh=MXB5cWFnaHJpbzJubg==" target="_blank" id="ig">
-                    <i class="fa-brands fa-tiktok" style="font-size: 10px; color: #000000;">Giovanni<!--CioacaGroasa--></i>
+                    <i class="fa-brands fa-tiktok" style="font-size: 10px; color: #000000;">Giovanni</i>
                 </a>
                 <br><br>
                 <a href="https://www.instagram.com/fane02532?igsh=MXB5cWFnaHJpbzJubg==" target="_blank" id="ig">
                     <i class="fab fa-instagram" style="font-size: 10px; color: #E1306C;">Sefu</i>
                 </a>
             </div>
-    
-            <div id="low"> <!-- Eliminăm class="container" -->
+
+            <div id="low">
                 <a target="_blank" id="mail">
                     <i class="fa-solid fa-envelope" style="color: #1c1d38b5;">Italy@d-amici.de</i>
                 </a>
@@ -170,21 +165,23 @@
                 </a>
             </div>
         </div>
-    
+
         <p>© <span id="year"></span> D` Amici. Alle Rechte vorbehalten.</p>
     </footer>
 
     <script>
         flatpickr("#calendar-modern", {
-          dateFormat: "d-m-Y",
-          minDate: "today",
-          locale: "ro"
+            dateFormat: "d-m-Y",
+            minDate: "today",
+            locale: "ro"
         });
-      </script>
-      
+    </script>
+
     <script>
         document.getElementById("year").textContent = new Date().getFullYear();
     </script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
