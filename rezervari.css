@@ -1,14 +1,23 @@
+@media (max-width: 768px) {
+  #rezervare-form {
+      width: 70%; /* Se adaptează mai bine pe ecrane mici */
+  }
+}
 *{
   text-align: center;
 }
+/*welcomeimage*/
 .welcome-image {
-  width: 100vw;         /* Ocupă toată lățimea ecranului */
-  max-width: 100%;      /* Se asigură că nu depășește containerul */
-  height: 500px /*auto*/;         /* Păstrează proporțiile */
-  object-fit: cover;    /* Evită distorsiuni */
-  display: block;       /* Elimină spațiile goale sub imagine */
+  width: 100%;           /* Imaginea se întinde pe 100% din container (responsive) */
+  max-width:100%;      /* Lățime maximă de 600px */
+  /*height: ;*/         /* Înălțimea nu este specificată, astfel încât se păstrează raportul original */
+  display: block;        /* Afișare ca element bloc */
+  margin: 0px auto;      /* Centrează imaginea orizontal */
+  /*align-items: center;*/ /* Comentariu: proprietate nefolosită aici */
 }
- 
+/*/welcomeimage*/
+ /*  width: 100%;            
+  max-width: 100%;*/
 body {   
   font-family: Arial, sans-serif; /* Fontul principal pentru conținut */
   margin: 0;      /* Fără margini implicite */
@@ -21,7 +30,7 @@ body {
 
 
 footer {    
-  color: rgb(0, 0, 0);      /* Culoare text specifică */
+  color: rgb(0, 0, 0);      
   text-align: center;         /* Text centrat */
   padding: 20px;              /* Spațiere internă */
   font-family: "Times New Roman", Times, serif;  /* Font clasic */
@@ -42,35 +51,13 @@ footer {
   align-items: center;
   justify-content: center;
 
-  
-  margin: 50px auto;
+  width: 90%;
+  max-width: 600px;
+  margin: 100px auto;
 }
 
 /* Pentru ecrane mici (mobile) */
-@media (max-width: 768px) {
-  #rezervare-form {
-      width: 70%; /* Se adaptează mai bine pe ecrane mici */
-  }
 
-  .calendar {
-    font-size: 16px;
-    padding: 12px 18px;
-    border: 2px solid #1c1d38b5;
-    border-radius: 12px;
-    background-color: #f4f6fb;
-    color: #1c1d38;
-    width: 100%;
-    max-width: 300px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    transition: all 0.2s ease;
-  }
-  
-  .calendar:focus {
-    outline: none;
-    border-color: #e1306c;
-    box-shadow: 0 0 0 3px rgba(225, 48, 108, 0.2);
-  }
-}
 
 #name{
   border-radius: 30px;
@@ -160,8 +147,7 @@ h2{
 
 #disponibilitate{
   text-align: center;
-  font-family: "Brush Script MT", cursive;
-  
+  font-family: "Brush Script MT", cursive;  
 }
 
 #rezbtn{
@@ -244,21 +230,26 @@ footer {
 }
 
 #phone {
+  margin: 50px auto;
   width: 300px;
 }
 
 #persoane {
+  margin: 50px auto;
   width: 300px;
 }
 
 #email {
+  margin: 50px auto;
   width: 300px;
 }
 
 #time {
+  margin: 50px auto;
   width: 300px;
 }
 
 #name {
+  margin: 50px auto;
   width: 300px;
 }
