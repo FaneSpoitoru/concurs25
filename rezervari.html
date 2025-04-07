@@ -20,22 +20,32 @@
         <img src="pizzajpg.jpg" alt="Delicious Italian Cuisine" class="welcome-image">
     </section>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nava">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">D` Amici</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container navbar-mobile" >
+          <!-- Logo -->
+          <a class="navbar-brand mx-auto d-lg-block" href="index.html">
+            <img src="logo-removebg-preview.png" alt="Logo" style="height: 80px; border: none;">
+          </a>
+       
+          <div class="nav-toggler-wrapper d-lg-none text-center">
+            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+              <span class="hamburger"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="meniu.html">Meniu Restaurant</a></li>
-                    <li class="nav-item"><a class="nav-link" href="galerie.html">Galerie</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                    <li class="nav-item"><a class="nav-link" href="Despre.html">Despre</a></li>
-                </ul>
-            </div>
+            <span class="nav-text">Navigație</span>
+          </div>
+      
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link" href="meniu.html">Meniu Restaurant</a></li>
+              <li class="nav-item"><a class="nav-link" href="galerie.html">Galerie</a></li>
+              <li class="nav-item"><a class="nav-link" href="rezervari.html">Rezervari</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+              <li class="nav-item"><a class="nav-link" href="Despre.html">Despre</a></li>
+            </ul>
+          </div>
         </div>
-    </nav>
+      </nav>
 
     <form id="rezervare-form">
         <h2>Fa o rezervare</h2>
@@ -197,6 +207,25 @@
         });
     </script>
 
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    const toggler = document.querySelector(".custom-toggler");
+    const navbarCollapse = document.getElementById("navbarNav");
+
+    toggler.addEventListener("click", function () {
+      this.classList.toggle("active");
+    });
+
+    navbarCollapse.addEventListener("hidden.bs.collapse", function () {
+      toggler.classList.remove("active");
+    });
+
+    navbarCollapse.addEventListener("shown.bs.collapse", function () {
+      toggler.classList.add("active");
+    });
+  }); 
+    </script>
     <script>
         document.getElementById("year").textContent = new Date().getFullYear();
     </script>

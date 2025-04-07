@@ -1,3 +1,21 @@
+document.addEventListener("DOMContentLoaded", function () {
+    const toggler = document.querySelector(".custom-toggler");
+    const navbarCollapse = document.getElementById("navbarNav");
+
+    toggler.addEventListener("click", function () {
+      this.classList.toggle("active");
+    });
+
+    navbarCollapse.addEventListener("hidden.bs.collapse", function () {
+      toggler.classList.remove("active");
+    });
+
+    navbarCollapse.addEventListener("shown.bs.collapse", function () {
+      toggler.classList.add("active");
+    });
+  });
+
+
 document.getElementById("chatButton").addEventListener("click", function() {
     document.getElementById("chatContainer").style.display = "flex";
 });
@@ -12,6 +30,10 @@ document.getElementById("chatInput").addEventListener("keydown", function(event)
         sendMessage();
     }
 });
+
+
+
+
 
 function sendMessage() {
     let inputField = document.getElementById("chatInput");
