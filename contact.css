@@ -89,36 +89,46 @@ body:hover{
 
 /*-------------------- Footer --------------------*/
 /* Stilizarea subsolului paginii */
-footer {
-  color: rgba(13, 12, 12, 0.589);
-  text-align: center;
-  padding: 20px;
-  font-family: "Times New Roman", Times, serif;
-  font-style: italic;
-  background-color: #ccc;
-  p{
-     padding-top: 5%;
-  }
+.footer-fixed {
+  position: relative; /* sau pur și simplu scoți complet */
 }
-
-.footer-container {
+.footer-fixed {
+  background: #111;
+  color: white;
+  font-size: 14px;
   display: flex;
-  justify-content: space-between; 
-  align-items: center; 
-  flex-wrap: wrap; 
-  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+  margin-top: 80px;
+  background: url('floor-tile.png') no-repeat center center/cover;
+  background-size: 200px; /* Ajustează dimensiunea dorită */
+  background-repeat: repeat;
 }
 
-#low {
-  text-align: right;
-  font-size: xx-small;
+.footer-icons {
+  display: flex;
+  gap: 16px;
+  font-size: 20px;
+  margin-bottom: 4px;
 }
 
-#low2 {
-  text-align: left;
-  font-size: xx-small;
-  height: 5px;
+.footer-icons a {
+  color: white;
+  text-decoration: none;
+  transition: transform 0.2s;
 }
+
+.footer-icons a:hover {
+  transform: scale(1.2);
+}
+
+.footer-copy {
+  font-size: 12px;
+  opacity: 0.7;
+  color: #111;
+}
+
 
 
 
