@@ -2,7 +2,8 @@
   #rezervare-form {
       width: 70%; /* Se adaptează mai bine pe ecrane mici */
   }
-}*{
+}
+*{
   text-align: center;
 }
 /*welcomeimage*/
@@ -146,8 +147,7 @@ h2{
 
 #disponibilitate{
   text-align: center;
-  font-family: "Brush Script MT", cursive;
-  
+  font-family: "Brush Script MT", cursive;  
 }
 
 #rezbtn{
@@ -230,21 +230,26 @@ footer {
 }
 
 #phone {
+  margin: 50px auto;
   width: 300px;
 }
 
 #persoane {
+  margin: 50px auto;
   width: 300px;
 }
 
 #email {
+  margin: 50px auto;
   width: 300px;
 }
 
 #time {
+  margin: 50px auto;
   width: 300px;
 }
 
 #name {
+  margin: 50px auto;
   width: 300px;
 }
