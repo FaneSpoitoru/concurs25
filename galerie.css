@@ -525,7 +525,7 @@ h2{
 
   .footer-left-wrapper {
     flex-direction: column;
-    align-items: center;
+    align-items: center; 
     border: none;
   }
 
