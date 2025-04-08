@@ -167,44 +167,110 @@ body {
 
 
 /*footer*/
-footer {
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: #222;
+  color: #ccc;
   font-family: Arial, sans-serif;
-  background-color: #f8f8f8;
-  padding: 10px;
-  text-align: center;
+  flex-wrap: wrap;
 }
 
-#low2 a, #low a {
-  font-size: 10px; 
-  display: inline-block;
-  margin: 5px 10px;
+.footer-left-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
 }
 
-#low2 i, #low i {
-  font-size: 18px; 
-  margin-right: 8px;
+.nume {
+  color: white;
+  font-size: 24px;
+  margin: 0;
 }
 
-#mail i {
-  font-size: 14px; 
-  margin-right: 8px;
+.footer-left {
+  border-left: 2px solid white;
+  padding-left: 2rem;
 }
 
-#low {  
+.footer-left-contact a {
+  margin-right: 15px;
+  color: #aaa;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.drepturi {
+  margin-top: 1rem;
+  font-size: 13px;
+}
+
+.footer-right {
   text-align: right;
-  font-size: xx-small;
 }
 
-#low2 {
-  height: 5px;
-  text-align: left;
-  font-size: xx-small;
+.footer-right .social-icons a {
+  margin: 0 10px;
+  color: #901818;
+  text-decoration: none;
+  font-size: 16px;
 }
 
-#year {
-  font-weight: bold;
-  color: #333;
+.footer-right p {
+  margin-top: 1rem;
+  font-size: 13px;
 }
+
+
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-left-wrapper {
+    flex-direction: column;
+    align-items: center;
+    border: none;
+  }
+
+  .footer-left,
+  .footer-right,
+  .nume {
+    width: 100%;
+  }
+
+  .footer-right {
+    text-align: center; /* Centrăm totul în footer-right */
+    margin-top: 1rem;
+  }
+
+  .footer-right .social-icons {
+    display: flex;
+    justify-content: center; /* Centrăm emoji-urile */
+    gap: 15px; /* Distanță între emoji-uri */
+  }
+ 
+  .footer-left-contact a {
+    display: inline-block;
+    margin: 5px 10px;
+  }
+
+  .drepturi {
+    text-align: center;
+    width: 100%;
+  }
+
+  /* Ascundem linia albă pe telefon */
+  .footer-left-contact {
+    border-left: none;
+  }
+}
+
+
 /*/footer*/
 
 
