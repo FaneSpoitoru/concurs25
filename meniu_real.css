@@ -254,7 +254,11 @@ footer {
   z-index: 1;
 }
 
-
+.menu-section{
+  font-family: Dancing Script, cursive;
+  text-align: center;
+  
+}
 
 
 .openBtn{
@@ -292,11 +296,15 @@ footer {
       margin-left: 0%;
       margin-right: 20%;
       font: bold;
+      background-color: rgba(169, 169, 169, 0.3);
+      color: #000000;
       
     }
   }
 }
-
+.openBtn:hover {
+  transform: scale(1.05);
+}
 ul {
   list-style-type: none;
   text-align: center;
