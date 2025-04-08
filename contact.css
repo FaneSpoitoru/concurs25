@@ -89,45 +89,110 @@ body:hover{
 
 /*-------------------- Footer --------------------*/
 /* Stilizarea subsolului paginii */
-.footer-fixed {
-  position: relative; /* sau pur și simplu scoți complet */
-}
-.footer-fixed {
-  background: #111;
-  color: white;
-  font-size: 14px;
+.footer {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px 0;
-  margin-top: 80px;
-  background: url('floor-tile.png') no-repeat center center/cover;
-  background-size: 200px; /* Ajustează dimensiunea dorită */
-  background-repeat: repeat;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: #222;
+  color: #ccc;
+  font-family: Arial, sans-serif;
+  flex-wrap: wrap;
 }
 
-.footer-icons {
+.footer-left-wrapper {
   display: flex;
-  gap: 16px;
-  font-size: 20px;
-  margin-bottom: 4px;
+  align-items: flex-start;
+  gap: 2rem;
 }
 
-.footer-icons a {
+.nume {
   color: white;
+  font-size: 24px;
+  margin: 0;
+}
+
+.footer-left {
+  border-left: 2px solid white;
+  padding-left: 2rem;
+}
+
+.footer-left-contact a {
+  margin-right: 15px;
+  color: #aaa;
   text-decoration: none;
-  transition: transform 0.2s;
+  font-size: 14px;
 }
 
-.footer-icons a:hover {
-  transform: scale(1.2);
+.drepturi {
+  margin-top: 1rem;
+  font-size: 13px;
 }
 
-.footer-copy {
-  font-size: 12px;
-  opacity: 0.7;
-  color: #111;
+.footer-right {
+  text-align: right;
 }
+
+.footer-right .social-icons a {
+  margin: 0 10px;
+  color: #901818;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.footer-right p {
+  margin-top: 1rem;
+  font-size: 13px;
+}
+
+
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-left-wrapper {
+    flex-direction: column;
+    align-items: center;
+    border: none;
+  }
+
+  .footer-left,
+  .footer-right,
+  .nume {
+    width: 100%;
+  }
+
+  .footer-right {
+    text-align: center; /* Centrăm totul în footer-right */
+    margin-top: 1rem;
+  }
+
+  .footer-right .social-icons {
+    display: flex;
+    justify-content: center; /* Centrăm emoji-urile */
+    gap: 15px; /* Distanță între emoji-uri */
+  }
+ 
+  .footer-left-contact a {
+    display: inline-block;
+    margin: 5px 10px;
+  }
+
+  .drepturi {
+    text-align: center;
+    width: 100%;
+  }
+
+  /* Ascundem linia albă pe telefon */
+  .footer-left-contact {
+    border-left: none;
+  }
+}
+
+
 
 
 
