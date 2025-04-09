@@ -32,10 +32,15 @@
 
 .nav-item {
   font-family: 'Libre Baskerville', serif;
-    font-size: 10px;
+    font-size: 20px;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 1.2px;
+    text-align: center;
+}
+
+.navbar-nav{
+  word-spacing: 20px;
 }
 
 
@@ -129,9 +134,7 @@ box-shadow: none !important;
 body {
   font-family: Arial, sans-serif; 
   margin: 0;      
-  padding: 0;     
-  text-align: center;  
-  background-color: ffffff;
+  padding: 0;       
   background: url('floor-tile.png') no-repeat center center/cover;
   background-size: 200px; 
   background-repeat: repeat;
@@ -141,26 +144,23 @@ body {
 
 
 /*bodytxt*/
-.body-text{
-  font-size: 30px;
-  word-spacing: 5px;
-  margin-right: 10px;
-  text-align: left;
-}
-
 .semnatura {
   font-family: "Delius", cursive;
-  font-weight: 400;
-  font-style: normal;
   font-size: 23px;
 }
 
-.body-text,h1 {
+.body-text{
   font-family: "Dancing Script", cursive;
-  font-optical-sizing: auto;
-  font-weight: 700px;
-  font-style: normal;
+  font-size: 30px;
+  word-spacing: 5px;  
+  text-align: left !important;
+  padding: 0;
 }
+
+.restaurant-description {
+  text-align: left !important;
+}
+
 /*/bodytxt*/
 
 
@@ -277,23 +277,17 @@ body {
 
 /*media*/
 @media (max-width: 768px) {
-  #low2 i, #low i {
-      font-size: 13px; 
-  }  
-  #low a, #low2 a {
-      font-size: 12px; 
-  }
-
+  
   .body-text{
     font-size: 25px;
     word-spacing: 5px;
     margin-right: 10px;
-    text-align: left;
+    text-align: left !important;
   }
   
   .semnatura {
     font-family: "Delius", cursive;
-    font-weight: 400px;
+    font-weight: 400;
     font-style: normal;
     font-size: 18px;
   }
@@ -303,12 +297,48 @@ body {
     font-optical-sizing: auto;
     font-weight: 500px;
     font-style: normal;
+    margin-left: 2rem !important;
   }
 }
 
 @media (min-width: 1024px) { 
   #welcome img {
       max-height: 900px; 
+  }
+
+  .body-text {
+    font-size: 40px;
+    word-spacing: 5px;
+  }
+
+  .body-text {
+    font-size: 40px;
+    word-spacing: 5px;    
+  }
+  
+  .semnatura {
+    font-family: "Delius", cursive;
+    font-size: 23px;
+  }
+  
+  .body-text,h1 {
+    font-family: "Dancing Script", cursive;
+    font-size: 30px;
+  }
+  
+  .restaurant-description {
+    font-size: 20px;
+    line-height: 1.5;
+    padding-left: 20px;
+  }
+  .restaurant-description {
+    font-size: 20px;
+    line-height: 1.5;
+    padding-left: 300px !important;
+    padding-right: 300px !important;
+  }
+  .restaurant-description {
+    text-align: left !important;
   }
 }
 /*/media*/

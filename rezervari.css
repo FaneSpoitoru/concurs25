@@ -56,7 +56,6 @@ footer {
   margin: 100px auto;
 }
 
-/* Pentru ecrane mici (mobile) */
 
 
 #name{
@@ -175,8 +174,6 @@ h2{
 }
 
 
-/*-------------------- Footer --------------------*/
-/* Stilizarea subsolului paginii */
 .footer {
   display: flex;
   justify-content: space-between;
@@ -191,7 +188,7 @@ h2{
   display: flex;
   align-items: flex-start;
   gap: 2rem;
-}
+} 
 
 .nume {
   color: white;
@@ -280,6 +277,21 @@ h2{
   }
 }
 
+.telefon-rezervari {
+  font-size: 18px;
+  font-weight: 500;
+  color: #444;
+  margin-top: 1rem;
+}
+.tel-link {
+  color: #453c3c;
+  text-decoration: none;
+  font-weight: bold;
+}
+.tel-link:hover {
+  text-decoration: underline;
+  color: #c42e2e;
+}
 
 
 

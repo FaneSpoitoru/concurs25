@@ -286,7 +286,8 @@ header {
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-  text-align: center;
+  text-align: left;
+  padding: 15px;
   width: 150px;
 }
 
@@ -299,9 +300,7 @@ header {
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   text-align: center;
   width: 170px;
-  margin-left: 50px;
-  
-  
+  margin: 20px auto;  
 }
 #reviews{
   border-radius: 30px;
@@ -310,11 +309,12 @@ header {
   backdrop-filter: blur(20px);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   width: 300px;
-  margin-left:50px ;
-  text-align: center;
+  margin:20px auto;
+  text-align: left;
+  padding: 15px;
 }
 h2{
-  position: relative;
+  position: center;
   left: 50px;
 }
 /*/recenzi*/
