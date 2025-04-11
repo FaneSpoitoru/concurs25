@@ -21,7 +21,7 @@
     </section>
 
     <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container navbar-mobile" >
+        <div class="container-fluid navbar-mobile px-3" >
           <!-- Logo -->
           <a class="navbar-brand mx-auto d-lg-block" href="index.html">
             <img src="logo-removebg-preview.png" alt="Logo" style="height: 80px; border: none;">
@@ -37,10 +37,10 @@
 
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
-              <li class="nav-item"><a class="nav-link" href="meniu.html">Meniu Restaurant</a></li>
-              <li class="nav-item"><a class="nav-link" href="galerie.html">Galerie</a></li>
-              <li class="nav-item"><a class="nav-link" href="rezervari.html">Rezervari</a></li>
-              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+              <li class="nav-item mx-3"><a class="nav-link" href="meniu.html">Meniu Restaurant</a></li>
+              <li class="nav-item mx-3"><a class="nav-link" href="galerie.html">Galerie</a></li>
+              <li class="nav-item mx-3"><a class="nav-link" href="rezervari.html">Rezervari</a></li>
+              <li class="nav-item mx-3"><a class="nav-link" href="contact.html">Contact</a></li>
               <li class="nav-item"><a class="nav-link" href="Despre.html">Despre</a></li>
             </ul>
           </div>
@@ -51,11 +51,11 @@
       <br><br><br><br><br>
       <div class="container">
         <div class="rezervari-intro">
-          <h2>🕯️ Rezervă-ți Masa la D'Amici</h2>          
+          <h2>Rezervă-ți Masa la D'Amici</h2>          
           <p>Completează formularul de mai jos pentru a-ți rezerva o masă și lasă-ne să ne ocupăm de restul.</p>
-          <p>📅 Rezervările se pot face cu minimum 2 ore înainte.</p>
-          <p>📞 Pentru rezervări urgente, te rugăm să ne contactezi telefonic.</p>
-          <p>👥 Pentru grupuri mai mari de 8 persoane, te rugăm să contactezi telefonic.</p>
+          <p>Rezervările se pot face cu minimum 2 ore înainte.</p>
+          <p>Pentru rezervări urgente, te rugăm să ne contactezi telefonic.</p>
+          <p>Pentru grupuri mai mari de 8 persoane, te rugăm să contactezi telefonic.</p>
         </div>
       </div>
 
@@ -67,14 +67,16 @@
 
 
 
-    <form id="rezervare-form">
+      <form id="rezervare-form">
         <h2>Fa o rezervare</h2>
-        <input type="text" id="name" placeholder="Numele tău" required>
-        <input type="text" id="calendar-modern" class="calendar" placeholder="Alege o dată" required>
-        <input type="time" id="time" required>
-        <input type="tel" id="phone" placeholder="Număr de telefon" required>
-        <input type="email" id="email" placeholder="Email" required>
-        <input type="number" id="persoane" placeholder="Număr persoane" required min="1" max="12">
+        <div class="form-grid">
+            <input type="text" id="name" placeholder="Numele tău" required>
+            <input type="text" id="calendar-modern" class="calendar" placeholder="Alege o dată" required>
+            <input type="time" id="time" required>
+            <input type="tel" id="phone" placeholder="Număr de telefon" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="number" id="persoane" placeholder="Număr persoane" required min="1" max="12">
+        </div>
         <p id="disponibilitate">Verificare disponibilitate...</p>
         <button type="submit" id="rezbtn" class="btn btn-primary">Rezervă</button>
     </form>
@@ -103,7 +105,7 @@
             if (this.value !== "") {
                 let num = parseInt(this.value, 10);
                 if (num < 1) this.value = "1";
-                if (num > 12) this.value = "12";
+                if (num > 8) this.value = "8";
             }
         });
     </script>

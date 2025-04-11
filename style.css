@@ -124,7 +124,7 @@ box-shadow: none !important;
 }
 
 .navbar-collapse {
-  transition: all 0.3s ease;
+  transition: all 0.3s ease; 
 }
 /*/navbar*/
 

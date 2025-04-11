@@ -449,3 +449,24 @@ box-shadow: none !important;
   padding: 0 !important;
   margin: 0 !important;
 }
+
+
+
+.form-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.form-grid input {
+  flex: 1 1 calc(50% - 20px); /* Două coloane */
+  max-width: 250px;
+}
+
+@media (max-width: 1024px) {
+  .form-grid input {
+    flex: 1 1 100%; /* O singură coloană */
+    max-width: 100%;
+  }
+}
