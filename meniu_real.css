@@ -394,3 +394,51 @@ ul {
   margin-left: 0%;
 
 }
+
+
+#topBtn {
+  display: none; /* Ascuns inițial */
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+#topBtn:hover {
+  background-color: #555;
+}
+
+
+#searchInput {
+  width: 220px;
+  padding: 6px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  outline: none;
+  transition: all 0.3s ease;
+  margin-bottom: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#searchInput:focus {
+  border-color: #333;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+#searchicn{
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 80px;
+}
