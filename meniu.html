@@ -14,6 +14,28 @@
 
 </head>
 
+<button onclick="scrollToTop()" id="topBtn" title="Mergi sus"><i class="fa-solid fa-up-long"></i> </button>
+
+
+<script>
+    // Afișează butonul când dai scroll
+    window.onscroll = function () {
+      const btn = document.getElementById("topBtn");
+      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        btn.style.display = "block";
+      } else {
+        btn.style.display = "none";
+      }
+    };
+  
+    // Scroll sus când se apasă
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+  
+
+
 <body>
 
 
@@ -62,6 +84,40 @@
 
 
     <section class="menu-section">
+        <i class="fa-solid fa-magnifying-glass" id="searchicn"></i>
+        <input type="text" id="searchInput" placeholder="Caută în meniu..." class="form-control mb-4" >
+        <script>
+            document.getElementById("searchInput").addEventListener("keyup", function () {
+              const query = this.value.toLowerCase();
+              const sections = document.querySelectorAll(".menu-item-types");
+          
+              sections.forEach(section => {
+                let anyVisible = false;
+                const listItems = section.querySelectorAll("li");
+          
+                listItems.forEach(li => {
+                  const button = li.querySelector(".openBtn");
+                  const text = button.textContent.toLowerCase();
+          
+                  if (text.includes(query)) {
+                    li.style.display = "block";
+                    anyVisible = true;
+                  } else {
+                    li.style.display = "none";
+                  }
+                });
+          
+                // Ascunde lista și titlul dacă nu există rezultate în acea secțiune
+                section.style.display = anyVisible ? "block" : "none";
+                const heading = section.previousElementSibling;
+                if (heading && heading.tagName.startsWith("H")) {
+                  heading.style.display = anyVisible ? "block" : "none";
+                }
+              });
+            });
+          </script>
+          
+          
         <div class="menu-item">
             <h1>🍽️ Antreuri</h1>
             <div class="menu-item-types">
@@ -980,11 +1036,14 @@
         });
     </script>
 
+<<<<<<< HEAD
 
 
 
 
 
+=======
+>>>>>>> 27950969b02320c5b1d775d40a3c4cc9888bc1c1
 <footer class="footer">
     <div class="footer-left-wrapper">
       <h2 class="nume">D`Amici</h2>
