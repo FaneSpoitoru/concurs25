@@ -8,13 +8,15 @@
 
  
 .hero {
-  background: url('hero.jpg') no-repeat center center/cover; /* Imagine de fundal, centrată și acoperind complet zona */
+  background-image: url('pictures/floor-tile.png') no-repeat center center/cover; /* Imagine de fundal, centrată și acoperind complet zona */
   color: rgb(0, 0, 0);      /* Culoarea textului din secțiune */ 
   text-align: center;         /* Text centrat */
   padding: 100px 10px;         /* Spațiere mare pentru a crea un impact vizual */
 }
 
-
+body{
+  background-image: url('pictures/floor-tile.png');
+}
 
 
 
@@ -47,7 +49,7 @@ body {
   margin: 0;      /* Fără margini implicite */
   padding: 0;     /* Fără padding */
   text-align: center;  /* Centrează textul în pagină */
-  background: url('floor-tile.png') no-repeat center center/cover;
+  background: url('pictures/floor-tile.png') no-repeat center center/cover;
   background-size: 200px; /* Ajustează dimensiunea dorită */
   background-repeat: repeat;
   cursor: url("https://cdn.custom-cursor.com/db/cursor/pointer_1426.png"),auto;

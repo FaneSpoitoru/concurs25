@@ -135,7 +135,7 @@ body {
   font-family: Arial, sans-serif; 
   margin: 0;      
   padding: 0;       
-  background: url('floor-tile.png') no-repeat center center/cover;
+  background: url('pictures/floor-tile.png') no-repeat center center/cover;
   background-size: 200px; 
   background-repeat: repeat;
 }

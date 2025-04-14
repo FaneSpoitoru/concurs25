@@ -165,7 +165,7 @@ body {
   padding: 0;     /* Fără padding */
   text-align: center;  /* Centrează textul în pagină */
   background-color: #ffffff;
-  background: url('floor-tile.png') no-repeat center center/cover;
+  background: url('pictures/floor-tile.png') no-repeat center center/cover;
   background-size: 200px; /* Ajustează dimensiunea dorită */
   background-repeat: repeat;
 }
