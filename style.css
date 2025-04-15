@@ -139,6 +139,9 @@ body {
   background-size: 200px; 
   background-repeat: repeat;
 }
+*{
+  scroll-behavior: smooth;
+}
 /*/body*/
 
 
