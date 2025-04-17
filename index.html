@@ -54,13 +54,13 @@
         </div>
       </nav>
       
-
+      
    
 
     <section class="restaurant-description">
         <div class="cont">
-            <!--<h1 style="text-align: left;">D’Amici</h1><br><br><br>-->
-            <p class="intro"></p><br><br><br><br>
+          <h1 class="typewriter">Bine ați venit la D'Amici!</h1>
+            <p class="in"></p><br><br><br><br>
             <p class="body-text" >D`Amici nu este doar un restaurant, ci o adevărată călătorie în inima Italiei.</p> <br>
             <p class="body-text" >Fiecare colț al țării are propriile sale tradiții gastronomice – ingredientele și rețetele variază de la munți la mare, de la regiuni verzi și fertile la zonele pline de soare.</p><br>
             <p class="body-text" >La D`Amici, vă invităm să explorați esența autentică a Italiei în fiecare preparat..</p> <br>
@@ -98,8 +98,17 @@
             <a href="#"><i class="fab fa-whatsapp"></i></a>
           </div>
           <p>Support: Italy@d-amici.de</p> 
+          <button id="darkModeToggle" class="btn btn-outline ms-2">🌓 Dark-mode</button>
         </div>
       </footer>
+      
+      <script>
+        const toggleButton = document.getElementById('darkModeToggle');
+        toggleButton.addEventListener('click', () => {
+          document.body.classList.toggle('dark-mode');
+        });
+      </script>
+      
       
     <script>
         document.getElementById("year").textContent = new Date().getFullYear();

@@ -159,22 +159,6 @@ body {
 
 
 /*rezervari-intro*/
-/*/rezervari-intro*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*rezervare-form*/
 @media (max-width: 768px) {
   #rezervare-form {
@@ -384,6 +368,23 @@ body {
 }
 
 /*/rezervare-form*/
+/*/rezervari-intro*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -517,4 +518,78 @@ border: none;
 background: transparent;
 padding: 0.5rem;
 z-index: 1051;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  margin-right: 200px;
+  margin-top: 30px;
+  gap: 250px;
+  margin-left: 30px;
+  height: 100px;
+}
+
+
+.form-group label {
+  width: 300px; /* eticheta în stânga */
+  margin-right: 10px;
+  margin-left: 50px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* 🟣 Pe telefon: eticheta deasupra inputului */
+@media (max-width: 768px) {
+  .form-group {
+    flex-direction: column;
+    align-items: stretch;
+    margin: 20px;
+  }
+
+  .form-group label {
+    text-align: left;
+    width: 200px; /* ca să nu stea fixate la 150px */
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+}
+
+
+@media (min-width: 1024px){
+  .form-group {
+    flex-direction: column;
+    align-items: stretch;
+    margin: 20px;
+  }
+
+  .form-group label {
+    text-align: left;
+    width: 200px; 
+    text-size: 30px;
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
 }

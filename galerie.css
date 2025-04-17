@@ -2,7 +2,7 @@
 .welcome-image {
   width: 100vw;         /* Ocupă toată lățimea ecranului */
   max-width: 100%;      /* Se asigură că nu depășește containerul */
-  height: 500px /*auto*/;         /* Păstrează proporțiile */
+  height: 800px /*auto*/;         /* Păstrează proporțiile */
   object-fit: cover;    /* Evită distorsiuni */
   display: block;       /* Elimină spațiile goale sub imagine */
 }
@@ -175,7 +175,7 @@ body:hover{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 10px;
-  max-width: 900px;
+  max-width: 100%; /* Maximizează galeria pe întreaga lățime */
   margin: auto;
   padding: 20px;
 }
@@ -189,15 +189,13 @@ body:hover{
 }
 
 .galerie {
-  
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; 
+  justify-content: center;
   gap: 10px;
 }
 
 .galerie img {
- 
   width: calc(33.33% - 10px); /* 3 imagini pe rând */
   min-width: 120px; /* Se micșorează, dar nu mai mic de 120px */
   height: auto;
@@ -245,6 +243,19 @@ header {
   font-size: 20px;
   border-radius: 5px;
 }
+
+/* Media query pentru ecrane mari */
+@media (min-width: 1200px) {
+  .galerie {
+    max-width: 80%; /* Galerie pe întreaga lățime */
+    padding: 20px 100px; /* Spațiu de 100px pe margini */
+  }
+
+  .galerie img {
+    width: calc(33.33% - 20px); /* 3 imagini pe rând, dar să fie mari */
+  }
+}
+
 /*/galerie*/
 
 
@@ -566,3 +577,52 @@ h2{
 
 
 /*/footer*/
+
+
+
+.testimonials {
+  padding: 40px 20px;
+  text-align: center;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.testimonial-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* Testimonial individual */
+.testimonial {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.testimonial:hover {
+  transform: scale(1.02);
+}
+
+/* Imagine client */
+.client-img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+/* Stele */
+.stars {
+  color: #f39c12;
+}
+
+/* Numele clientului */
+.client-name {
+  font-weight: bold;
+}
+
