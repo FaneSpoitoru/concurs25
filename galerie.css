@@ -304,32 +304,76 @@ header {
   width: 150px;
 }
 
+#imageUpload{
+  display: none;
+}
+.custom-file-upload {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f39c12;
+  color: white;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.custom-file-upload:hover {
+  background-color: #e08e0b;
+}
 
 #reviewForm{
-  border-radius: 30px;
-  background-color: #fcfcfc7e;
-  -webkit-backdrop-filter: blur(20px);
-  backdrop-filter: blur(20px);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+ 
   text-align: center;
   width: 170px;
   margin: 20px auto;  
 }
 #reviews{
-  border-radius: 30px;
-  background-color: #fcfcfc7e;
-  -webkit-backdrop-filter: blur(20px);
-  backdrop-filter: blur(20px);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-  width: 300px;
-  margin:20px auto;
-  text-align: left;
+  
+  width: 500px;
+  margin:20px 500px;
+  position: center;
   padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* spațiu între review-uri */
+}
+#imaguser{
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+#dap{
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+}
+#username{
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 5px;
+  white-space: nowrap;          /* <- Asta îl forțează pe un singur rând */
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}
+#usermsg{
+  width: 400px;
+  text-align: center;
+  padding-right: 15%;
 }
 h2{
   position: center;
   left: 50px;
 }
+
+#dap:hover {
+  transform: scale(1.02);
+}
+
 /*/recenzi*/
 
 
@@ -687,3 +731,29 @@ h2{
 .floating-btn:hover {
   transform: scale(1.05);
 }
+
+
+.rating {
+  display: flex;
+  gap: 5px;
+  font-size: 24px;
+  cursor: pointer;
+  position: center;
+  padding-left: 20%;
+}
+
+.rating .star {
+  color: #ccc;
+  transition: color 0.2s;
+  position: center;
+}
+
+.rating .star.selected {
+  color: gold;
+  position: center;
+}
+
+
+
+
+

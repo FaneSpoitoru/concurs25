@@ -88,60 +88,8 @@
     
   
 
-    <section class="testimonials">
-      <h2>Impresiile clientilor nostrii</h2>
-      <div class="testimonial-container">
-        <div class="testimonial">
-          <img src="cefemeie.jpg" alt="Clientul 1" class="client-img">
-          <p>"Un loc minunat, cu mâncare delicioasă! Ne-am simțit ca acasă. Recomand cu drag!"</p>
-          <p class="client-name">Maria P.</p>
-          <div class="stars">
-            <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-          </div>
-        </div>
-        <div class="testimonial">
-          <img src="salut.png" alt="Clientul 1" class="client-img">
-          <p>"Un loc minunat, cu mâncare delicioasă! Ne-am simțit ca acasă. Recomand cu drag!"</p>
-          <p class="client-name">Maria P.</p>
-          <div class="stars">
-            <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-          </div>
-        </div><div class="testimonial">
-          <img src="salut.png" alt="Clientul 1" class="client-img">
-          <p>"Un loc minunat, cu mâncare delicioasă! Ne-am simțit ca acasă. Recomand cu drag!"</p>
-          <p class="client-name">Maria P.</p>
-          <div class="stars">
-            <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-          </div>
-        </div>
-        <div class="testimonial">
-          <img src="salut.png" alt="Clientul 1" class="client-img">
-          <p>"Un loc minunat, cu mâncare delicioasă! Ne-am simțit ca acasă. Recomand cu drag!"</p>
-          <p class="client-name">Maria P.</p>
-          <div class="stars">
-            <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-          </div>
-        </div>
-        <div class="testimonial">
-          <img src="salut.png" alt="Clientul 1" class="client-img">
-          <p>"Un loc minunat, cu mâncare delicioasă! Ne-am simțit ca acasă. Recomand cu drag!"</p>
-          <p class="client-name">Maria P.</p>
-          <div class="stars">
-            <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-          </div>
-        </div>
-        <div class="testimonial">
-          <img src="salut.png" alt="Clientul 1" class="client-img">
-          <p>"Un loc minunat, cu mâncare delicioasă! Ne-am simțit ca acasă. Recomand cu drag!"</p>
-          <p class="client-name">Maria P.</p>
-          <div class="stars">
-            <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <button id="openReviewForm" class="floating-btn">adauga impresia ta</button>
+    
+    <button id="openReviewForm" class="floating-btn">Adauga impresia ta</button>
 
 
     <div id="reviewModal" class="modal">
@@ -151,7 +99,17 @@
     <form id="reviewForm">
         <input type="text" id="name" placeholder="Nume" required><br>
         <textarea id="message" placeholder="Scrie recenzia ta..." required></textarea><br>
-        <input type="file" id="imageUpload" name="image" accept="image/*"><br>
+        <label for="imageUpload" class="custom-file-upload">
+          Încarcă fișier
+        </label>
+        <input type="file" id="imageUpload" name="image" accept="image/*" required><br>
+        <div class="rating">
+          <span class="star" data-star="1">&#9733;</span>
+          <span class="star" data-star="2">&#9733;</span>
+          <span class="star" data-star="3">&#9733;</span>
+          <span class="star" data-star="4">&#9733;</span>
+          <span class="star" data-star="5">&#9733;</span>
+        </div>
     <button type="submit" class="btn-53">
         <div class="original">Trimite</div>
             <div class="letters">
@@ -172,7 +130,7 @@
   
 
     <section class="reviews-section">
-      <h2>Ultimele recenzii</h2>
+      <h2 style="margin-right: 50px;">Parerile clientilor nostri</h2>
       <div id="reviews"></div>
     </section>
     
