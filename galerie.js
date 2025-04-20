@@ -121,6 +121,7 @@ function loadReviews() {
   </div>
   <br>
   </div>
+  <br>
       `;
 
       reviewsDiv.appendChild(div);
@@ -129,3 +130,4 @@ function loadReviews() {
 }
 
 loadReviews();
+//test
