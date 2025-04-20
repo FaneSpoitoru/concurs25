@@ -112,7 +112,7 @@ function loadReviews() {
           ? `<img src="${review.imageUrl}" id="imaguser">`
           : ""
       }
-        <strong id="username>${review.name}</strong>
+        <strong id="username">${review.name}</strong>
         <p id="usermsg">${review.message}</p>
         
         
