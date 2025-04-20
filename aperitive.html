@@ -64,11 +64,11 @@
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="meniu.html">Meniu Restaurant</a></li>
-                    <li class="nav-item"><a class="nav-link" href="galerie.html">Galerie</a></li>
-                    <li class="nav-item"><a class="nav-link" href="rezervari.html">Rezervari</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                    <li class="nav-item"><a class="nav-link" href="Despre.html">Despre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pizza.html">pizza</a></li>
+                    <li class="nav-item"><a class="nav-link" href="paste.html">paste</a></li>
+                    <li class="nav-item"><a class="nav-link" href="salate.html">salata</a></li>
+                    <li class="nav-item"><a class="nav-link" href="bauturi.html">bauturi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Despre.html">nimic</a></li>
                 </ul>
             </div>
         </div>
@@ -81,17 +81,118 @@
         <p>Bucură-te de preparate autentice italiene</p> <br><br>
     </section>
 
-    <div class="grid">
-        <a class="categorie" href="pizza.html">🍕 Pizza</a>
-        <a class="categorie" href="paste.html">🍝 Paste</a>
-        <a class="categorie" href="salate.html">🥗 Salate</a>
-        <a class="categorie" href="bauturi.html">🥤 Băuturi</a>
-        <a class="categorie" href="aperitive.html">aperitive</a>
-      </div>
 
-   
+    <section class="menu-section">
+        <i class="fa-solid fa-magnifying-glass" id="searchicn"></i>
+        <input type="text" id="searchInput" placeholder="Caută în meniu..." class="form-control mb-4" >
+        <script>
+            document.getElementById("searchInput").addEventListener("keyup", function () {
+              const query = this.value.toLowerCase();
+              const sections = document.querySelectorAll(".menu-item-types");
+          
+              sections.forEach(section => {
+                let anyVisible = false;
+                const listItems = section.querySelectorAll("li");
+          
+                listItems.forEach(li => {
+                  const button = li.querySelector(".openBtn");
+                  const text = button.textContent.toLowerCase();
+          
+                  if (text.includes(query)) {
+                    li.style.display = "block";
+                    anyVisible = true;
+                  } else {
+                    li.style.display = "none";
+                  }
+                });
+          
+                // Ascunde lista și titlul dacă nu există rezultate în acea secțiune
+                section.style.display = anyVisible ? "block" : "none";
+                const heading = section.previousElementSibling;
+                if (heading && heading.tagName.startsWith("H")) {
+                  heading.style.display = anyVisible ? "block" : "none";
+                }
+              });
+            });
+          </script>
           
           
+        <div class="menu-item">
+            <h1>🍽️ Antreuri</h1>
+            <div class="menu-item-types">
+                <ul>
+                    <br>
+                    <li>
+                        <button class="openBtn"
+                            data-popup-content="Bruschetta Clasică: pâine, roșii, oregano, oțet balsamic – 7,90 €">
+                            <div id="meniu-item-content" class="container">
+                                <img src="pictures\WhatsApp Image 2025-04-07 at 18.25.27_b7980eef.jpg" alt="Bruschetta"
+                                    style="width: 200px; height: 100px;">
+                                <div id="meniu-ietm-text" class="content">
+                                    <p>Bruschetta Clasică</p>
+                                </div>
+
+                            </div>
+                        </button>
+                    </li>
+                    <br>
+                    <li>
+                        <button class="openBtn"
+                            data-popup-content="Caprese: roșii, mozzarella, rucola, oțet balsamic - 10,50 €">
+                            <div id="meniu-item-content" class="container">
+                                <img src="pictures\WhatsApp Image 2025-04-07 at 18.25.27_b7980eef.jpg" alt="Bruschetta"
+                                    style="width: 200px; height: 100px;">
+                                <div id="meniu-ietm-text" class="content">
+                                    <p>Caprese</p>
+                                </div>
+
+                            </div>
+                        </button>
+                    </li>
+                    <br>
+                    <li>
+                        <button class="openBtn"
+                            data-popup-content="Bruschetta cu pere: pere, rucola, parmezan, sos de smântână  – 12,00 €">
+                            <div id="meniu-item-content" class="container">
+                                <img src="pictures\WhatsApp Image 2025-04-07 at 18.25.27_b7980eef.jpg" alt="Bruschetta"
+                                    style="width: 200px; height: 100px;">
+                                <div id="meniu-ietm-text" class="content">
+                                    <p>Bruschetta cu pere</p>
+                                </div>
+
+                            </div>
+                        </button>
+                    </li>
+                    <br>
+                    <li>
+                        <button class="openBtn"
+                            data-popup-content="Carpaccio: mușchi de vită, rucola, parmezan – 14,50 € ">
+                            <div id="meniu-item-content" class="container">
+                                <img src="pictures\WhatsApp Image 2025-04-07 at 18.25.27_b7980eef.jpg" alt="Bruschetta"
+                                    style="width: 200px; height: 100px;">
+                                <div id="meniu-ietm-text" class="content">
+                                    <p>Carpaccio</p>
+                                </div>
+
+                            </div>
+                        </button>
+                    </li>
+                    <br>
+                    <li>
+                        <button class="openBtn"
+                            data-popup-content="Antipasto Misto: focaccia de casă, roșii, mozzarella, rucola, măsline, ardei copți, ciuperci, legume mixte – 16,90 €">
+                            <div id="meniu-item-content" class="container">
+                                <img src="pictures\WhatsApp Image 2025-04-07 at 18.25.27_b7980eef.jpg" alt="Bruschetta"
+                                    style="width: 200px; height: 100px;">
+                                <div id="meniu-ietm-text" class="content">
+                                    <p>Antipasto Misto</p>
+                                </div>
+
+                            </div>
+                        </button>
+                    </li>
+               
+    </section>
 
 
     <div id="popup">
@@ -172,10 +273,10 @@
       <h2 class="nume">D`Amici</h2>
       <div class="footer-left">
         <nav class="footer-left-contact">
-          <a href="meniu.html">Meniu</a>
-          <a href="galerie.html">Galerie</a>
-          <a href="contact.html">Contact</a>
-          <a href="rezervari.html">Rezervari</a>
+          <a href="pizza.html">pizza</a>
+          <a href="paste.html">paste</a>
+          <a href="salate.html">salata</a>
+          <a href="bauturi.html">bauturi</a>
         </nav>
         <p class="drepturi">© <span id="year"></span> D`Amici. Toate drepturile rezervate.</p>
       </div>

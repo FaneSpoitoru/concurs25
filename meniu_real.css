@@ -157,6 +157,76 @@ body {
   font-weight: 700px;
   font-style: normal;
 }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      padding: 40px;
+    }
+
+    .categorie {
+      border-radius: 20px;
+      padding: 40px;
+      font-size: 24px;
+      color: white;
+      text-decoration: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 150px;
+      position: relative;
+    }
+
+    .categorie::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.4); /* overlay semi-transparent */
+      border-radius: 20px;
+      z-index: 0;
+    }
+
+    .categorie span {
+      position: relative;
+      z-index: 1;
+    }
+
+    .categorie:hover {
+      transform: scale(1.05);
+    }
+
+    /* Fundaluri diferite pentru fiecare */
+    .pizza {
+      background-image: url('WhatsApp\ Image\ 2025-04-07\ at\ 16.13.04_1ea344c4.jpg');
+    }
+
+    .paste {
+      background-image: url('paste.jpg');
+    }
+
+    .desert {
+      background-image: url('desert.jpg');
+    }
+
+    .bauturi {
+      background-image: url('bauturi.jpg');
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .categorie {
+        padding: 20px;
+        font-size: 18px;
+        min-height: 120px;
+      }
+    }
+ 
+
 /*/body*/
 
 
