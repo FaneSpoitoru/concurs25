@@ -85,24 +85,8 @@
 
     
 
-    <!--<h2>Lasă un review</h2>
-    <form id="reviewForm">
-        <input type="text" id="name" placeholder="Nume" required><br>
-        <textarea id="message" placeholder="Scrie recenzia ta..." required></textarea><br>
-    <button type="submit" class="btn-53">
-        <div class="original">Trimite</div>
-            <div class="letters">
-            <span>T</span>
-            <span>R</span>
-            <span>I</span>
-            <span>M</span>
-            <span>I</span>
-            <span>T</span>
-            <span>E</span>
-        </div>
-    </button>
-    </form>
-  -->
+    
+  
 
     <section class="testimonials">
       <h2>Impresiile clientilor nostrii</h2>
@@ -163,22 +147,35 @@
     <div id="reviewModal" class="modal">
       <div class="modal-content">
         <span class="close-btn">&times;</span>
-        <h3>Scrie-ți impresia</h3>
-        <input type="text" placeholder="Numele tău" id="reviewName"><br>
-        <textarea placeholder="Mesajul tău" id="reviewText"></textarea><br>
-        <input type="file" id="reviewPhoto" accept="image/*"><br>
-        <div id="starRating">
-          <span class="star" data-star="1">&#9733;</span>
-          <span class="star" data-star="2">&#9733;</span>
-          <span class="star" data-star="3">&#9733;</span>
-          <span class="star" data-star="4">&#9733;</span>
-          <span class="star" data-star="5">&#9733;</span>
+        <h2>Lasă un review</h2>
+    <form id="reviewForm">
+        <input type="text" id="name" placeholder="Nume" required><br>
+        <textarea id="message" placeholder="Scrie recenzia ta..." required></textarea><br>
+        <input type="file" id="imageUpload" name="image" accept="image/*"><br>
+    <button type="submit" class="btn-53">
+        <div class="original">Trimite</div>
+            <div class="letters">
+            <span>T</span>
+            <span>R</span>
+            <span>I</span>
+            <span>M</span>
+            <span>I</span>
+            <span>T</span>
+            <span>E</span>
         </div>
-        <button class="btn">Trimite</button>
+    </button>
+    </form>
+
       </div>
     </div>
     
+  
 
+    <section class="reviews-section">
+      <h2>Ultimele recenzii</h2>
+      <div id="reviews"></div>
+    </section>
+    
 
 
     <footer class="footer">
