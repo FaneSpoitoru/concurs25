@@ -31,6 +31,7 @@ document.getElementById("reviewForm").addEventListener("submit", async function 
 
   const name = document.getElementById("name").value.trim();
   const message = document.getElementById("message").value.trim();
+  const stars = document.querySelectorAll(".star.selected").length;
   const imageFile = document.getElementById("imageUpload").files[0];
 
   // Validare minimă
@@ -80,6 +81,7 @@ document.getElementById("reviewForm").addEventListener("submit", async function 
     await addDoc(collection(db, "Review"), {
       name,
       message,
+      stars,
       imageUrl,
       timestamp: new Date(),
     });
@@ -105,14 +107,22 @@ function loadReviews() {
       const div = document.createElement("div");
       div.className = "review";
       div.innerHTML = `
-        <strong>${review.name}</strong>
-        <p>${review.message}</p>
-        ${
-          review.imageUrl
-            ? `<img src="${review.imageUrl}" style="max-width: 200px; max-height: 200px;">`
-            : ""
-        }
+      <div id="dap">${
+        review.imageUrl
+          ? `<img src="${review.imageUrl}" id="imaguser">`
+          : ""
+      }
+        <strong id="username>${review.name}</strong>
+        <p id="usermsg">${review.message}</p>
+        
+        
+        <div class="stars">
+    ${"★".repeat(review.stars)}${"☆".repeat(5 - review.stars)}
+  </div>
+  <br>
+  </div>
       `;
+
       reviewsDiv.appendChild(div);
     });
   });
