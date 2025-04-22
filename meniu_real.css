@@ -22,7 +22,23 @@
 /*meniu*/
 
 #pizda{
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/9/91/Pizza-3007395.jpg");
+  background-image: url("imagini_site/pizza.jpg");
+  background-size: cover;
+}
+#pasta{
+  background-image: url("imagini_site/pasta.avif");
+  background-size: cover;
+}
+#salad{
+  background-image: url("imagini_site/salata.jpg");
+  background-size: cover;
+}
+#drinks{
+  background-image: url("imagini_site/bauturi.jpg");
+  background-size: cover;
+}
+#aperitive{
+  background-image: url('imagini_site/aperitive.jpg');
   background-size: cover;
 }
 
