@@ -588,7 +588,7 @@ z-index: 1051;
   .form-group label {
     text-align: left;
     width: 200px; 
-    text-size: 30px;
+    font-size: 30px;
     margin-right: 0;
     margin-bottom: 5px;
   }
