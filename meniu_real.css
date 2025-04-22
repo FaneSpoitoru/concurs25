@@ -19,7 +19,14 @@
 }
 /*/welcomeimage*/
 
+/*meniu*/
 
+#pizda{
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/9/91/Pizza-3007395.jpg");
+  background-size: cover;
+}
+
+/*meniu*/
 
 /*navbar*/
 .navbar-brand{
@@ -186,7 +193,7 @@ body {
       content: "";
       position: absolute;
       inset: 0;
-      background-color: rgba(0, 0, 0, 0.4); /* overlay semi-transparent */
+      background-color: rgba(0, 0, 0, 0.1); /* overlay semi-transparent */
       border-radius: 20px;
       z-index: 0;
     }
