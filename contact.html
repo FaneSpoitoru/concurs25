@@ -13,9 +13,22 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 </head>
 
+<!-- Google Translate -->
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+          pageLanguage: 'ro',
+          includedLanguages: 'ro,en,de,it,fr,es',
+          layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      }, 'google_translate_element');
+  }
+</script>
+<script type="text/javascript"
+  src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 <body>
 
-
+  <div id="google_translate_element" style="position: absolute; bottom: 20px; right: 20px; z-index: 1000;"></div>
 
     <section id="welcome">
         <img src="pictures\pizzajpg.jpg" alt="Delicious Italian Cuisine" class="welcome-image">
@@ -55,7 +68,7 @@
             document.querySelector(".menu-items").classList.toggle("show");
         });
     </script>-->
-
+    
 
 
 

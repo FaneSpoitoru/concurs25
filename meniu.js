@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-
+ 
 document.getElementById("chatButton").addEventListener("click", function() {
     document.getElementById("chatContainer").style.display = "flex";
 });
@@ -63,3 +63,62 @@ function sendMessage() {
 }
 
 
+const traduceri = {
+  ro: {
+    textIndex: [
+      "bucura te de preparatele autentice italiene",
+      "pizza",
+      "paste",
+      "salate",
+      "bauturi",
+      "aperitive"
+    ],
+    navbar: ["Meniu", "Restaurant", "Galerie", "Rezervări", "Contact", "Despre"]
+  },
+  en: {
+    textIndex: [
+      "Enjoy authentic Italian dishes",
+      "pizza",
+      "pasta",
+      "salad",
+      "apetite"
+    ],
+    navbar: ["Menu", "Restaurant", "Gallery", "Reservations", "Contact", "About"]
+  },
+  it: {
+    textIndex: [
+      "Godetevi autentici piatti italiani",
+      "pizza",
+      "pasta",
+      "salate",
+      "Bevanda",
+      "antipasti"
+    ],
+    navbar: ["Menù", "Ristorante", "Galleria", "Prenotazioni", "Contatto", "Chi siamo"]
+  }
+};
+
+    const voci = {
+      ro: "ro-RO",
+      en: "en-US",
+      it: "it-IT"
+    };
+  
+    function schimbaLimba(limba) {
+      localStorage.setItem('limbaSelectata', limba);
+    
+      // Text principal index
+      const paragrafe = document.querySelectorAll(".categorie, .body-text");
+      const texte = traduceri[limba].textIndex;
+      paragrafe.forEach((el, i) => {
+        el.textContent = texte[i];
+      });
+    
+      // Navbar
+      const navItems = document.querySelectorAll(".nav-item");
+      const navText = traduceri[limba].navbar;
+      navItems.forEach((el, i) => {
+        el.textContent = navText[i];
+      });
+    }
+    
