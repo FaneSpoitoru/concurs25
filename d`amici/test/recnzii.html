@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recenzii cu Firebase</title>
+    
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 600px; margin: auto; }
+        input, textarea, button { width: 100%; margin-top: 10px; padding: 8px; }
+        .review { border: 1px solid #ddd; padding: 10px; margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <h2>Lasă un review</h2>
+    <form id="reviewForm">
+        <input type="text" id="name" placeholder="Nume" required>
+        <textarea id="message" placeholder="Scrie recenzia ta..." required></textarea>
+        <button type="submit">Trimite</button>
+    </form>
+
+    <h2>Recenzii</h2>
+    <div id="reviews"></div>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.5.0/firebase-app.js";
+        import { getFirestore, collection, addDoc, query, orderBy, onSnapshot } from "https://www.gstatic.com/firebasejs/11.5.0/firebase-firestore.js";
+
+        // 🔹 1. Configurare Firebase
+        const firebaseConfig = {
+            apiKey: "AIzaSyBxhyUYPzt8SE_LFv4A_svzswxnhbSyCmM",
+            authDomain: "review-50f0b.firebaseapp.com",
+            projectId: "review-50f0b",
+            storageBucket: "review-50f0b.firebasestorage.com",
+            messagingSenderId: "201117735805",
+            appId: "1:201117735805:web:41dde2b142214f42dfca14",
+            measurementId: "G-KQKKZF8XFX"
+          };
+
+        // Inițializarea Firebase
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app); // Definim Firestoreconst app = initializeApp(firebaseConfig);
+        
+
+        // 🔹 2. Salvarea recenziei în Firestore
+        document.getElementById('reviewForm').addEventListener('submit', async function(event) {
+            event.preventDefault();
+
+            let name = document.getElementById('name').value;
+            let message = document.getElementById('message').value;
+
+            try {
+                await addDoc(collection(db, "Review"), {
+                    name: name,
+                    message: message,
+                    timestamp: new Date()
+                });
+
+                console.log("Recenzia a fost salvată!");
+                alert("Recenzia a fost salvată!");
+                document.getElementById('reviewForm').reset();
+            } catch (error) {
+                console.error("Eroare la salvarea recenziei:", error);
+                alert("Eroare la salvarea recenziei. Verifică consola.");
+            }
+        });
+
+        // 🔹 3. Afișarea recenziilor în timp real
+        function loadReviews() {
+            const q = query(collection(db, "Review"), orderBy("timestamp", "desc"));
+
+            onSnapshot(q, (snapshot) => {
+                let reviewsDiv = document.getElementById('reviews');
+                reviewsDiv.innerHTML = '';
+
+                snapshot.forEach((doc) => {
+                    let review = doc.data();
+                    console.log("Recenzie încărcată:", review);
+                    let div = document.createElement('div');
+                    div.className = 'review';
+                    div.innerHTML = `<strong>${review.name}</strong><p>${review.message}</p>`;
+                    reviewsDiv.appendChild(div);
+                });
+            });
+        }
+
+        // Încarcă recenziile imediat ce pagina este încărcată
+        loadReviews();
+    </script>
+</body>
+</html>
