@@ -1,0 +1,12 @@
+USE prima; 
+
+CREATE TABLE IF NOT EXISTS clienti1 (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    Nume VARCHAR(255),
+    Prenume VARCHAR(255),
+    Telefon VARCHAR(255),
+    MASA VARCHAR(255)
+);
+ALTER TABLE clienti1
+ADD dataa DATE;
+DESCRIBE clienti1;

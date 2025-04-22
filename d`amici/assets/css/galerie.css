@@ -1,0 +1,759 @@
+/*welcomeimage*/
+.welcome-image {
+  width: 100%;         /* Ocupă toată lățimea ecranului */
+  max-width: 100%;      /* Se asigură că nu depășește containerul */
+  height: 800px /*auto*/;         /* Păstrează proporțiile */
+  object-fit: cover;    /* Evită distorsiuni */
+  display: block;       /* Elimină spațiile goale sub imagine */
+}
+
+
+/*/welcomeimage*/
+
+
+
+
+
+
+
+
+
+
+/*navbar*/
+.navbar-brand{
+  font-family: "Comfortaa", sans-serif;
+}
+
+.navbar {
+  background-color: #ffffff;            /*efebe1;*/
+} 
+
+.nav-item {
+  font-family: 'Libre Baskerville', serif;
+    font-size: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+
+
+@media (max-width: 991.98px) {
+  .navbar-mobile {
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar-brand img {
+    margin: auto;
+  }
+  .nav-toggler-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 10px;
+  }
+  .nav-text {
+    display: inline;
+  }
+}
+
+@media (min-width: 992px) {
+  .nav-text {
+    display: none;
+  }
+}
+
+.hamburger {
+width: 30px;
+height: 3px;
+background-color: #000;
+position: relative;
+transition: all 0.3s ease-in-out;
+display: block;
+}
+
+.hamburger::before,
+.hamburger::after {
+content: '';
+position: absolute;
+width: 30px;
+height: 3px;
+background-color: #000;
+transition: all 0.3s ease-in-out;
+left: -0.05px;
+}
+
+.hamburger::before {
+top: -10px;
+}
+
+.hamburger::after {
+top: 10px;
+}
+
+.custom-toggler.active .hamburger {
+background-color: transparent;
+}
+
+.custom-toggler.active .hamburger::before {
+transform: rotate(45deg);
+top: 0;
+}
+
+.custom-toggler.active .hamburger::after {
+transform: rotate(-45deg);
+top: 0;
+}
+
+.custom-toggler {
+border: none;
+background: transparent;
+padding: 0.5rem;
+z-index: 1051;
+}
+
+.navbar-toggler {
+box-shadow: none !important;
+}
+
+.navbar-collapse {
+  transition: all 0.3s ease;
+}
+
+.navbar-toggler {
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+/*/navbar*/
+
+
+
+
+
+
+
+
+
+
+/*body*/
+body {
+  font-family: Arial, sans-serif; 
+  margin: 0;      
+  padding: 0;     
+  text-align: center;  
+  background: url('pictures/floor-tile.png') center center/cover;
+  background-size: 200px; 
+  background-repeat: repeat; 
+}
+
+* {
+  text-align: center;
+}
+
+body{
+  cursor: url("https://cdn.custom-cursor.com/db/cursor/pointer_1426.png"),auto;
+}
+body:hover{
+  cursor: url("https://cdn.custom-cursor.com/db/cursor/pointer_1426.png"),auto;
+}
+
+* {
+  cursor: url("https://cdn.custom-cursor.com/db/cursor/pointer_1426.png"),auto;
+}
+/*/body*/
+
+
+
+
+
+
+
+
+
+
+/*galerie*/
+.galerie {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  max-width: 100%; /* Maximizează galeria pe întreaga lățime */
+  margin: auto;
+  padding: 20px;
+}
+
+.galerie img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.galerie {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.galerie img {
+  width: calc(33.33% - 10px); /* 3 imagini pe rând */
+  min-width: 120px; /* Se micșorează, dar nu mai mic de 120px */
+  height: auto;
+  object-fit: cover;
+}
+
+.galerie img:hover {
+  transform: scale(1.05);
+}
+
+/* Lightbox */
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.lightbox img {
+  max-width: 80%;
+  max-height: 80%;
+  border-radius: 5px;
+}
+
+header {
+  background-color: #333;
+  color: rgb(255, 255, 255);
+  padding: 15px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.btn {
+  background: #ff6600;
+  color: white;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+/* Media query pentru ecrane mari */
+@media (min-width: 1200px) {
+  .galerie {
+    max-width: 80%; /* Galerie pe întreaga lățime */
+    padding: 20px 100px; /* Spațiu de 100px pe margini */
+  }
+
+  .galerie img {
+    width: calc(33.33% - 20px); /* 3 imagini pe rând, dar să fie mari */
+  }
+}
+
+/*/galerie*/
+
+
+
+
+
+
+
+
+
+
+/*recenzi*/
+#preview img {
+  max-width: 150px;
+  max-height: 150px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+#copy{
+  text-align: center;
+}
+#name{
+  border-radius: 30px;
+  background-color: #fcfcfc7e;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  margin: 5%;
+  padding-top: 0%;
+  width: 150px;
+  text-align: center;
+}
+#message{
+  padding: 0%;
+  margin-left: 5%;
+  border-radius: 30px;
+  background-color: #fcfcfc7e;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  text-align: left;
+  padding: 15px;
+  width: 150px;
+}
+
+#imageUpload{
+  display: none;
+}
+.custom-file-upload {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f39c12;
+  color: white;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.custom-file-upload:hover {
+  background-color: #e08e0b;
+}
+
+#reviewForm{
+ 
+  text-align: center;
+  width: 170px;
+  margin: 20px auto;  
+}
+#reviews{
+  
+  width: 500px;
+  margin:20px 500px;
+  position: center;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* spațiu între review-uri */
+}
+#imaguser{
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+#dap{
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+}
+#username{
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 5px;
+  white-space: nowrap;          /* <- Asta îl forțează pe un singur rând */
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}
+#usermsg{
+  width: 400px;
+  text-align: center;
+  padding-right: 15%;
+}
+h2{
+  position: center;
+  left: 50px;
+}
+
+#dap:hover {
+  transform: scale(1.02);
+}
+
+/*/recenzi*/
+
+
+
+
+
+
+
+
+
+
+/*buton*/
+/* From Uiverse.io by doniaskima */
+.btn-53,
+.btn-53 * ,
+.btn-53 :after,
+.btn-53 :before,
+.btn-53:after,
+.btn-53:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+
+.btn-53 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  appearance: button(20px);
+  background-color: #000;
+  background-image: none;
+  color: #fcfcfc;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 0.7rem;  /* Dimensiune mai mică pentru text */
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0.5rem 2rem;  /* Diminuarea paddingului pentru un buton mai mic */
+  height: auto;  /* Permite ajustarea automată a înălțimii pe baza conținutului */
+  width: auto;  /* Permite ajustarea automată a lățimii pe baza conținutului */
+  margin-left: 30px;
+  text-align: left;  /* Asigură alinierea la stânga a textului */
+}
+
+.btn-53:disabled {
+  cursor: default;
+}
+
+.btn-53:-moz-focusring {
+  outline: auto;
+}
+
+.btn-53 svg {
+  display: block;
+  
+}
+
+.btn-53 [hidden] {
+  display: none;
+}
+
+.btn-53 {
+  border: 1px solid;
+  border-radius: 999px;
+  box-sizing: border-box;
+  display: block;
+  font-weight: 900;
+  overflow: hidden;
+  position: relative;
+  text-transform: uppercase;
+  height: auto;  /* Permite ajustarea automată a înălțimii pe baza conținutului */
+  width: auto;  /* Permite ajustarea automată a lățimii pe baza conținutului */
+}
+
+.btn-53 .original {
+  background: #fff;
+  color: #000;
+  display: grid;
+  inset: 0;
+  place-content: center;
+  position: absolute;
+  transition: transform 0.2s cubic-bezier(0.87, 0, 0.13, 1);
+  text-align: left;  /* Aliniere text la stânga */
+}
+
+.btn-53:hover .original {
+  transform: translateY(100%); 
+}
+
+.btn-53 .letters {
+  display: inline-flex;
+  text-align: left;  /* Aliniere text la stânga */
+}
+
+.btn-53 span {
+  opacity: 0;
+  transform: translateY(-15px);
+  transition: transform 0.2s cubic-bezier(0.87, 0, 0.13, 1), opacity 0.2s;
+}
+
+.btn-53 span:nth-child(2n) {
+  transform: translateY(15px);
+}
+
+.btn-53:hover span {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.btn-53:hover span:nth-child(2) {
+  transition-delay: 0.1s;
+}
+
+.btn-53:hover span:nth-child(3) {
+  transition-delay: 0.2s;
+}
+
+.btn-53:hover span:nth-child(4) {
+  transition-delay: 0.3s;
+}
+
+.btn-53:hover span:nth-child(5) {
+  transition-delay: 0.4s;
+}
+
+.btn-53:hover span:nth-child(6) {
+  transition-delay: 0.5s;
+}
+/*/buton*/
+
+
+
+
+
+
+
+
+
+
+/*footer*/
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: #222;
+  color: #ccc;
+  font-family: Arial, sans-serif;
+  flex-wrap: wrap;
+}
+
+.footer-left-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.nume {
+  color: white;
+  font-size: 24px;
+  margin: 0;
+}
+
+.footer-left {
+  border-left: 2px solid white;
+  padding-left: 2rem;
+}
+
+.footer-left-contact a {
+  margin-right: 15px;
+  color: #aaa;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.drepturi {
+  margin-top: 1rem;
+  font-size: 13px;
+}
+
+.footer-right {
+  text-align: right;
+}
+
+.footer-right .social-icons a {
+  margin: 0 10px;
+  color: #901818;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.footer-right p {
+  margin-top: 1rem;
+  font-size: 13px;
+}
+
+
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-left-wrapper {
+    flex-direction: column;
+    align-items: center; 
+    border: none;
+  }
+
+  .footer-left,
+  .footer-right,
+  .nume {
+    width: 100%;
+  }
+
+  .footer-right {
+    text-align: center; /* Centrăm totul în footer-right */
+    margin-top: 1rem;
+  }
+
+  .footer-right .social-icons {
+    display: flex;
+    justify-content: center; /* Centrăm emoji-urile */
+    gap: 15px; /* Distanță între emoji-uri */
+  }
+ 
+  .footer-left-contact a {
+    display: inline-block;
+    margin: 5px 10px;
+  }
+
+  .drepturi {
+    text-align: center;
+    width: 100%;
+  }
+
+  /* Ascundem linia albă pe telefon */
+  .footer-left-contact {
+    border-left: none;
+  }
+}
+
+
+
+
+/*/footer*/
+
+
+
+.testimonials {
+  padding: 40px 20px;
+  text-align: center;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.testimonial-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* Testimonial individual */
+.testimonial {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.testimonial:hover {
+  transform: scale(1.02);
+}
+
+/* Imagine client */
+.client-img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+/* Stele */
+.stars {
+  color: #f39c12;
+}
+
+/* Numele clientului */
+.client-name {
+  font-weight: bold;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+#starRating .star {
+  font-size: 30px;
+  cursor: pointer;
+  color: gray;
+}
+
+#starRating .star.selected {
+  color: gold;
+}
+.floating-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #f39c12;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 50px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 9999;
+  transition: transform 0.2s ease;
+}
+
+.floating-btn:hover {
+  transform: scale(1.05);
+}
+
+
+.rating {
+  display: flex;
+  gap: 5px;
+  font-size: 24px;
+  cursor: pointer;
+  position: center;
+  padding-left: 20%;
+}
+
+.rating .star {
+  color: #ccc;
+  transition: color 0.2s;
+  position: center;
+}
+
+.rating .star.selected {
+  color: gold;
+  position: center;
+}
+
+
+
+
+
