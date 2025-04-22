@@ -57,14 +57,17 @@ document.addEventListener("DOMContentLoaded", function () {
       };
     
       function schimbaLimba(limba) {
-        const paragrafe = document.querySelectorAll(".restaurant-description .body-text, .restaurant-description h1, .semnatura, .restaurant-description p:not(.body-text):not(.semnatura)");
+        localStorage.setItem('limbaSelectata', limba); // ✅ Salvează în browser
+        const paragrafe = document.querySelectorAll(".restaurant-description .body-text, .restaurant-description h1, .semnatura");
         const texte = traduceri[limba];
-        const lang = voci[limba];
-    
         paragrafe.forEach((el, i) => {
           el.textContent = texte[i];
         });
-    
-
       }
+  
+      // ✅ Aplică limba la încărcare
+      window.addEventListener('DOMContentLoaded', () => {
+        const limbaSalvata = localStorage.getItem('limbaSelectata') || 'ro';
+        schimbaLimba(limbaSalvata);
+      });
     
