@@ -320,6 +320,11 @@ header {
   background-color: #e08e0b;
 }
 
+#reviews-section{
+  align-items: center;
+  
+}
+
 #reviewForm{
  
   text-align: center;
@@ -327,9 +332,9 @@ header {
   margin: 20px auto;  
 }
 #reviews{
-  
+  margin-left:33%;
   width: 500px;
-  margin:20px 500px;
+  align-items: center;
   position: center;
   padding: 15px;
   display: flex;
@@ -541,8 +546,17 @@ h2{
     padding: 10px;
     margin-bottom: 10px;
     #usermsg{
-      padding-right: 100px;
+      text-align: center;
+      padding-left: 0%;
+      padding-right: 0%;
+      width: 200px;
     }
+  }
+  #openReviewForm{
+    display: block;
+    margin-left: auto;
+    
+    width:180px;
   }
 }
 

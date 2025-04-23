@@ -535,3 +535,8 @@ ul {
   margin-top: 10px;
   margin-left: 80px;
 }
+#body-text{
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
+  
+}
