@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <title>Pizza D’Amici</title>
+  <style>
+    body {
+      background: #fff8f0;
+      font-family: sans-serif;
+      text-align: center;
+      padding: 30px;
+    }
+    .pizza {
+      position: relative;
+      width: 300px;
+      height: 300px;
+      margin: auto;
+      border-radius: 50%;
+      overflow: hidden;
+      background-image: url('sos_rosu.png');
+      background-size: cover;
+      /*box-shadow: 0 0 20px rgba(0,0,0,0.2);*/
+    }
+    .slice {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      pointer-events: none;
+    }
+    .controls {
+      margin-top: 30px;
+    }
+    label {
+      margin: 5px;
+      display: inline-block;
+    }
+
+    /* === PALETĂ DE CULORI === */
+:root {
+    --pink‑light: #fff5f9;   /* roz foarte deschis, aproape alb */
+    --pink‑hover: #ffe6ef;   /* ușor mai saturat la hover */
+    --pink‑active:#ffd0e0;   /* încă un pas pentru click */
+    --pink‑shadow:#ffb6cf;   /* umbră subtilă în tema butonului */
+    --text‑contrast:#8a2a5b; /* mov‑zmeuriu, lizibil pe roz pal */
+}
+
+/* === BUTON GENERAL – clasa .btn‑round === */
+.btn‑round{
+    display:inline-block;
+    padding:0.7rem 1.6rem;
+    font:600 1rem/1.2 "Poppins",sans-serif;     /* font modern, clar */
+    color:var(--text‑contrast);
+    background:var(--pink‑light);
+    border:none;
+    border-radius:999px;                         /* margini perfect rotunjite */
+    box-shadow:0 2px 6px rgba(0,0,0,0.07),
+               0 0 0 2px var(--pink‑shadow);     /* contur discret */
+    text-decoration:none;                        /* pt <a> link‑uri */
+    cursor:pointer;
+    transition:
+        background 160ms ease,
+        transform 120ms ease,
+        box-shadow 160ms ease;
+}
+
+.btn‑round:hover,
+.btn‑round:focus{
+    background:var(--pink‑hover);
+    transform:translateY(-2px);                  /* „ridică” la hover */
+    box-shadow:0 4px 10px rgba(0,0,0,0.08),
+               0 0 0 2px var(--pink‑shadow);
+    outline:none;                                /* scoate conturul default */
+}
+
+.btn‑round:active{
+    background:var(--pink‑active);
+    transform:translateY(0);                     /* revine la apăsare */
+    box-shadow:0 1px 4px rgba(0,0,0,0.1),
+               0 0 0 2px var(--pink‑shadow);
+}
+
+/* === BUTON DIMENSIUNE XL (opțional) === */
+.btn‑round.btn‑xl{
+    padding:1rem 2.4rem;
+    font-size:1.15rem;
+}
+
+/* === CENTRARE ÎN PAGINĂ (dacă ai nevoie) === */
+.center‑wrapper{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column; /* buton + text deasupra/dedesubt */
+}
+
+  </style>
+</head>
+<body>
+
+  <h2>🍕 Creează-ți propria pizza!</h2>
+
+  <div class="pizza" id="pizzaBox"></div>
+
+  <div class="controls">
+    <h4>Sos:</h4>
+    <label><input type="radio" name="sos" value="sos_rosu" checked> Roșu</label>
+    <label><input type="radio" name="sos" value="sos_alb"> Alb</label>
+    <label><input type="radio" name="sos" value="sos_pesto"> Pesto</label>
+
+    <h4>Toppinguri:</h4>
+    <label><input type="checkbox" value="mozzarella"> Mozzarella</label>
+    <label><input type="checkbox" value="ciuperci"> Ciuperci</label>
+    <label><input type="checkbox" value="salam"> Salam</label>
+    <label><input type="checkbox" value="porumb"> Porumb</label>
+    <label><input type="checkbox" value="condimente"> condimente</label>
+    <label><input type="checkbox" value="ardei"> ardei</label>
+    <label><input type="checkbox" value="ceapa"> ceapa</label>
+    <label><input type="checkbox" value="masline">masline</label>
+    <label><input type="checkbox" value="ananas"> ananas</label>
+    <label><input type="checkbox" value="ton"> ton</label>
+    <label><input type="checkbox" value="pui"> pui</label>
+    <label><input type="checkbox" value="bacon"> bacon</label>
+    <label><input type="checkbox" value="branza"> branza</label>  
+    <label><input type="checkbox" value="ardei iute"> ardei iute</label>
+    <label><input type="checkbox" value="porumb"> porumb</label>
+    <label><input type="checkbox" value="dovlecel"> dovlecel</label>
+    <label><input type="checkbox" value="broccoli"> broccoli</label>
+    <label><input type="checkbox" value="sparanghel"> sparanghel</label>
+    <label><input type="checkbox" value="anghinare"> anghinare</label>
+    <label><input type="checkbox" value="ardei"> ardei gras</label>
+    <label><input type="checkbox" value="usutroi"> usturoi</label>
+    <label><input type="checkbox" value="praz"> praz</label>
+    <label><input type="checkbox" value="ridiche"> ridiche</label>
+    <label><input type="checkbox" value="sfecla"> sfecla</label>
+    <label><input type="checkbox" value="conopida"> conopida</label>
+    <label><input type="checkbox" value="varza"> varza</label>
+    <label><input type="checkbox" value="telina"> telina</label>
+    <label><input type="checkbox" value="ardei iute"> ardei iute</label>
+    <label><input type="checkbox" value="ardei gras"> ardei gras</label>
+
+  
+
+    
+    <br><br>
+    <button onclick="comandaPizza()">Comandă acum</button>
+  </div>
+
+  <script>
+    const pizza = document.getElementById("pizzaBox");
+
+    const toppingFiles = {
+      mozzarella: "mozzarella.png",
+      ciuperci: "mushroom.png",
+      salam: "salam.png",
+      porumb: "porum.png",
+      ardei: "ardei.pmg",
+      condimente: "condimente.png",
+      ceapa: "ceapa.png",
+      masline: "masline.png",
+      ananas: "ananas.png",
+      ton: "ton.png",
+      pui: "pui.png",
+      bacon: "bacon.png",
+      branza: "branza.png",
+  
+      dovlecel: "dovlecel.png",
+      broccoli: "broccoli.png",
+      sparanghel: "sparanghel.png",   
+      anghinare: "anghinare.png",
+      usturoi: "usturoi.png",
+      praz: "praz.png",
+      ridiche: "ridiche.png",
+      sfecla: "sfecla.png",
+      conopida: "conopida.png",
+      varza: "varza.png",
+      telina: "telina.png",
+      
+
+    };
+
+    function genTopping(name) {
+  const centerX = 150;
+  const centerY = 150;
+  const maxRadius = 120;
+  const num = 16;
+
+  for (let i = 0; i < num; i++) {
+    // coordonate random într-un cerc
+    const r = Math.sqrt(Math.random()) * maxRadius;
+    const angle = Math.random() * 2 * Math.PI;
+    const x = centerX + r * Math.cos(angle);
+    const y = centerY + r * Math.sin(angle);
+
+    const img = document.createElement("img");
+    img.src = toppingFiles[name];
+    img.className = "slice";
+    img.style.left = `${x - 15}px`; // -15 pt centrul imaginii
+    img.style.top = `${y - 15}px`;
+    img.dataset.type = name;
+
+    pizza.appendChild(img);
+  }
+}
+
+
+    function clearTopping(name) {
+      document.querySelectorAll(`.slice[data-type="${name}"]`).forEach(el => el.remove());
+    }
+
+    document.querySelectorAll('input[type="checkbox"]').forEach(input => {
+      input.addEventListener("change", () => {
+        const topping = input.value;
+        if (input.checked) {
+          genTopping(topping);
+          localStorage.setItem(topping, "true");
+        } else {
+          clearTopping(topping);
+          localStorage.setItem(topping, "false");
+        }
+      });
+    });
+
+    document.querySelectorAll('input[name="sos"]').forEach(input => {
+      input.addEventListener("change", () => {
+        pizza.style.backgroundImage = `url('${input.value}.png')`;
+        localStorage.setItem("sos", input.value);
+      });
+    });
+
+    function comandaPizza() {
+      alert("Pizza a fost salvată! 🍕");
+      // aici poți trimite în Firebase
+    }
+
+    // La încărcare, refacem pizza
+    window.addEventListener("DOMContentLoaded", () => {
+      // Sosul
+      const sos = localStorage.getItem("sos") || "sos_rosu";
+      pizza.style.backgroundImage = `url('${sos}.png')`;
+      document.querySelector(`input[value="${sos}"]`).checked = true;
+
+      // Toppinguri
+      for (let topping in toppingFiles) {
+        if (localStorage.getItem(topping) === "true") {
+          genTopping(topping);
+          document.querySelector(`input[value="${topping}"]`).checked = true;
+        }
+      }
+    });
+  </script>
+
+<div class="center‑wrapper">
+  <a href="pizza.html" class="btn‑round btn‑xl">⟵ Înapoi la pagina principală</a>
+</div>
+  
+</body>
+</html>
