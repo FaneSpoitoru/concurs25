@@ -11,16 +11,18 @@
       padding: 30px;
     }
     .pizza {
-      position: relative;
-      width: 300px;
-      height: 300px;
-      margin: auto;
-      border-radius: 50%;
-      overflow: hidden;
-      background-image: url('sos_rosu.png');
-      background-size: cover;
-      /*box-shadow: 0 0 20px rgba(0,0,0,0.2);*/
-    }
+  position: relative;
+  width: 700px;
+  height: 700px;
+  border-radius: 50%;
+  margin-left: 650px;
+  overflow: hidden;
+  background-image: url('sos_rosu.png');
+  background-size: cover;
+  background-position: center; /* Asigură că imaginea este centrată */
+  /*box-shadow: 0 0 20px rgba(0,0,0,0.2);*/
+}
+
     .slice {
       position: absolute;
       width: 30px;
@@ -106,13 +108,14 @@
     <label><input type="radio" name="sos" value="sos_rosu" checked> Roșu</label>
     <label><input type="radio" name="sos" value="sos_alb"> Alb</label>
     <label><input type="radio" name="sos" value="sos_pesto"> Pesto</label>
+    <label><input type="checkbox" name="sos" value="sos_branza"> BRANZA</label>
 
     <h4>Toppinguri:</h4>
     <label><input type="checkbox" value="mozzarella"> Mozzarella</label>
     <label><input type="checkbox" value="ciuperci"> Ciuperci</label>
     <label><input type="checkbox" value="salam"> Salam</label>
     <label><input type="checkbox" value="porumb"> Porumb</label>
-    <label><input type="checkbox" value="condimente"> condimente</label>
+    <!--<label><input type="checkbox" value="condimente"> condimente</label>
     <label><input type="checkbox" value="ardei"> ardei</label>
     <label><input type="checkbox" value="ceapa"> ceapa</label>
     <label><input type="checkbox" value="masline">masline</label>
@@ -136,7 +139,7 @@
     <label><input type="checkbox" value="varza"> varza</label>
     <label><input type="checkbox" value="telina"> telina</label>
     <label><input type="checkbox" value="ardei iute"> ardei iute</label>
-    <label><input type="checkbox" value="ardei gras"> ardei gras</label>
+    <label><input type="checkbox" value="ardei gras"> ardei gras</label>-->
 
   
 
@@ -149,9 +152,9 @@
     const pizza = document.getElementById("pizzaBox");
 
     const toppingFiles = {
-      mozzarella: "mozzarella.png",
+      mozzarella: "CASCAVAL_RAS.png",
       ciuperci: "mushroom.png",
-      salam: "salam.png",
+      salam: "SALAM_REALLL.png",
       porumb: "porum.png",
       ardei: "ardei.pmg",
       condimente: "condimente.png",
