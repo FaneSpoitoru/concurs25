@@ -135,7 +135,8 @@
 
 /*body*/
 body {   
-  font-family: Arial, sans-serif; /* Fontul principal pentru conținut */
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto; /* Fontul principal pentru conținut */
   margin: 0;      /* Fără margini implicite */
   padding: 0;     /* Fără padding */
   text-align: center;  /* Centrează textul în pagină */

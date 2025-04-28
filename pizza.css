@@ -1,0 +1,477 @@
+/*welcomeimage*/
+#welcome {
+  margin: 0;
+  padding: 0;
+}
+
+#welcome img {
+  width: 100%;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.welcome-image {
+  width: 100%;            
+  max-width: 100%;      
+  display: block;         
+  margin: 0px auto;       
+}
+/*/welcomeimage*/
+
+/*meniu*/
+
+#pizda{
+  background-image: url("imagini_site/pizza.jpg");
+  background-size: cover;
+}
+#pasta{
+  background-image: url("imagini_site/pasta.avif");
+  background-size: cover;
+}
+#salad{
+  background-image: url("imagini_site/salata.jpg");
+  background-size: cover;
+}
+#drinks{
+  background-image: url("imagini_site/bauturi.jpg");
+  background-size: cover;
+}
+#aperitive{
+  background-image: url('imagini_site/aperitive.jpg');
+  background-size: cover;
+}
+
+/*meniu*/
+
+/*navbar*/
+.navbar-brand{
+  font-family: "Comfortaa", sans-serif;
+}
+
+.navbar {
+  background-color: #f0ece2;            /*efebe1;*/
+}
+
+.nav-item {
+  font-family: 'Libre Baskerville', serif;
+    font-size: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+
+
+@media (max-width: 991.98px) {
+  .navbar-mobile {
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar-brand img {
+    margin: auto;
+  }
+  .nav-toggler-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 10px;
+  }
+  .nav-text {
+    display: inline;
+  }
+}
+
+@media (min-width: 992px) {
+  .nav-text {
+    display: none;
+  }
+}
+
+.hamburger {
+width: 30px;
+height: 3px;
+background-color: #000;
+position: relative;
+transition: all 0.3s ease-in-out;
+display: block;
+}
+
+.hamburger::before,
+.hamburger::after {
+content: '';
+position: absolute;
+width: 30px;
+height: 3px;
+background-color: #000;
+transition: all 0.3s ease-in-out;
+left: -0.05px;
+}
+
+
+.hamburger::before {
+top: -10px;
+}
+
+.hamburger::after {
+top: 10px;
+}
+
+.custom-toggler.active .hamburger {
+background-color: transparent;
+}
+
+.custom-toggler.active .hamburger::before {
+transform: rotate(45deg);
+top: 0;
+}
+
+.custom-toggler.active .hamburger::after {
+transform: rotate(-45deg);
+top: 0;
+}
+
+.custom-toggler {
+border: none;
+background: transparent;
+padding: 0.5rem;
+z-index: 1051;
+}
+
+.navbar-toggler {
+box-shadow: none !important;
+}
+
+.navbar-collapse {
+  transition: all 0.3s ease;
+}
+/*/navbar*/
+
+
+
+/*body*/
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;      
+  padding: 0;     
+  text-align: center;  
+  background-color: ffffff;
+  background: url('pictures/floor-tile.png') no-repeat center center/cover;
+  background-size: 200px; 
+  background-repeat: repeat;
+}
+
+.categorie {
+    width: 300px; /* sau cât vrei */
+    height: 200px; /* toate la fel */
+    background-color: #f5f5f5; /* dacă nu ai poză, se vede culoarea asta */
+    background-size: cover;
+    background-position: center;
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white; /* text alb peste imagine */
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.categorie:hover {
+    transform: scale(1.05);
+}
+
+/*/body*/
+
+
+
+/*footer*/
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: #222;
+  color: #ccc;
+  font-family: Arial, sans-serif;
+  flex-wrap: wrap;
+}
+
+.footer-left-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.nume {
+  color: white;
+  font-size: 24px;
+  margin: 0;
+}
+
+.footer-left {
+  border-left: 2px solid white;
+  padding-left: 2rem;
+}
+
+.footer-left-contact a {
+  margin-right: 15px;
+  color: #aaa;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.drepturi {
+  margin-top: 1rem;
+  font-size: 13px;
+}
+
+.footer-right {
+  text-align: right;
+}
+
+.footer-right .social-icons a {
+  margin: 0 10px;
+  color: #901818;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.footer-right p {
+  margin-top: 1rem;
+  font-size: 13px;
+}
+
+
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-left-wrapper {
+    flex-direction: column;
+    align-items: center;
+    border: none;
+  }
+
+  .footer-left,
+  .footer-right,
+  .nume {
+    width: 100%;
+  }
+
+  .footer-right {
+    text-align: center; /* Centrăm totul în footer-right */
+    margin-top: 1rem;
+  }
+
+  .footer-right .social-icons {
+    display: flex;
+    justify-content: center; /* Centrăm emoji-urile */
+    gap: 15px; /* Distanță între emoji-uri */
+  }
+ 
+  .footer-left-contact a {
+    display: inline-block;
+    margin: 5px 10px;
+  }
+
+  .drepturi {
+    text-align: center;
+    width: 100%;
+  }
+
+  /* Ascundem linia albă pe telefon */
+  .footer-left-contact {
+    border-left: none;
+  }
+}
+
+
+/*/footer*/
+
+
+
+/*chatbot*/
+/*/chatbot*/
+
+
+
+/*media*/
+@media (max-width: 768px) {
+  #low2 i, #low i {
+      font-size: 13px;
+  }
+  #low a, #low2 a {
+      font-size: 12px;
+  }
+ 
+  
+}
+/*/media*/
+
+
+
+#popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80vw;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+  color: white;
+  overflow: hidden;
+  z-index: 1000;
+}
+#popup::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-image: url('pictures/logo_popup.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: brightness(50%) blur(1px); /* Dark + blur efect */
+  z-index: 0;
+}
+#popup * {
+  position: relative;
+  z-index: 1;
+}
+
+.menu-section{
+  font-family: Dancing Script, cursive;
+  text-align: center;
+  
+}
+
+
+.openBtn{
+  background-color: none;
+  border:none;
+  display: inline-block;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  backdrop-filter: transparent;
+  background: none;
+  text-align: center;
+  padding-left: 0%;
+  align-items: center;
+  .container {
+    position: relative;
+    max-width: 800px; /* Maximum width */
+    margin: 0 auto; /* Center it */
+    img{
+      border-radius: 30px;
+      filter: blur(0px);
+    }
+  }
+  
+  .container .content {
+    position: absolute; /* Position the background text */
+    top: 0; /* At the bottom. Use top:0 to append it to the top */
+    
+    color: #181718; /* Grey text */
+    width: 100%; /* Full width */
+    padding: 10px; /* Some padding */
+    
+    p{
+      margin-top: 0%;
+      text-align: justify;
+      text-align: center;
+      margin-left: 0%;
+      margin-right: 20%;
+      font: bold;
+      background-color: rgba(169, 169, 169, 0.3);
+      color: #000000;
+      
+    }
+  }
+}
+.openBtn:hover {
+  transform: scale(1.05);
+}
+ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+#closeBtn{
+  border-radius: 30px;
+  align-items: center;
+  font-family: inherit;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 0.5em 1.0em 0.3em 0.7em;
+  color: white;
+  background: #ad5389;
+  background: linear-gradient(
+  0deg,
+  rgba(77, 54, 208, 1) 0%,
+  rgba(132, 116, 254, 1) 100%
+);
+  margin-left: 0%;
+
+}
+
+
+#topBtn {
+  display: none; /* Ascuns inițial */
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+#topBtn:hover {
+  background-color: #555;
+}
+
+
+#searchInput {
+  width: 220px;
+  padding: 6px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  outline: none;
+  transition: all 0.3s ease;
+  margin-bottom: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#searchInput:focus {
+  border-color: #333;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+#searchicn{
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 80px;
+}
+#body-text{
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
+  
+}
+
+

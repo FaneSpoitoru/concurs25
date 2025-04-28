@@ -160,7 +160,8 @@ box-shadow: none !important;
 
 /*body*/
 body {
-  font-family: Arial, sans-serif; /* Fontul principal pentru conținut */
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;/* Fontul principal pentru conținut */
   margin: 0;      /* Fără margini implicite */
   padding: 0;     /* Fără padding */
   text-align: center;  /* Centrează textul în pagină */
@@ -172,6 +173,66 @@ body {
 
 * {
   text-align: center;
+}
+
+.typewriter {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: .15em solid orange;
+  animation: typing 3s steps(30, end), blink .75s step-end infinite;
+  font-size: 2rem;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+.semnatura {
+  font-family: "Delius", cursive;
+  font-size: 23px;
+  text-align: left;
+  margin-left: 70px;
+
+}
+
+.body-text{
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
+  font-size: 30px;
+  word-spacing: 5px;  
+  text-align: left !important;
+  padding: 0;
+}
+
+.restaurant-description {
+  text-align: left !important;
+}
+@media (max-width: 767px) {
+  .restaurant-description {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  .body-text{
+    font-size: 25px;
+    word-spacing: 5px;
+    margin-right: 10px;
+    text-align: left !important;
+  }
+  
+  .semnatura {
+    font-family: "Delius", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    padding-left: 30px;
+  }
+  
 }
 /*/body*/
 

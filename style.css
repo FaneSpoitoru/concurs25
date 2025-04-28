@@ -23,7 +23,8 @@
 
 /*navbar*/
 .navbar-brand{
-  font-family: "Dancing Script", cursive;
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
 }
 
 .navbar-brand{
@@ -31,12 +32,13 @@
 }
 
 .navbar {
-  background-color: #f0ece2;            /*efebe1;*/
+  background-color: #efebe1;
 } 
 
 .nav-item {
-  font-family: 'Libre Baskerville', serif;
-    font-size: 10px;
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
+    font-size: 20px;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 1.2px;
@@ -130,11 +132,12 @@
 
 /*body*/
 body {
-  font-family: Arial, sans-serif; 
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
   margin: 0;      
   padding: 0;       
   background: url('pictures/floor-tile.png') no-repeat center center/cover;
-  background-size: 200px; 
+  background-size: 100px; 
   background-repeat: repeat;
 }
 *{
@@ -182,7 +185,8 @@ body.dark-mode::before {
 }
 
 .body-text{
-  font-family: "Dancing Script", cursive;
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
   font-size: 30px;
   word-spacing: 5px;  
   text-align: left !important;
@@ -328,7 +332,8 @@ body.dark-mode::before {
   }
   
   .body-text,h1 {
-    font-family: "Dancing Script", cursive;
+    font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
@@ -345,7 +350,8 @@ body.dark-mode::before {
   }
 
   .body-text,h1 {
-    font-family: "Dancing Script", cursive;
+    font-family: "Playwrite AU SA", cursive;
+    font-optical-sizing: auto;
     font-size: 28px;
     margin-left: 3rem !important;
   }
@@ -373,7 +379,8 @@ body.dark-mode::before {
   }
   
   .body-text,h1 {
-    font-family: "Dancing Script", cursive;
+    font-family: "Playwrite AU SA", cursive;
+    font-optical-sizing: auto;
     font-size: 30px;
   }
   
