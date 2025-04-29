@@ -158,24 +158,26 @@ body {
   background: url('pictures/floor-tile.png') no-repeat center center/cover;
   background-size: 200px; 
   background-repeat: repeat;
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
 }
 
 .menu-item-types{
-  font-family: "Quicksand", sans-serif;
+  font-family: "Playwrite AU SA", cursive;
   font-optical-sizing: auto;
   font-weight: 30px;
   font-style: normal;
 }
 
 .menu-item{
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Playwrite AU SA", cursive;
   font-optical-sizing: auto;
   font-weight: 30px;
   font-style: normal;
 }
 
 .menu-section{
-  font-family: "Dancing Script", cursive;
+  font-family: "Playwrite AU SA", cursive;
   font-optical-sizing: auto;
   font-weight: 700px;
   font-style: normal;
@@ -386,6 +388,9 @@ body {
 #popup {
   display: none;
   position: fixed;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.5rem;
+  color: white;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -393,20 +398,25 @@ body {
   max-width: 500px;
   height: auto;
   border-radius: 10px;
-  color: white;
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.8);
   overflow: hidden;
   z-index: 1000;
+  
 }
 #popup::before {
   content: '';
   position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
-  background-image: url('pictures/logo_popup.jpg');
+  /*background-image: url('pictures/logo_popup.jpg');
   background-size: cover;
-  background-position: center;
-  filter: brightness(50%) blur(1px); /* Dark + blur efect */
+  background-position: center;*/
+  /*filter: brightness(50%) blur(1px);*/ /* Dark + blur efect */
   z-index: 0;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.5rem;
+  color: white;
 }
 #popup * {
   position: relative;
@@ -414,17 +424,31 @@ body {
 }
 
 .menu-section{
-  font-family: Dancing Script, cursive;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.5rem;
+  color: white;
+  font-optical-sizing: auto;
   text-align: center;
   
 }
 
+#popup p {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1rem;
+  color: white;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
 
 .openBtn{
   background-color: none;
   border:none;
   display: inline-block;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.5rem;
+  color: white;
+  font-optical-sizing: auto;
   backdrop-filter: transparent;
   background: none;
   text-align: center;
@@ -434,6 +458,10 @@ body {
     position: relative;
     max-width: 800px; /* Maximum width */
     margin: 0 auto; /* Center it */
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+    color: white;
+  font-optical-sizing: auto;
     img{
       border-radius: 30px;
       filter: blur(0px);
@@ -457,16 +485,26 @@ body {
       font: bold;
       background-color: rgba(169, 169, 169, 0.3);
       color: #000000;
+      font-family: 'Dancing Script', cursive;
+      font-size: 1.5rem;
+      color: white;
       
     }
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+    color: white;
   }
 }
+
 .openBtn:hover {
   transform: scale(1.05);
 }
 ul {
   list-style-type: none;
   text-align: center;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.5rem;
+  color: white;
 }
 
 #closeBtn{
@@ -485,7 +523,9 @@ ul {
   rgba(132, 116, 254, 1) 100%
 );
   margin-left: 0%;
-
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.5rem;
+  color: white;
 }
 
 
@@ -504,6 +544,9 @@ ul {
   padding: 10px 15px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.5rem;
+  color: white;
 }
 
 #topBtn:hover {

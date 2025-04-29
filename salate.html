@@ -174,92 +174,6 @@
                 
                     
             </div>
-</div>
-          
-          
-        <div class="menu-item">
-            <h1> Salate</h1>
-            <div class="menu-item-types">
-                <ul>
-                    <br>
-                    <li>
-                        <button class="openBtn"
-                            data-popup-content="Salată mixtă  – 8,90 € ">
-                            <div id="meniu-item-content" class="container">
-                                <img src="pictures\WhatsApp Image 2025-04-07 at 18.25.27_b7980eef.jpg" alt="Bruschetta"
-                                    style="width: 200px; height: 100px;">
-                                <div id="meniu-ietm-text" class="content">
-                                    <p>Salată mixtă</p>
-                                </div>
-
-                            </div>
-                        </button>
-                    </li>
-                    <br>
-                    <li>
-                        <button class="openBtn"
-                            data-popup-content="Salată cu pui – 16,50 € ">
-                            <div id="meniu-item-content" class="container">
-                                <img src="pictures\WhatsApp Image 2025-04-07 at 18.25.27_b7980eef.jpg" alt="Bruschetta"
-                                    style="width: 200px; height: 100px;">
-                                <div id="meniu-ietm-text" class="content">
-                                    <p>Salată cu pui </p>
-                                </div>
-
-                            </div>
-                        </button>
-                    </li>
-                    <br>
-                    <li>
-                        <button class="openBtn"
-                            data-popup-content="Salată Capriccioasă: salată mixtă, ton, șuncă, cașcaval – 16,70 €">
-                            <div id="meniu-item-content" class="container">
-                                <img src="pictures\WhatsApp Image 2025-04-07 at 18.25.27_b7980eef.jpg" alt="Bruschetta"
-                                    style="width: 200px; height: 100px;">
-                                <div id="meniu-ietm-text" class="content">
-                                    <p>Salată Capriccioasă</p>
-                                </div>
-
-                            </div>
-                        </button>
-                    </li>
-                    <br>
-                    <li>
-                        <button class="openBtn"
-                            data-popup-content="Salată cu somon – 17,90 € ">
-                            <div id="meniu-item-content" class="container">
-                                <img src="pictures\WhatsApp Image 2025-04-07 at 18.25.27_b7980eef.jpg" alt="Bruschetta"
-                                    style="width: 200px; height: 100px;">
-                                <div id="meniu-ietm-text" class="content">
-                                    <p>Salată cu somon</p>
-                                </div>
-
-                            </div>
-                        </button>
-                    </li>
-                    <br>
-                    <li>
-                        <button class="openBtn"
-                            data-popup-content="Salată cu ton și cașcaval – 14,90 €">
-                            <div id="meniu-item-content" class="container">
-                                <img src="pictures\WhatsApp Image 2025-04-07 at 18.25.27_b7980eef.jpg" alt="Bruschetta"
-                                    style="width: 200px; height: 100px;">
-                                <div id="meniu-ietm-text" class="content">
-                                    <p>Salată cu ton și cașcaval</p>
-                                </div>
-
-                            </div>
-                        </button>
-                    </li>
-                </ul>
-            </div>
-            <br><br>
-            
-
-                </ul>
-            </div>
-        </div>
-    </section>
 
 
     <div id="popup">
@@ -358,7 +272,25 @@
       <p>Support: Italy@d-amici.de</p>
     </div>
   </footer>
+  <script>
+    const popup1 = document.getElementById("popup");
+    const overlay1 = document.getElementById("overlay");
+    const buttons = document.querySelectorAll(".openBtn");
 
+    buttons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        const content = btn.getAttribute("data-popup-content");
+        popup1.innerHTML = content; // Afișează HTML, nu doar text simplu
+        popup1.classList.add("show");
+        overlay1.classList.add("show");
+      });
+    });
+
+    overlay1.addEventListener("click", () => {
+      popup1.classList.remove("show");
+      overlay1.classList.remove("show");
+    });
+  </script>
 
     <script>
         document.getElementById("year").textContent = new Date().getFullYear();
