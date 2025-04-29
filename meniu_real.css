@@ -50,11 +50,14 @@
 }
 
 .navbar {
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
   background-color: #f0ece2;            /*efebe1;*/
 }
 
 .nav-item {
-  font-family: 'Libre Baskerville', serif;
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
     font-size: 10px;
     font-weight: 500;
     text-transform: uppercase;

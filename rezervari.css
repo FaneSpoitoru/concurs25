@@ -260,8 +260,7 @@ body {
 
 
 #disponibilitate{
-  text-align: center;
-  font-family: "Brush Script MT", cursive;  
+  text-align: center;  
 }
 
 #rezbtn{
@@ -508,10 +507,7 @@ footer {
 /*/footer*/
 
 h2{
-  text-align: center;
-  font-family: "Brush Script MT", cursive;
   margin: 0%;
-  
 }
 
 .custom-toggler {

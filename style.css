@@ -23,25 +23,21 @@
 
 /*navbar*/
 .navbar-brand{
-  font-family: "Playwrite AU SA", cursive;
-  font-optical-sizing: auto;
+  
 }
 
-.navbar-brand{
-  font-family: "Comfortaa", sans-serif;
-}
 
 .navbar {
   background-color: #efebe1;
 } 
 
 .nav-item {
-  font-family: "Playwrite AU SA", cursive;
-  font-optical-sizing: auto;
+ 
     font-size: 20px;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 1.2px;
+    text-align: center !important;
 }
 
 @media (max-width: 991.98px) {
@@ -132,11 +128,9 @@
 
 /*body*/
 body {
-  font-family: "Playwrite AU SA", cursive;
-  font-optical-sizing: auto;
   margin: 0;      
   padding: 0;       
-  background: url('pictures/floor-tile.png') no-repeat center center/cover;
+  background: url('pictures/floor-tile.png')center center/cover;
   background-size: 100px; 
   background-repeat: repeat;
 }
@@ -185,8 +179,6 @@ body.dark-mode::before {
 }
 
 .body-text{
-  font-family: "Playwrite AU SA", cursive;
-  font-optical-sizing: auto;
   font-size: 30px;
   word-spacing: 5px;  
   text-align: left !important;
@@ -209,8 +201,6 @@ body.dark-mode::before {
   padding: 2rem;
   background-color: #222;
   color: #ccc;
-  font-family: Arial, sans-serif;
-  flex-wrap: wrap;
 }
 
 .footer-left-wrapper {
@@ -318,6 +308,7 @@ body.dark-mode::before {
     padding-right: 20px !important;
   }
   .body-text{
+
     font-size: 25px;
     word-spacing: 5px;
     margin-right: 10px;
@@ -332,9 +323,6 @@ body.dark-mode::before {
   }
   
   .body-text,h1 {
-    font-family: "Playwrite AU SA", cursive;
-  font-optical-sizing: auto;
-    font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
     margin-left: 3rem !important;
@@ -350,8 +338,6 @@ body.dark-mode::before {
   }
 
   .body-text,h1 {
-    font-family: "Playwrite AU SA", cursive;
-    font-optical-sizing: auto;
     font-size: 28px;
     margin-left: 3rem !important;
   }
@@ -379,8 +365,6 @@ body.dark-mode::before {
   }
   
   .body-text,h1 {
-    font-family: "Playwrite AU SA", cursive;
-    font-optical-sizing: auto;
     font-size: 30px;
   }
   
