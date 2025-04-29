@@ -136,6 +136,7 @@
 /*body*/
 body {   
   font-family: "Playwrite AU SA", cursive;
+    font-optical-sizing: auto;
   font-optical-sizing: auto; /* Fontul principal pentru conținut */
   margin: 0;      /* Fără margini implicite */
   padding: 0;     /* Fără padding */
@@ -501,8 +502,8 @@ footer {
   color: rgb(0, 0, 0);      
   text-align: center;         /* Text centrat */
   padding: 20px;              /* Spațiere internă */
-  font-family: "Times New Roman", Times, serif;  /* Font clasic */
-  font-style: italic;  
+  font-family: "Playwrite AU SA", cursive;
+    font-optical-sizing: auto;
 }
 /*/footer*/
 

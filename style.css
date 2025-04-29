@@ -23,7 +23,8 @@
 
 /*navbar*/
 .navbar-brand{
-  
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
 }
 
 
@@ -32,7 +33,8 @@
 } 
 
 .nav-item {
- 
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
     font-size: 20px;
     font-weight: 500;
     text-transform: uppercase;
@@ -128,6 +130,8 @@
 
 /*body*/
 body {
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
   margin: 0;      
   padding: 0;       
   background: url('pictures/floor-tile.png')center center/cover;
@@ -179,6 +183,8 @@ body.dark-mode::before {
 }
 
 .body-text{
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
   font-size: 30px;
   word-spacing: 5px;  
   text-align: left !important;
@@ -308,7 +314,8 @@ body.dark-mode::before {
     padding-right: 20px !important;
   }
   .body-text{
-
+    font-family: "Playwrite AU SA", cursive;
+    font-optical-sizing: auto;
     font-size: 25px;
     word-spacing: 5px;
     margin-right: 10px;
@@ -323,6 +330,8 @@ body.dark-mode::before {
   }
   
   .body-text,h1 {
+    font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
     margin-left: 3rem !important;
@@ -338,6 +347,8 @@ body.dark-mode::before {
   }
 
   .body-text,h1 {
+    font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
     font-size: 28px;
     margin-left: 3rem !important;
   }
@@ -350,21 +361,19 @@ body.dark-mode::before {
   }
 
   .body-text {
+    font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
     font-size: 40px;
     word-spacing: 5px;
   }
-
-  .body-text {
-    font-size: 40px;
-    word-spacing: 5px;    
-  }
-  
   .semnatura {
     font-family: "Delius", cursive;
     font-size: 23px;
   }
   
   .body-text,h1 {
+    font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
     font-size: 30px;
   }
   
