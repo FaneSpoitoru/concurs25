@@ -87,7 +87,7 @@
     <br><br><br>
     <section class="hero">
         <h1>Aici sunt toate pizzele  </h1>
-        <p>bucurate de toate</p> <br><br>
+        <p>Bucura-te de toate</p> <br><br>
     </section>
 
     <div id="google_translate_element" style="position: absolute; bottom: 20px; left: 20px; z-index: 1000;"></div>
@@ -376,10 +376,6 @@ style="background-image: url('imagini_site/pizza8.jpg'); background-size: cover;
 
 
 
-            <div class="center‑wrapper">
-                <a href="joc.html" class="btn‑round">Descoperă meniul ➜</a>
-             </div>
-        
 
     <div id="popup">
         <p id="popupContent">.</p>
@@ -392,24 +388,22 @@ style="background-image: url('imagini_site/pizza8.jpg'); background-size: cover;
         const popup = document.getElementById('popup');
         const closeBtn = document.getElementById('closeBtn');
         const popupContent = document.getElementById('popupContent');
-
+    
         // Când se apasă un buton, deschide pop-up-ul cu conținutul corespunzător
         openBtns.forEach(button => {
             button.onclick = function () {
                 // Setează conținutul pop-up-ului din atributul 'data-popup-content'
-                popupContent.textContent = button.getAttribute('data-popup-content');
+                popupContent.innerHTML = button.getAttribute('data-popup-content'); // Folosește innerHTML pentru a permite HTML
                 popup.style.display = 'block';
             }
         });
-
+    
         // Când apesi butonul de închidere, închide pop-up-ul
         closeBtn.onclick = function () {
             popup.style.display = 'none';
         }
-
-
-        
     </script>
+    
 
 
     <button id="menuButton"
@@ -429,32 +423,8 @@ style="background-image: url('imagini_site/pizza8.jpg'); background-size: cover;
     <div id="overlay"
         style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.7); z-index: 999;">
     </div>
-
-    <script>
-        // Obține butonul și meniul popup
-        const menuButton = document.getElementById('menuButton');
-        const menuPopup = document.getElementById('menuPopup');
-        const overlay = document.getElementById('overlay');
-        const closeChatButton = document.getElementById('closeChatButton');
-
-        // Când butonul este apăsat, afișează popup-ul și overlay-ul
-        menuButton.addEventListener('click', function () {
-            menuPopup.style.display = 'block'; // Afișează meniul popup
-            overlay.style.display = 'block'; // Afișează overlay-ul întunecat
-        });
-
-        // Când se face clic pe butonul de închidere, ascunde popup-ul și overlay-ul
-        closeChatButton.addEventListener('click', function () {
-            menuPopup.style.display = 'none'; // Ascunde meniul popup
-            overlay.style.display = 'none'; // Ascunde overlay-ul
-        });
-
-        // Când se face clic pe overlay, ascunde popup-ul și overlay-ul
-        overlay.addEventListener('click', function () {
-            menuPopup.style.display = 'none'; // Ascunde meniul popup
-            overlay.style.display = 'none'; // Ascunde overlay-ul
-        });
-    </script>
+ 
+    
 
 <footer class="footer">
     <div class="footer-left-wrapper">
@@ -479,50 +449,8 @@ style="background-image: url('imagini_site/pizza8.jpg'); background-size: cover;
       <p>Support: Italy@d-amici.de</p>
     </div>
   </footer>
-  <script>
-    const popup1 = document.getElementById("popup");
-    const overlay1 = document.getElementById("overlay");
-    const buttons = document.querySelectorAll(".openBtn");
-
-    buttons.forEach(btn => {
-      btn.addEventListener("click", () => {
-        const content = btn.getAttribute("data-popup-content");
-        popup1.innerHTML = content; // Afișează HTML, nu doar text simplu
-        popup1.classList.add("show");
-        overlay1.classList.add("show");
-      });
-    });
-
-    overlay1.addEventListener("click", () => {
-      popup1.classList.remove("show");
-      overlay1.classList.remove("show");
-    });
-  </script>
-<script>document.querySelectorAll(".openBtn").forEach(button => {
-    button.addEventListener("click", () => {
-        // Șterge popup-ul anterior dacă există
-        const existing = document.querySelector(".popup");
-        if (existing) existing.remove();
-
-        const popup = document.createElement("div");
-        popup.classList.add("popup");
-        popup.innerHTML = button.getAttribute("data-popup-content");
-        document.body.appendChild(popup);
-
-        // Scroll în mijloc
-        popup.scrollIntoView({ behavior: "smooth", block: "center" });
-    });
-});
-
-// Închidere popup
-document.addEventListener("click", function(e) {
-    if (e.target.classList.contains("closeBtn")) {
-        const popup = document.querySelector(".popup");
-        if (popup) popup.remove();
-    }
-});
-</script>
   
+
 
     <script>
         document.getElementById("year").textContent = new Date().getFullYear();
