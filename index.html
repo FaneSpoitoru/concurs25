@@ -88,7 +88,7 @@
     <br><br><br><br><br><br><br>
     <br>
 
-    <div id="google_translate_element" style="position: absolute; bottom: 20px; left: 20px; z-index: 1001;"></div>
+    <div id="google_translate_element" style="position: absolute; bottom: 20px; right: 20px; z-index: 1001;"></div>
    
     <footer class="footer">
         <div class="footer-left-wrapper">
@@ -121,7 +121,12 @@
           document.body.classList.toggle('dark-mode');
         });
       </script>
-      
+      <script>
+        setTimeout(() => {
+          const el = document.getElementById("text");
+          el.remove(); // sau el.remove();
+        }, 3500);
+      </script>
       
     <script>
         document.getElementById("year").textContent = new Date().getFullYear();

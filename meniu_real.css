@@ -58,7 +58,7 @@
 .nav-item {
   font-family: "Playwrite AU SA", cursive;
   font-optical-sizing: auto;
-    font-size: 10px;
+    font-size: 15px;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 1.2px;
@@ -157,7 +157,7 @@ body {
   margin: 0;      
   padding: 0;     
   text-align: center;  
-  background-color: ffffff;
+  background-color: #ffffff;
   background: url('pictures/floor-tile.png') no-repeat center center/cover;
   background-size: 200px; 
   background-repeat: repeat;
@@ -199,7 +199,7 @@ body {
       font-size: 24px;
       color: white;
       text-decoration: none;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 8px rgba(0,0,0,0);
       transition: transform 0.2s;
       background-size: cover;
       background-position: center;
@@ -391,7 +391,8 @@ body {
 #popup {
   display: none;
   position: fixed;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
   font-size: 1.5rem;
   color: white;
   top: 50%;
@@ -402,7 +403,7 @@ body {
   height: auto;
   border-radius: 10px;
   color: rgb(255, 255, 255);
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.5);
   overflow: hidden;
   z-index: 1000;
   
@@ -486,7 +487,7 @@ body {
       margin-left: 0%;
       margin-right: 20%;
       font: bold;
-      background-color: rgba(169, 169, 169, 0.3);
+      background-color: rgba(169, 169, 169, 0);
       color: #000000;
       font-family: 'Dancing Script', cursive;
       font-size: 1.5rem;
@@ -546,7 +547,7 @@ ul {
   cursor: pointer;
   padding: 10px 15px;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.4);
   font-family: 'Dancing Script', cursive;
   font-size: 1.5rem;
   color: white;
@@ -573,7 +574,7 @@ ul {
 
 #searchInput:focus {
   border-color: #333;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 #searchicn{

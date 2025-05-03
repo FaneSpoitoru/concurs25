@@ -1,4 +1,5 @@
 /*welcomeimage*/
+
 #welcome {
   margin: 0;
   padding: 0;
@@ -17,6 +18,7 @@
   display: block;         
   margin: 0px auto;       
 }
+
 /*/welcomeimage*/
 
 
@@ -35,7 +37,7 @@
 .nav-item {
   font-family: "Playwrite AU SA", cursive;
   font-optical-sizing: auto;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 1.2px;
@@ -145,9 +147,10 @@ body {
 .typewriter {
   overflow: hidden;
   white-space: nowrap;
-  border-right: .15em solid orange;
+  border-right: 0.15em solid orange;
   animation: typing 3s steps(30, end), blink .75s step-end infinite;
   font-size: 2rem;
+  display: inline-block;
 }
 
 @keyframes typing {
@@ -156,20 +159,20 @@ body {
 }
 
 @keyframes blink {
-  from, to { border-color: transparent }
-  50% { border-color: orange; }
+  0%, 100% { border-color: transparent }
+  50% { border-color: orange }
 }
 
 body::before {
   content: "";
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
-  background-color: rgba(0,0,0,0); /* transparent normal */
+  background-color: rgba(0,0,0,0); 
   z-index: -1;
 }
 
 body.dark-mode::before {
-  background-color: rgba(0,0,0,0.6); /* întunecă imaginea */
+  background-color: rgba(0,0,0,0.6); 
 }
 
 /*/body*/
@@ -185,7 +188,7 @@ body.dark-mode::before {
 .body-text{
   font-family: "Playwrite AU SA", cursive;
   font-optical-sizing: auto;
-  font-size: 30px;
+  font-size: 20px;
   word-spacing: 5px;  
   text-align: left !important;
   padding: 0;
@@ -193,6 +196,8 @@ body.dark-mode::before {
 
 .restaurant-description {
   text-align: left !important;
+  padding: 0px;
+  margin-left: 0px;
 }
 
 /*/bodytxt*/
@@ -276,14 +281,14 @@ body.dark-mode::before {
   }
 
   .footer-right {
-    text-align: center; /* Centrăm totul în footer-right */
+    text-align: center; 
     margin-top: 1rem;
   }
 
   .footer-right .social-icons {
     display: flex;
-    justify-content: center; /* Centrăm emoji-urile */
-    gap: 15px; /* Distanță între emoji-uri */
+    justify-content: center; 
+    gap: 15px; 
   }
  
   .footer-left-contact a {
@@ -296,7 +301,7 @@ body.dark-mode::before {
     width: 100%;
   }
 
-  /* Ascundem linia albă pe telefon */
+  
   .footer-left-contact {
     border-left: none;
   }
@@ -310,13 +315,13 @@ body.dark-mode::before {
 /*media*/
 @media (max-width: 767px) {
   .restaurant-description {
-    padding-left: 20px !important;
-    padding-right: 20px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
   }
   .body-text{
     font-family: "Playwrite AU SA", cursive;
     font-optical-sizing: auto;
-    font-size: 25px;
+    font-size: 20px;
     word-spacing: 5px;
     margin-right: 10px;
     text-align: left !important;
@@ -327,15 +332,19 @@ body.dark-mode::before {
     font-weight: 400;
     font-style: normal;
     font-size: 18px;
+    margin-left: 7rem;
   }
   
   .body-text,h1 {
+    font-size: 20px;
     font-family: "Playwrite AU SA", cursive;
-  font-optical-sizing: auto;
+    font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
-    margin-left: 3rem !important;
+    margin-left: 2rem !important;
   }
+
+  
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -348,9 +357,10 @@ body.dark-mode::before {
 
   .body-text,h1 {
     font-family: "Playwrite AU SA", cursive;
-  font-optical-sizing: auto;
-    font-size: 28px;
-    margin-left: 3rem !important;
+    font-optical-sizing: auto;
+    font-size: 23px;
+    margin-left: 1rem;
+    text-align: left !important;
   }
 }
 
@@ -362,7 +372,7 @@ body.dark-mode::before {
 
   .body-text {
     font-family: "Playwrite AU SA", cursive;
-  font-optical-sizing: auto;
+    font-optical-sizing: auto;
     font-size: 40px;
     word-spacing: 5px;
   }
@@ -398,7 +408,7 @@ body.dark-mode::before {
 
 
 
-/*butondarkmode*//* Tema normală (light) este implicită */
+/*butondarkmode*/
   body.dark-mode {
     background-color: #121212;
     color: white;

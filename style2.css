@@ -1,0 +1,339 @@
+/* ==== Welcome Image ==== */
+#welcome, #welcome img {
+    margin: 0;
+    padding: 0;
+  }
+  
+  #welcome img, .welcome-image {
+    width: 100%;
+    display: block;
+  }
+  
+  .welcome-image {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  /* ==== Navbar ==== */
+  .navbar, .dark-mode .navbar {
+    background-color: #efebe1;
+  }
+  
+  .navbar-brand, .nav-item {
+    font-family: "Playwrite AU SA", cursive;
+    font-optical-sizing: auto;
+  }
+  
+  .nav-item {
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    text-align: center !important;
+  }
+  
+  .navbar-toggler {
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    box-shadow: none !important;
+  }
+  
+  .navbar-collapse {
+    transition: all 0.3s ease;
+  }
+  
+  .hamburger,
+  .hamburger::before,
+  .hamburger::after {
+    width: 30px;
+    height: 3px;
+    background-color: #000;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+  }
+  
+  .hamburger::before,
+  .hamburger::after {
+    content: '';
+    position: absolute;
+    left: 0;
+  }
+  
+  .hamburger::before { top: -10px; }
+  .hamburger::after { top: 10px; }
+  
+  .custom-toggler.active .hamburger {
+    background-color: transparent;
+  }
+  
+  .custom-toggler.active .hamburger::before {
+    transform: rotate(45deg);
+    top: 0;
+  }
+  
+  .custom-toggler.active .hamburger::after {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+  
+  @media (max-width: 991.98px) {
+    .navbar-mobile {
+      flex-direction: column;
+      align-items: center;
+    }
+    .navbar-brand img {
+      margin: auto;
+    }
+    .nav-toggler-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 10px;
+    }
+    .nav-text { display: inline; }
+  }
+  
+  @media (min-width: 992px) {
+    .nav-text { display: none; }
+  }
+  
+  /* ==== Body ==== */
+  body {
+    font-family: "Playwrite AU SA", cursive;
+    font-optical-sizing: auto;
+    margin: 0;
+    padding: 0;
+    background: url('pictures/floor-tile.png') center center/cover;
+    background-size: 100px;
+    background-repeat: repeat;
+    scroll-behavior: smooth;
+  }
+  
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0,0,0,0);
+    z-index: -1;
+  }
+  
+  body.dark-mode::before {
+    background-color: rgba(0,0,0,0.6);
+  }
+  
+  .typewriter {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: .15em solid orange;
+    animation: typing 3s steps(30, end), blink .75s step-end infinite;
+    font-size: 2rem;
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  @keyframes blink {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+  
+  /* ==== Text Styles ==== */
+  .semnatura {
+    font-family: "Delius", cursive;
+    font-size: 23px;
+  }
+  
+  .body-text, .body-text h1 {
+    font-family: "Playwrite AU SA", cursive;
+    font-optical-sizing: auto;
+    word-spacing: 5px;
+    text-align: left !important;
+    padding: 0;
+  }
+  
+  .restaurant-description {
+    text-align: left !important;
+    line-height: 1.5;
+  }
+  
+  /* ==== Footer ==== */
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #222;
+    color: #ccc;
+  }
+  
+  .footer-left-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+  
+  .nume {
+    color: white;
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .footer-left {
+    border-left: 2px solid white;
+    padding-left: 2rem;
+  }
+  
+  .footer-left-contact a {
+    margin-right: 15px;
+    color: #aaa;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .drepturi {
+    margin-top: 1rem;
+    font-size: 13px;
+  }
+  
+  .footer-right {
+    text-align: right;
+  }
+  
+  .footer-right .social-icons a {
+    margin: 0 10px;
+    color: #901818;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .footer-right p {
+    margin-top: 1rem;
+    font-size: 13px;
+  }
+  
+  @media (max-width: 768px) {
+    .footer {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .footer-left-wrapper {
+      flex-direction: column;
+      align-items: center;
+      border: none;
+    }
+  
+    .footer-left,
+    .footer-right,
+    .nume {
+      width: 100%;
+    }
+  
+    .footer-right {
+      text-align: center;
+      margin-top: 1rem;
+    }
+  
+    .footer-right .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+  
+    .footer-left-contact a {
+      display: inline-block;
+      margin: 5px 10px;
+    }
+  
+    .drepturi {
+      text-align: center;
+      width: 100%;
+    }
+  
+    .footer-left-contact {
+      border-left: none;
+    }
+  }
+  
+  /* ==== Responsive Text ==== */
+  @media (max-width: 767px) {
+    .restaurant-description {
+      padding: 0 20px !important;
+    }
+  
+    .body-text {
+      font-size: 25px;
+      margin-right: 10px;
+    }
+  
+    .semnatura {
+      font-size: 18px;
+    }
+  
+    .body-text h1 {
+      font-size: 28px;
+      margin-left: 3rem !important;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .restaurant-description {
+      padding: 0 10px !important;
+      font-size: 22px;
+    }
+  
+    .body-text h1 {
+      font-size: 28px;
+      margin-left: 3rem !important;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    #welcome img {
+      max-height: 900px;
+    }
+  
+    .body-text {
+      font-size: 40px;
+    }
+  
+    .body-text h1 {
+      font-size: 30px;
+    }
+  
+    .restaurant-description {
+      font-size: 20px;
+      padding: 0 300px !important;
+    }
+  }
+  
+  /* ==== Dark Mode Button Support ==== */
+  body.dark-mode {
+    background-color: #121212;
+    color: white;
+  }
+  
+  .dark-mode .card {
+    background-color: #2c2c2c;
+    color: white;
+    border: 1px solid #444;
+  }
+  
+  .dark-mode a {
+    color: #ffd700;
+  }
+  
+  .dark-mode .btn {
+    border-color: #fff;
+    color: #fff;
+  }
+  
+  .dark-mode footer {
+    background-color: #1a1a1a;
+    color: white;
+  }
+  

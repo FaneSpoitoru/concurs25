@@ -163,13 +163,13 @@ box-shadow: none !important;
 /*body*/
 body {
   font-family: "Playwrite AU SA", cursive;
-  font-optical-sizing: auto;/* Fontul principal pentru conținut */
-  margin: 0;      /* Fără margini implicite */
-  padding: 0;     /* Fără padding */
-  text-align: center;  /* Centrează textul în pagină */
+  font-optical-sizing: auto;
+  margin: 0;      
+  padding: 0;     
+  text-align: center;  
   background-color: #ffffff;
   background: url('pictures/floor-tile.png') no-repeat center center/cover;
-  background-size: 200px; /* Ajustează dimensiunea dorită */
+  background-size: 200px; 
   background-repeat: repeat;
 }
 
@@ -187,7 +187,7 @@ body {
 
 @keyframes typing {
   from { width: 0 }
-  to { width: 100% }
+  to { width: 100% } 
 }
 
 @keyframes blink {
@@ -197,7 +197,7 @@ body {
 
 .semnatura {
   font-family: "Delius", cursive;
-  font-size: 23px;
+  font-size: 27px;
   text-align: left;
   margin-left: 70px;
 
@@ -221,7 +221,7 @@ body {
     padding-right: 20px !important;
   }
   .body-text{
-    font-size: 25px;
+    font-size: 20px;
     word-spacing: 5px;
     margin-right: 10px;
     text-align: left !important;
@@ -246,8 +246,8 @@ body {
 
 /*bodytext*/
 h1{
-  font-family: 'Times New Roman', Times, serif;
-  text-align: center;
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
 }
 /*/bodytext*/
 
@@ -258,6 +258,8 @@ h1{
 /*footer*/
 .footer {
   display: flex;
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
   justify-content: space-between;
   padding: 2rem;
   background-color: #222;
@@ -274,29 +276,39 @@ h1{
 
 .nume {
   color: white;
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
   font-size: 24px;
   margin: 0;
 }
 
 .footer-left {
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
   border-left: 2px solid white;
   padding-left: 2rem;
 }
 
 .footer-left-contact a {
   margin-right: 15px;
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
   color: #aaa;
   text-decoration: none;
   font-size: 14px;
 }
 
 .drepturi {
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
   margin-top: 1rem;
   font-size: 13px;
 }
 
 .footer-right {
   text-align: right;
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
 }
 
 .footer-right .social-icons a {
@@ -318,12 +330,16 @@ h1{
     flex-direction: column;
     align-items: center;
     text-align: center;
+    font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
   }
 
   .footer-left-wrapper {
     flex-direction: column;
     align-items: center;
     border: none;
+    font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
   }
 
   .footer-left,
@@ -333,19 +349,23 @@ h1{
   }
 
   .footer-right {
-    text-align: center; /* Centrăm totul în footer-right */
+    text-align: center; 
     margin-top: 1rem;
+    font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
   }
 
   .footer-right .social-icons {
     display: flex;
-    justify-content: center; /* Centrăm emoji-urile */
-    gap: 15px; /* Distanță între emoji-uri */
+    justify-content: center; 
+    gap: 15px; 
   }
  
   .footer-left-contact a {
     display: inline-block;
     margin: 5px 10px;
+    font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
   }
 
   .drepturi {
@@ -353,7 +373,7 @@ h1{
     width: 100%;
   }
 
-  /* Ascundem linia albă pe telefon */
+  
   .footer-left-contact {
     border-left: none;
   }
@@ -432,6 +452,14 @@ div.galerie {
     height: auto;
   }
 }
+
+.echipa-wrapper {
+  padding: 50px;
+  max-width: 1500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
 /*/pozeangajati*/
 
 
