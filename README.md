@@ -1,4 +1,4 @@
-![D'amici Restaurant](logo-removebg-preview.png)
+
 
 # *D'amici Restaurant*
 
@@ -52,13 +52,10 @@ cd concurs25
 
 There are currently no known bugs.
 
-# 📸 Screenshots
+# 🔊 Note
 
-<img src="screenshots\s1.png" alt="Homepage Screenshot" width="600"/>
-<img src="screenshots\s2.png" alt="Homepage Screenshot" width="600"/><br>
-<img src="screenshots\s3.png" alt="Homepage Screenshot" width="200"/><br>
-<img src="screenshots\s4.png" alt="Homepage Screenshot" width="200"/><br>
-<img src="screenshots\s5.png" alt="Homepage Screenshot" width="200"/>
+- There are a few menu items that don't have a picture that is allocated with that specific item but we will update them as soon as possible
+- The same for the team section 
 
 
 # 👷 Builded by
