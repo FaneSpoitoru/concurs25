@@ -201,9 +201,15 @@
         <a href="#"><i class="fab fa-whatsapp"></i></a>
       </div>
       <p>Support: Italy@d-amici.de</p>
+      <button id="darkModeToggle" class="btn btn-outline ms-2">🌓 Dark</button>
     </div>
   </footer>
-
+  <script>
+    const toggleButton = document.getElementById('darkModeToggle');
+    toggleButton.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+    });
+  </script>
 
     <script>
         document.getElementById("year").textContent = new Date().getFullYear();

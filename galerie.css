@@ -180,6 +180,18 @@ body:hover{
 * {
   cursor: url("https://cdn.custom-cursor.com/db/cursor/pointer_1426.png"),auto;
 }
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0,0,0,0); 
+  z-index: -1;
+}
+
+body.dark-mode::before {
+  background-color: rgba(0,0,0,0.6); 
+}
 /*/body*/
 
 
@@ -356,16 +368,14 @@ header {
   width: 170px;
   margin: 20px auto;  
 }
-#reviews{
-  margin-left:33%;
-  width: 500px;
-  align-items: center;
-  position: center;
-  padding: 15px;
+#reviews {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px; /* spațiu între review-uri */
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
 }
+
 #imaguser{
   border-radius: 50%;
   width: 50px;
@@ -384,7 +394,7 @@ header {
   font-weight: bold;
   font-size: 18px;
   margin-bottom: 5px;
-  white-space: nowrap;          /* <- Asta îl forțează pe un singur rând */
+  white-space: nowrap;            
   overflow: hidden;
   text-overflow: ellipsis; 
 }
@@ -403,6 +413,30 @@ h2{
 }
 
 /*/recenzi*/
+#reviews {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+.review-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1 1 calc(33.333% - 40px); /* 3 pe rând cu spațiu între ele */
+  max-width: calc(33.333% - 40px);
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .review-card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
 
 
 

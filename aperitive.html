@@ -58,7 +58,7 @@
 
 
     <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container navbar-mobile">
+        <div class="container-fluid navbar-mobile px-3">
             <!-- Logo -->
             <a class="navbar-brand mx-auto d-lg-block" href="index.html">
                 <img src="pictures\logo-removebg-preview.png" alt="Logo" style="height: 80px; border: none;">
@@ -75,10 +75,10 @@
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="pizza.html">pizza</a></li>
-                    <li class="nav-item"><a class="nav-link" href="paste.html">paste</a></li>
-                    <li class="nav-item"><a class="nav-link" href="salate.html">salata</a></li>
-                    <li class="nav-item"><a class="nav-link" href="bauturi.html">bauturi</a></li>
+                    <li class="nav-item mx-3"><a class="nav-link" href="pizza.html">pizza</a></li>
+                    <li class="nav-item mx-3"><a class="nav-link" href="paste.html">paste</a></li>
+                    <li class="nav-item mx-3"><a class="nav-link" href="salate.html">salata</a></li>
+                    <li class="nav-item mx-3"><a class="nav-link" href="bauturi.html">bauturi</a></li>
                     <li class="nav-item"><a class="nav-link" href="Despre.html">nimic</a></li>
                 </ul>
             </div>
@@ -293,11 +293,17 @@
         <a href="#"><i class="fab fa-whatsapp"></i></a>
       </div>
       <p>Support: Italy@d-amici.de</p>
+      <button id="darkModeToggle" class="btn btn-outline ms-2">🌓 Dark</button>
     </div>
   </footer>
 
 
- 
+  <script>
+    const toggleButton = document.getElementById('darkModeToggle');
+    toggleButton.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+    });
+  </script>
   
     <script>
         document.getElementById("year").textContent = new Date().getFullYear();

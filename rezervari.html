@@ -226,9 +226,16 @@
       <p class="telefon-rezervari">
         Suport: 
         <a href="tel:+40721234567" class="tel-link">+40 721 234 567</a>
+        <button id="darkModeToggle" class="btn btn-outline ms-2">🌓 Dark</button>
       </p>
     </div>
   </footer>
+  <script>
+    const toggleButton = document.getElementById('darkModeToggle');
+    toggleButton.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+    });
+  </script>
 
     <script> 
         flatpickr("#calendar-modern", {

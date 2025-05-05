@@ -69,15 +69,15 @@
     
 
     <div class="galerie">
-        <img src="imagini_site\masa1.jpg" alt="Interior restaurant" onclick="openLightbox(this)">
-        <img src="imagini_site\masa.jpg" alt="Fel de mâncare" onclick="openLightbox(this)">
-        <img src="imagini_site\vin.jpg" alt="Vin și pahare" onclick="openLightbox(this)">
-        <img src="imagini_site\pahare.jpg" alt="Desert delicios" onclick="openLightbox(this)">
-        <img src="imagini_site\salata.jpg" alt="Terasa restaurantului" onclick="openLightbox(this)">
-        <img src="imagini_site\pahare1.jpg" alt="Bucătăria restaurantului" onclick="openLightbox(this)">
-        <img src="imagini_site\pizza10.jpg" alt="Interior restaurant" onclick="openLightbox(this)">
-        <img src="imagini_site\paste.jpg" alt="Fel de mâncare" onclick="openLightbox(this)">
-        <img src="imagini_site\paste7.jpg" alt="Vin și pahare" onclick="openLightbox(this)">
+        <img src="imagini_site\masa1.jpg" alt="Interior restaurant" onclick="openLightbox(this)" loading="lazy">
+        <img src="imagini_site\masa.jpg" alt="Fel de mâncare" onclick="openLightbox(this)" loading="lazy">
+        <img src="imagini_site\vin.jpg" alt="Vin și pahare" onclick="openLightbox(this)" loading="lazy">
+        <img src="imagini_site\pahare.jpg" alt="Desert delicios" onclick="openLightbox(this)" loading="lazy">
+        <img src="imagini_site\salata.jpg" alt="Terasa restaurantului" onclick="openLightbox(this)" loading="lazy">
+        <img src="imagini_site\pahare1.jpg" alt="Bucătăria restaurantului" onclick="openLightbox(this)" loading="lazy">
+        <img src="imagini_site\pizza10.jpg" alt="Interior restaurant" onclick="openLightbox(this)" loading="lazy">
+        <img src="imagini_site\paste.jpg" alt="Fel de mâncare" onclick="openLightbox(this)" loading="lazy">
+        <img src="imagini_site\paste7.jpg" alt="Vin și pahare" onclick="openLightbox(this)" loading="lazy">
         
     </div>
     
@@ -91,7 +91,7 @@
   <br><br><br>
 
     
-    <button id="openReviewForm" class="floating-btn">Adauga impresia ta</button>
+      <button id="openReviewForm" class="floating-btn">Adauga impresia ta</button>  
 
 
     <div id="reviewModal" class="modal">
@@ -150,9 +150,15 @@
             <a href="#"><i class="fab fa-whatsapp"></i></a>
           </div>
           <p>Support: Italy@d-amici.de</p>
+          <button id="darkModeToggle" class="btn btn-outline ms-2">🌓 Dark</button>
         </div>
-      </footer>
-
+    </footer>
+      <script>
+        const toggleButton = document.getElementById('darkModeToggle');
+        toggleButton.addEventListener('click', () => {
+          document.body.classList.toggle('dark-mode');
+        });
+      </script>
 
 
 
