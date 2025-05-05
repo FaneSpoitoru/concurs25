@@ -19,11 +19,13 @@
 
 /*navbar*/
 .navbar-brand{
-  font-family: "Dancing Script", cursive;
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
 }
 
 .navbar-brand{
-  font-family: "Comfortaa", sans-serif;
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
 }
 
 .navbar {
@@ -31,8 +33,9 @@
 } 
 
 .nav-item {
-  font-family: 'Libre Baskerville', serif;
-    font-size: 10px;
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
+    font-size: 15px;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 1.2px;
@@ -147,6 +150,8 @@ body {
 }
 
 *{
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
   text-align: center;
 }
 /*/body*/
@@ -244,6 +249,8 @@ body {
 }
 
 #rezervare-form {
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
   border-radius: 30px;
   background-color: rgba(252, 252, 252, 0.5); 
   backdrop-filter: blur(20px);
@@ -325,31 +332,43 @@ body {
 }
 
 #phone {
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
   margin: 50px auto;
   width: 300px;
 }
 
 #persoane {
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
   margin: 50px auto;
   width: 300px;
 }
 
 #email {
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
   margin: 50px auto;
   width: 300px;
 }
 
 #time {
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
   margin: 50px auto;
   width: 300px;
 }
 
 #name {
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
   margin: 50px auto;
   width: 300px;
 }
 
 .form-grid {
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -409,9 +428,13 @@ body {
   display: flex;
   align-items: flex-start;
   gap: 2rem;
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
 } 
 
 .nume {
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
   color: white;
   font-size: 24px;
   margin: 0;
@@ -420,6 +443,8 @@ body {
 .footer-left {
   border-left: 2px solid white;
   padding-left: 2rem;
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
 }
 
 .footer-left-contact a {
@@ -427,15 +452,21 @@ body {
   color: #aaa;
   text-decoration: none;
   font-size: 14px;
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
 }
 
 .drepturi {
   margin-top: 1rem;
   font-size: 13px;
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
 }
 
 .footer-right {
   text-align: right;
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
 }
 
 .footer-right .social-icons a {
@@ -443,23 +474,31 @@ body {
   color: #901818;
   text-decoration: none;
   font-size: 16px;
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
 }
 
 .footer-right p {
   margin-top: 1rem;
   font-size: 13px;
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
 }
 
 
 
 @media (max-width: 768px) {
   .footer {
+    font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
 
   .footer-left-wrapper {
+    font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
     flex-direction: column;
     align-items: center;
     border: none;
@@ -468,26 +507,36 @@ body {
   .footer-left,
   .footer-right,
   .nume {
+    font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
     width: 100%;
   }
 
   .footer-right {
+    font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
     text-align: center; /* Centrăm totul în footer-right */
     margin-top: 1rem;
   }
 
   .footer-right .social-icons {
     display: flex;
+    font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
     justify-content: center; /* Centrăm emoji-urile */
     gap: 15px; /* Distanță între emoji-uri */
   }
  
   .footer-left-contact a {
+    font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
     display: inline-block;
     margin: 5px 10px;
   }
 
   .drepturi {
+    font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
     text-align: center;
     width: 100%;
   }
@@ -532,6 +581,8 @@ z-index: 1051;
 
 
 .form-group {
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
   display: flex;
   align-items: center;
   margin-bottom: 15px;
@@ -544,6 +595,8 @@ z-index: 1051;
 
 
 .form-group label {
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
   width: 300px; /* eticheta în stânga */
   margin-right: 10px;
   margin-left: 50px;
@@ -553,6 +606,8 @@ z-index: 1051;
 .form-group input,
 .form-group select,
 .form-group textarea {
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
   flex: 1;
   padding: 8px;
   border: 1px solid #ccc;
@@ -562,12 +617,16 @@ z-index: 1051;
 /* 🟣 Pe telefon: eticheta deasupra inputului */
 @media (max-width: 768px) {
   .form-group {
+    font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
     flex-direction: column;
     align-items: stretch;
     margin: 20px;
   }
 
   .form-group label {
+    font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
     text-align: left;
     width: 200px; /* ca să nu stea fixate la 150px */
     margin-right: 0;
@@ -578,12 +637,16 @@ z-index: 1051;
 
 @media (min-width: 1024px){
   .form-group {
+    font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
     flex-direction: column;
     align-items: stretch;
     margin: 20px;
   }
 
   .form-group label {
+    font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
     text-align: left;
     width: 200px; 
     font-size: 30px;

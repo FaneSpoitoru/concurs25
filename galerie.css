@@ -38,11 +38,13 @@
 
 /*navbar*/
 .navbar-brand{
-  font-family: "Dancing Script", cursive;
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
 }
 
 .navbar-brand{
-  font-family: "Comfortaa", sans-serif;
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
 }
 
 .navbar {
@@ -50,8 +52,9 @@
 } 
 
 .nav-item {
-  font-family: 'Libre Baskerville', serif;
-    font-size: 10px;
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
+    font-size: 15px;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 1.2px;
@@ -151,7 +154,8 @@
 
 /*body*/
 body {
-  font-family: Arial, sans-serif; 
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
   margin: 0;      
   padding: 0;     
   text-align: center;  
@@ -161,6 +165,8 @@ body {
 }
 
 * {
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
   text-align: center;
 }
 
@@ -242,6 +248,8 @@ body:hover{
 }
 
 header {
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
   background-color: #333;
   color: rgb(255, 255, 255);
   padding: 15px 0;

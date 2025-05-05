@@ -181,8 +181,9 @@ body.dark-mode::before {
 
 /*bodytxt*/
 .semnatura {
-  font-family: "Delius", cursive;
-  font-size: 23px;
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
+  font-size: 20px;
 }
 
 .body-text{
@@ -328,7 +329,8 @@ body.dark-mode::before {
   }
   
   .semnatura {
-    font-family: "Delius", cursive;
+    font-family: "Playwrite AU SA", cursive;
+    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     font-size: 18px;
@@ -377,8 +379,9 @@ body.dark-mode::before {
     word-spacing: 5px;
   }
   .semnatura {
-    font-family: "Delius", cursive;
-    font-size: 23px;
+    font-family: "Playwrite AU SA", cursive;
+    font-optical-sizing: auto;
+    font-size: 20px;
   }
   
   .body-text,h1 {

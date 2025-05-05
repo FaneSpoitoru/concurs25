@@ -258,7 +258,10 @@ body {
         min-height: 120px;
       }
     }
- 
+ * {
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
+ }
 
 /*/body*/
 
