@@ -105,3 +105,24 @@ document.addEventListener("DOMContentLoaded", function () {
     yearEl.textContent = new Date().getFullYear();
   }
 });
+
+
+// Selectăm toate butoanele cu clasa "openBtn" și pop-up-ul
+//       const openBtns = document.querySelectorAll('.openBtn');
+const popup = document.getElementById('popup');
+const closeBtn = document.getElementById('closeBtn');
+const popupContent = document.getElementById('popupContent');
+
+// Când se apasă un buton, deschide pop-up-ul cu conținutul corespunzător
+openBtns.forEach(button => {
+    button.onclick = function () {
+        // Setează conținutul pop-up-ului din atributul 'data-popup-content'
+        popupContent.innerHTML = button.getAttribute('data-popup-content'); // Folosește innerHTML pentru a permite HTML
+        popup.style.display = 'block';
+    }
+});
+
+// Când apesi butonul de închidere, închide pop-up-ul
+closeBtn.onclick = function () {
+    popup.style.display = 'none';
+}
