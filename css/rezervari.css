@@ -1,0 +1,669 @@
+/*welcomeimage*/
+.welcome-image {
+  width: 100%;         
+  max-width:100%;      
+  display: block;      
+  margin: 0px auto;    
+}
+/*/welcomeimage*/
+
+
+
+
+
+
+
+
+
+
+
+/*navbar*/
+.navbar-brand{
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
+}
+
+.navbar-brand{
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
+}
+
+.navbar {
+  background-color: #f0ece2;            /*efebe1;*/
+} 
+
+.nav-item {
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-mobile {
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar-brand img {
+    margin: auto;
+  }
+  .nav-toggler-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 10px;
+  }
+  .nav-text {
+    display: inline;
+  }
+}
+
+@media (min-width: 992px) {
+  .nav-text {
+    display: none;
+  }
+}
+
+.navbar-toggler {
+  box-shadow: none !important;
+}
+  
+.navbar-collapse {
+    transition: all 0.3s ease;
+}
+  
+.navbar-toggler {
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.hamburger {
+    width: 30px;
+    height: 3px;
+    background-color: #000;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    display: block;
+}
+    
+.hamburger::before,
+    .hamburger::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: #000;
+    transition: all 0.3s ease-in-out;
+    left: -0.05px;
+}
+    
+    
+.hamburger::before {
+    top: -10px;
+}
+    
+.hamburger::after {
+    top: 10px;
+}
+    
+.custom-toggler.active .hamburger {
+    background-color: transparent;
+}
+    
+.custom-toggler.active .hamburger::before {
+    transform: rotate(45deg);
+    top: 0;
+}
+    
+.custom-toggler.active .hamburger::after {
+    transform: rotate(-45deg);
+    top: 0;
+}
+/*/navbar*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*body*/
+body {   
+  font-family: "Playwrite AU SA", cursive;
+    font-optical-sizing: auto;
+  font-optical-sizing: auto; /* Fontul principal pentru conținut */
+  margin: 0;      /* Fără margini implicite */
+  padding: 0;     /* Fără padding */
+  text-align: center;  /* Centrează textul în pagină */
+  background: url('../pictures/floor-tile.png') no-repeat center center/cover;
+  background-size: 200px; /* Ajustează dimensiunea dorită */
+  background-repeat: repeat;
+}
+
+*{
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
+  text-align: center;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0,0,0,0); 
+  z-index: -1;
+}
+
+body.dark-mode::before {
+  background-color: rgba(0,0,0,0.6); 
+}
+
+/*/body*/
+
+
+
+
+
+
+
+
+
+
+/*rezervari-intro*/
+/*rezervare-form*/
+@media (max-width: 768px) {
+  #rezervare-form {
+      width: 70%; 
+  }
+}
+
+#name{
+  border-radius: 30px;
+  background-color: #fcfcfc7e;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  margin: 10%;
+  padding-top: 0%;
+  width: 150px;
+  text-align: center;
+  height: 50px;
+}
+#date{
+  border-radius: 30px;
+  background-color: #fcfcfc7e;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  margin: 10%;
+  padding-top: 0%;
+  width: 150px;
+  text-align: center;
+  height: 50px;
+}
+#time{
+  border-radius: 30px;
+  background-color: #fcfcfc7e;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  margin: 10%;
+  padding-top: 0%;
+  width: 150px;
+  text-align: center;
+  height: 50px;
+}
+#phone{
+  border-radius: 30px;
+  background-color: #fcfcfc7e;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  margin: 10%;
+  padding-top: 0%;
+  width: 150px;
+  text-align: center;
+  height: 50px;
+}
+
+#email{
+  border-radius: 30px;
+  background-color: #fcfcfc7e;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  margin: 10%;
+  padding-top: 0%;
+  width: 150px;
+  text-align: center;
+  height: 50px;
+}
+
+#persoane{
+  border-radius: 30px;
+  background-color: #fcfcfc7e;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  margin: 10%;
+  padding-top: 0%;
+  width: 150px;
+  text-align: center;
+  height: 50px;
+}
+
+#rezervare-form {
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
+  border-radius: 30px;
+  background-color: rgba(252, 252, 252, 0.5); 
+  backdrop-filter: blur(20px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+  width: 500px;
+  padding: 20px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  max-width: 600px;
+  margin: 100px auto;
+}
+
+
+#disponibilitate{
+  text-align: center;  
+}
+
+#rezbtn{
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+#rezbtn:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+
+.telefon-rezervari {
+  font-size: 18px;
+  font-weight: 500;
+  color: #444;
+  margin-top: 1rem;
+}
+.tel-link {
+  color: #453c3c;
+  text-decoration: none;
+  font-weight: bold;
+}
+.tel-link:hover {
+  text-decoration: underline;
+  color: #c42e2e;
+}
+
+/* Stil personalizat pentru input */
+.calendar {
+  font-size: 16px;
+  padding: 12px 18px;
+  border: 2px solid #1c1d38b5;
+  border-radius: 12px;
+  background-color: #f4f6fb;
+  color: #1c1d38;
+  width: 100%;
+  max-width: 300px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+}
+
+.calendar:focus {
+  outline: none;
+  border-color: #e1306c;
+  box-shadow: 0 0 0 3px rgba(225, 48, 108, 0.2);
+}
+
+#phone {
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
+  margin: 50px auto;
+  width: 300px;
+}
+
+#persoane {
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
+  margin: 50px auto;
+  width: 300px;
+}
+
+#email {
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
+  margin: 50px auto;
+  width: 300px;
+}
+
+#time {
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
+  margin: 50px auto;
+  width: 300px;
+}
+
+#name {
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
+  margin: 50px auto;
+  width: 300px;
+}
+
+.form-grid {
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.form-grid input {
+  flex: 1 1 calc(50% - 20px); /* Două coloane */
+  max-width: 500px;
+}
+
+@media (max-width: 1024px) {
+  .form-grid input {
+    flex: 1 1 100%; /* O singură coloană */
+    max-width: 100%;
+  }
+}
+
+/*/rezervare-form*/
+/*/rezervari-intro*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*footer*/
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: #222;
+  color: #ccc;
+  font-family: Arial, sans-serif;
+  flex-wrap: wrap;
+}
+
+.footer-left-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
+} 
+
+.nume {
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
+  color: white;
+  font-size: 24px;
+  margin: 0;
+}
+
+.footer-left {
+  border-left: 2px solid white;
+  padding-left: 2rem;
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
+}
+
+.footer-left-contact a {
+  margin-right: 15px;
+  color: #aaa;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
+}
+
+.drepturi {
+  margin-top: 1rem;
+  font-size: 13px;
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
+}
+
+.footer-right {
+  text-align: right;
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
+}
+
+.footer-right .social-icons a {
+  margin: 0 10px;
+  color: #901818;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
+}
+
+.footer-right p {
+  margin-top: 1rem;
+  font-size: 13px;
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
+}
+
+
+
+@media (max-width: 768px) {
+  .footer {
+    font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-left-wrapper {
+    font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+  }
+
+  .footer-left,
+  .footer-right,
+  .nume {
+    font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
+    width: 100%;
+  }
+
+  .footer-right {
+    font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
+    text-align: center; /* Centrăm totul în footer-right */
+    margin-top: 1rem;
+  }
+
+  .footer-right .social-icons {
+    display: flex;
+    font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
+    justify-content: center; /* Centrăm emoji-urile */
+    gap: 15px; /* Distanță între emoji-uri */
+  }
+ 
+  .footer-left-contact a {
+    font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
+    display: inline-block;
+    margin: 5px 10px;
+  }
+
+  .drepturi {
+    font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
+    text-align: center;
+    width: 100%;
+  }
+
+  /* Ascundem linia albă pe telefon */
+  .footer-left-contact {
+    border-left: none;
+  }
+}
+
+footer {    
+  color: rgb(0, 0, 0);      
+  text-align: center;         /* Text centrat */
+  padding: 20px;              /* Spațiere internă */
+  font-family: "Playwrite AU SA", cursive;
+    font-optical-sizing: auto;
+}
+/*/footer*/
+
+h2{
+  margin: 0%;
+}
+
+.custom-toggler {
+border: none;
+background: transparent;
+padding: 0.5rem;
+z-index: 1051;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.form-group {
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  margin-right: 200px;
+  margin-top: 30px;
+  gap: 250px;
+  margin-left: 30px;
+  height: 100px;
+}
+
+
+.form-group label {
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
+  width: 300px; /* eticheta în stânga */
+  margin-right: 10px;
+  margin-left: 50px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* 🟣 Pe telefon: eticheta deasupra inputului */
+@media (max-width: 768px) {
+  .form-group {
+    font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
+    flex-direction: column;
+    align-items: stretch;
+    margin: 20px;
+  }
+
+  .form-group label {
+    font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
+    text-align: left;
+    width: 200px; /* ca să nu stea fixate la 150px */
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+}
+
+
+@media (min-width: 1024px){
+  .form-group {
+    font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
+    flex-direction: column;
+    align-items: stretch;
+    margin: 20px;
+  }
+
+  .form-group label {
+    font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
+    text-align: left;
+    width: 200px; 
+    font-size: 30px;
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+}

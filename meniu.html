@@ -10,50 +10,16 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="meniu_real.css">
+    <link rel="stylesheet" href="css/meniu_real.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&display=swap" rel="stylesheet">
 </head>
 
-<!--<button onclick="scrollToTop()" id="topBtn" title="Mergi sus"><i class="fa-solid fa-up-long"></i> </button>-->
 
-
-<script> 
-    // Afișează butonul când dai scroll
-    window.onscroll = function () {
-      const btn = document.getElementById("topBtn");
-      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-        btn.style.display = "block";
-      } else {
-        btn.style.display = "none";
-      }
-    };
-  
-    // Scroll sus când se apasă
-    function scrollToTop() {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-  </script>
-
-  <!-- Google Translate -->
-<script type="text/javascript">
-    function googleTranslateElementInit() {
-        new google.translate.TranslateElement({
-            pageLanguage: 'ro',
-            includedLanguages: 'ro,en,de,it,fr,es',
-            layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-        }, 'google_translate_element');
-    }
-</script>
-<script type="text/javascript"
-    src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 
 <body>
-
-
-
     <section id="welcome" class="text-center">
         <img src="pictures\pizzajpg.jpg" alt="Delicious Italian Cuisine" class="img-fluid">
     </section>
@@ -92,18 +58,19 @@
 
     <br><br><br>
     <section class="hero">
-        <p class="body-text" id="body-text">Bucură-te de preparate autentice italiene</p> <br><br>
+        <p class="body-text" id="body-text">Bucură-te de preparate autentice italiene</p> 
+        <br><br>
     </section>
 
     <div class="grid">
-       <div id="pizda" class="categorie"><a class="categorie" href="pizza.html" >🍕 Pizza</a></div> 
-        <div id="pasta" class="categorie"><a class="categorie" href="paste.html">🍝 Paste</a></div>
-        <div id="salad" class="categorie"><a class="categorie" href="salate.html">🥗 Salate</a></div>
-        <div id="drinks" class="categorie"><a class="categorie" href="bauturi.html">🥤 Băuturi</a></div>
-        <div id="aperitive" class="categorie"><a class="categorie" href="aperitive.html">🥪 Aperitive</a></div>
+       <div id="pizza" class="categorie"><a class="categorie" href="meniu/pizza.html" >🍕 Pizza</a></div> 
+        <div id="pasta" class="categorie"><a class="categorie" href="meniu/paste.html">🍝 Paste</a></div>
+        <div id="salad" class="categorie"><a class="categorie" href="meniu/salate.html">🥗 Salate</a></div>
+        <div id="drinks" class="categorie"><a class="categorie" href="meniu/bauturi.html">🥤 Băuturi</a></div>
+        <div id="aperitive" class="categorie"><a class="categorie" href="meniu/aperitive.html">🥪 Aperitive</a></div>
       </div>
 
-      <div id="google_translate_element" style="position: absolute; bottom: 20px; left: 20px; z-index: 1000;"></div>
+      <div id="google_translate_element" style="position: absolute; bottom: 20px; right: 20px; z-index: 1000;"></div>
 
           
           
@@ -114,28 +81,7 @@
         <button id="closeBtn">Închide</button>
     </div>
 
-    <script>
-        // Selectăm toate butoanele cu clasa "openBtn" și pop-up-ul
-        const openBtns = document.querySelectorAll('.openBtn');
-        const popup = document.getElementById('popup');
-        const closeBtn = document.getElementById('closeBtn');
-        const popupContent = document.getElementById('popupContent');
-
-        // Când se apasă un buton, deschide pop-up-ul cu conținutul corespunzător
-        openBtns.forEach(button => {
-            button.onclick = function () {
-                // Setează conținutul pop-up-ului din atributul 'data-popup-content'
-                popupContent.textContent = button.getAttribute('data-popup-content');
-                popup.style.display = 'block';
-            }
-        });
-
-        // Când apesi butonul de închidere, închide pop-up-ul
-        closeBtn.onclick = function () {
-            popup.style.display = 'none';
-        }
-
-    </script>
+    
     <button id="menuButton"
         style="position: fixed; bottom: 20px; right: 20px; width: 50px; height: 50px; border-radius: 50%; background-color: #ffffff; color: white; font-size: 30px; border: none; display: flex; justify-content: center; align-items: center; cursor: pointer; z-index: 1001;">
         💬
@@ -154,32 +100,7 @@
         style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.7); z-index: 999;">
     </div>
 
-    <script>
-        // Obține butonul și meniul popup
-        const menuButton = document.getElementById('menuButton');
-        const menuPopup = document.getElementById('menuPopup');
-        const overlay = document.getElementById('overlay');
-        const closeChatButton = document.getElementById('closeChatButton');
-
-        // Când butonul este apăsat, afișează popup-ul și overlay-ul
-        menuButton.addEventListener('click', function () {
-            menuPopup.style.display = 'block'; // Afișează meniul popup
-            overlay.style.display = 'block'; // Afișează overlay-ul întunecat
-        });
-
-        // Când se face clic pe butonul de închidere, ascunde popup-ul și overlay-ul
-        closeChatButton.addEventListener('click', function () {
-            menuPopup.style.display = 'none'; // Ascunde meniul popup
-            overlay.style.display = 'none'; // Ascunde overlay-ul
-        });
-
-        // Când se face clic pe overlay, ascunde popup-ul și overlay-ul
-        overlay.addEventListener('click', function () {
-            menuPopup.style.display = 'none'; // Ascunde meniul popup
-            overlay.style.display = 'none'; // Ascunde overlay-ul
-        });
-    </script>
-
+   
 <footer class="footer">
     <div class="footer-left-wrapper">
       <h2 class="nume">D`Amici</h2>
@@ -204,17 +125,11 @@
       <button id="darkModeToggle" class="btn btn-outline ms-2">🌓 Dark</button>
     </div>
   </footer>
-  <script>
-    const toggleButton = document.getElementById('darkModeToggle');
-    toggleButton.addEventListener('click', () => {
-      document.body.classList.toggle('dark-mode');
-    });
-  </script>
+  
 
-    <script>
-        document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
-    <script src="meniu.js"></script>
+    
+    <script type="text/javascript"src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="js/meniu.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
