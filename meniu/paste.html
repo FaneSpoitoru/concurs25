@@ -31,7 +31,6 @@
 
   <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container-fluid navbar-mobile px-3">
-      <!-- Logo -->
       <a class="navbar-brand mx-auto d-lg-block" href="../index.html">
         <img src="../pictures\logo-removebg-preview.png" alt="Logo" style="height: 80px; border: none;">
       </a>
@@ -68,6 +67,9 @@
   <section class="menu-section">
     <i class="fa-solid fa-magnifying-glass" id="searchicn"></i>
     <input type="text" id="searchInput" placeholder="Caută în meniu..." class="form-control mb-4">
+
+
+
     <script>
       document.getElementById("searchInput").addEventListener("keyup", function () {
         const query = this.value.toLowerCase();
@@ -88,8 +90,6 @@
               li.style.display = "none";
             }
           });
-
-          // Ascunde lista și titlul dacă nu există rezultate în acea secțiune
           section.style.display = anyVisible ? "block" : "none";
           const heading = section.previousElementSibling;
           if (heading && heading.tagName.startsWith("H")) {
@@ -98,10 +98,7 @@
         });
       });
     </script>
-
-
     <script>
-
       fetch('paste.json')
         .then(response => response.json())
         .then(data => {
@@ -196,13 +193,13 @@
     </div>
 
     <script>
-      // Selectăm toate butoanele cu clasa "openBtn" și pop-up-ul
+     
       const openBtns = document.querySelectorAll('.openBtn');
       const popup = document.getElementById('popup');
       const closeBtn = document.getElementById('closeBtn');
       const popupContent = document.getElementById('popupContent');
 
-      // Când se apasă un buton, deschide pop-up-ul cu conținutul corespunzător
+     
       openBtns.forEach(button => {
         button.onclick = function () {
           // Setează conținutul pop-up-ului din atributul 'data-popup-content'

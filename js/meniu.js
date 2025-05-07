@@ -126,3 +126,6 @@ openBtns.forEach(button => {
 closeBtn.onclick = function () {
     popup.style.display = 'none';
 }
+
+
+
