@@ -12,11 +12,12 @@
 }
 
 .welcome-image {
-  width: 100%;            
-  max-width: 100%;      
-  display: block;         
-  margin: 0px auto;       
+  width: 100%;
+  max-width: 100%;
+  display: block;
+  margin: 0px auto;
 }
+
 /*/welcomeimage*/
 
 
@@ -24,34 +25,39 @@
 body {
   font-family: "Playwrite AU SA", cursive;
   font-optical-sizing: auto;
-  margin: 0;      
-  padding: 0;     
-  text-align: center;  
+  margin: 0;
+  padding: 0;
+  text-align: center;
   background: url('../pictures/floor-tile.png') no-repeat center center/cover;
   background-size: 200px;
   background-repeat: repeat;
-  cursor: url("https://cdn.custom-cursor.com/db/cursor/pointer_1426.png"),auto;
-  
+  cursor: url("https://cdn.custom-cursor.com/db/cursor/pointer_1426.png"), auto;
+
 }
-body:hover{
-  cursor: url("https://cdn.custom-cursor.com/db/cursor/pointer_1426.png"),auto;
+
+body:hover {
+  cursor: url("https://cdn.custom-cursor.com/db/cursor/pointer_1426.png"), auto;
 }
- 
+
 ::selection {
-  background: rgba(255, 255, 0, 0.5); 
-  color: black; 
-  cursor:  url("https://cdn.custom-cursor.com/db/cursor/pointer_1426.png"),auto, auto; 
+  background: rgba(255, 255, 0, 0.5);
+  color: black;
+  cursor: url("https://cdn.custom-cursor.com/db/cursor/pointer_1426.png"), auto, auto;
 }
+
 body::before {
   content: "";
   position: fixed;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background-color: rgba(0,0,0,0); 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0);
   z-index: -1;
 }
 
 body.dark-mode::before {
-  background-color: rgba(0,0,0,0.6); 
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 /*/body*/
@@ -60,22 +66,23 @@ body.dark-mode::before {
 
 
 /*navbar*/
-.navbar-brand{
+.navbar-brand {
   font-family: "Playwrite AU SA", cursive;
   font-optical-sizing: auto;
 }
 
 .navbar {
-  background-color: #f0ece2;            /*efebe1;*/
-} 
+  background-color: #f0ece2;
+  /*efebe1;*/
+}
 
 .nav-item {
   font-family: "Playwrite AU SA", cursive;
   font-optical-sizing: auto;
-    font-size: 15px;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 1.2px;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
 }
 
 
@@ -84,15 +91,18 @@ body.dark-mode::before {
     flex-direction: column;
     align-items: center;
   }
+
   .navbar-brand img {
     margin: auto;
   }
+
   .nav-toggler-wrapper {
     display: flex;
     align-items: center;
     gap: 0.5rem;
     margin-top: 10px;
   }
+
   .nav-text {
     display: inline;
   }
@@ -105,57 +115,57 @@ body.dark-mode::before {
 }
 
 .hamburger {
-width: 30px;
-height: 3px;
-background-color: #000;
-position: relative;
-transition: all 0.3s ease-in-out;
-display: block;
+  width: 30px;
+  height: 3px;
+  background-color: #000;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  display: block;
 }
 
 .hamburger::before,
 .hamburger::after {
-content: '';
-position: absolute;
-width: 30px;
-height: 3px;
-background-color: #000;
-transition: all 0.3s ease-in-out;
-left: -0.05px;
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background-color: #000;
+  transition: all 0.3s ease-in-out;
+  left: -0.05px;
 }
 
 
 .hamburger::before {
-top: -10px;
+  top: -10px;
 }
 
 .hamburger::after {
-top: 10px;
+  top: 10px;
 }
 
 .custom-toggler.active .hamburger {
-background-color: transparent;
+  background-color: transparent;
 }
 
 .custom-toggler.active .hamburger::before {
-transform: rotate(45deg);
-top: 0;
+  transform: rotate(45deg);
+  top: 0;
 }
 
 .custom-toggler.active .hamburger::after {
-transform: rotate(-45deg);
-top: 0;
+  transform: rotate(-45deg);
+  top: 0;
 }
 
 .custom-toggler {
-border: none;
-background: transparent;
-padding: 0.5rem;
-z-index: 1051;
+  border: none;
+  background: transparent;
+  padding: 0.5rem;
+  z-index: 1051;
 }
 
 .navbar-toggler {
-box-shadow: none !important;
+  box-shadow: none !important;
 }
 
 .navbar-collapse {
@@ -179,15 +189,15 @@ box-shadow: none !important;
   align-items: center;
 }
 
-.navbar navbar-expand-lg navbar-light bg-light{
+.navbar navbar-expand-lg navbar-light bg-light {
   text-align: center;
   align-items: center;
 
 }
 
 
-.navbar-toggler{
-   text-align: center;
+.navbar-toggler {
+  text-align: center;
   align-items: center;
 }
 
@@ -199,15 +209,17 @@ box-shadow: none !important;
   width: 75%;
   height: 600px;
   border-radius: 10px;
-  margin: 50px auto; 
+  margin: 50px auto;
   overflow: hidden;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
+
 .map-container iframe {
-  width: 100%; 
+  width: 100%;
   height: 100%;
   border: none;
 }
+
 /*/harta*/
 
 
@@ -230,12 +242,14 @@ box-shadow: none !important;
   font-optical-sizing: auto;
   margin-bottom: 10px;
 }
+
 #status {
   font-family: "Playwrite AU SA", cursive;
   font-optical-sizing: auto;
   font-weight: bold;
   color: green;
 }
+
 table {
   font-family: "Playwrite AU SA", cursive;
   font-optical-sizing: auto;
@@ -243,43 +257,46 @@ table {
   margin-top: 10px;
   border-collapse: collapse;
 }
+
 td {
   padding: 10px;
   border-bottom: 1px solid #cccccc;
 }
 
 .table {
-  width: 80%; 
-  margin: 20px auto; 
-  border-collapse: collapse; 
-  background: #fff; 
-  font-size: 18px; 
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background: #fff;
+  font-size: 18px;
   font-family: "Playwrite AU SA", cursive;
   font-optical-sizing: auto;
 
-  
+
 }
 
-.table th, .table td {
-  padding: 12px; 
+.table th,
+.table td {
+  padding: 12px;
   border: 1px solid #ddd;
-  text-align: center; 
+  text-align: center;
 }
 
 .table thead {
   background: #333;
-  color: white; 
+  color: white;
 }
 
 .table tbody tr:nth-child(even) {
-  background: #f9f9f9; 
+  background: #f9f9f9;
 }
 
 .table tbody tr:hover {
   background: #ddd;
 }
 
-.table td.text-danger {font-family: "Playwrite AU SA", cursive;
+.table td.text-danger {
+  font-family: "Playwrite AU SA", cursive;
   font-optical-sizing: auto;
   font-weight: bold;
 }
@@ -368,7 +385,7 @@ td {
 
   .footer-left-wrapper {
     font-family: "Playwrite AU SA", cursive;
-  font-optical-sizing: auto;
+    font-optical-sizing: auto;
     flex-direction: column;
     align-items: center;
     border: none;
@@ -381,18 +398,18 @@ td {
   }
 
   .footer-right {
-    text-align: center; 
+    text-align: center;
     margin-top: 1rem;
   }
 
   .footer-right .social-icons {
     font-family: "Playwrite AU SA", cursive;
-  font-optical-sizing: auto;
+    font-optical-sizing: auto;
     display: flex;
-    justify-content: center; 
-    gap: 15px; 
+    justify-content: center;
+    gap: 15px;
   }
- 
+
   .footer-left-contact a {
     display: inline-block;
     margin: 5px 10px;
@@ -400,18 +417,19 @@ td {
 
   .drepturi {
     font-family: "Playwrite AU SA", cursive;
-  font-optical-sizing: auto;
+    font-optical-sizing: auto;
     text-align: center;
     width: 100%;
   }
 
-  
+
   .footer-left-contact {
     border-left: none;
     font-family: "Playwrite AU SA", cursive;
-  font-optical-sizing: auto;
+    font-optical-sizing: auto;
   }
 }
+
 /*footer*/
 
 
@@ -427,33 +445,33 @@ td {
 
 /*media*/
 @media (max-width: 768px) {
-  
+
   .map-container {
-    width: 85%;          
-    height: 400px;        
-    margin: 100px ;    
+    width: 85%;
+    height: 400px;
+    margin: 100px;
     border-radius: 11px;
     overflow: hidden;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     margin-left: 40px;
     margin-right: 40px;
   }
+
   .map-container iframe {
-    width: 100%; 
-    height: 100%; 
-    border: none; 
-    
-  }
-  
-  .orar {
-    width: 95%; 
+    width: 100%;
+    height: 100%;
+    border: none;
+
   }
 
-  .welcome-image{
+  .orar {
+    width: 95%;
+  }
+
+  .welcome-image {
     max-width: 100%;
     height: 500px;
   }
 }
+
 /*/media*/
-
-

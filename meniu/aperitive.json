@@ -1,0 +1,22 @@
+{
+    "aperitiv_1": {
+        "nume": "Bruschetta clasica",
+        "html": "Bruschetta Clasică<br><p>Ingrediente: pâine crocantă, roșii cherry (80g), oregano proaspăt (2g), ulei de măsline extravirgin (10ml), oțet balsamic (5ml), usturoi (1g), sare, piper</p>Gramaj total: 360g<br><p>Informații nutriționale / 100g:<br>Valoare energetică: 567.8kJ / 135.38kcal<br>Glucide: 15.16g, din care zaharuri: 0.86g;<br>Proteine: 4.31g<br>Grăsimi: 5.93g, din care acizi grași saturați: 0.43g;<br>Fibre: 0.31g;<br>Sare: 0.16g</p>"
+    },
+    "aperitiv_2": {
+        "nume": "Caprese",
+        "html": "Caprese<br><p>Ingrediente: roșii cherry (80g), mozzarella (50g), busuioc proaspăt (2g), ulei de măsline extravirgin (10ml), oțet balsamic (5ml), sare, piper</p>Gramaj total: 360g<br><p>Informații nutriționale / 100g:<br>Valoare energetică: 567.8kJ / 135.38kcal<br>Glucide: 15.16g, din care zaharuri: 0.86g;<br>Proteine: 4.31g<br>Grăsimi: 5.93g, din care acizi grași saturați: 0.43g;<br>Fibre: 0.31g;<br>Sare: 0.16g</p>"
+    },
+    "aperitiv_3": {
+        "nume": "Bruschetta cu rosii si busuioc",
+        "html": "Bruschetta cu roșii și busuioc<br><p>Ingrediente: pâine crocantă, roșii cherry (80g), busuioc proaspăt (2g), ulei de măsline extravirgin (10ml), oțet balsamic (5ml), usturoi (1g), sare, piper</p>Gramaj total: 360g<br><p>Informații nutriționale / 100g:<br>Valoare energetică: 567.8kJ / 135.38kcal<br>Glucide: 15.16g, din care zaharuri: 0.86g;<br>Proteine: 4.31g<br>Grăsimi: 5.93g, din care acizi grași saturați: 0.43g;<br>Fibre: 0.31g;<br>Sare: 0.16g</p>"
+    },
+    "aperitiv_4": {
+        "nume": "carpaccio",
+        "html": "Carpaccio<br><p>Ingrediente: carne de vită (80g), ulei de măsline extravirgin (10ml), oțet balsamic (5ml), rucola (20g), parmezan (10g), sare, piper</p>Gramaj total: 360g<br><p>Informații nutriționale / 100g:<br>Valoare energetică: 567.8kJ / 135.38kcal<br>Glucide: 15.16g, din care zaharuri: 0.86g;<br>Proteine: 4.31g<br>Grăsimi: 5.93g, din care acizi grași saturați: 0.43g;<br>Fibre: 0.31g;<br>Sare: 0.16g</p>"
+    },
+    "aperitiv_5": {
+        "nume": "antipasto",
+        "html": "Antipasto<br><p>Ingrediente: brânză (50g), salam (50g), măsline (30g), ardei gras (20g), ulei de măsline extravirgin (10ml), oțet balsamic (5ml), sare, piper</p>Gramaj total: 360g<br><p>Informații nutriționale / 100g:<br>Valoare energetică: 567.8kJ / 135.38kcal<br>Glucide: 15.16g, din care zaharuri: 0.86g;<br>Proteine: 4.31g<br>Grăsimi: 5.93g, din care acizi grași saturați: 0.43g;<br>Fibre: 0.31g;<br>Sare: 0.16g</p>"
+    }
+}

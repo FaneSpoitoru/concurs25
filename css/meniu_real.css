@@ -12,36 +12,41 @@
 }
 
 .welcome-image {
-  width: 100%;            
-  max-width: 100%;      
-  display: block;         
-  margin: 0px auto;       
+  width: 100%;
+  max-width: 100%;
+  display: block;
+  margin: 0px auto;
 }
+
 /*/welcomeimage*/
 
 /*meniu*/
 
-#h1{
+#h1 {
   text-align: center;
 }
 
-#pizza{
+#pizza {
   background-image: url("../imagini_site/pizza.jpg");
   background-size: cover;
 }
-#pasta{
+
+#pasta {
   background-image: url("../imagini_site/pasta.avif");
   background-size: cover;
 }
-#salad{
+
+#salad {
   background-image: url("../imagini_site/salata.jpg");
   background-size: cover;
 }
-#drinks{
+
+#drinks {
   background-image: url("../imagini_site/bauturi.jpg");
   background-size: cover;
 }
-#aperitive{
+
+#aperitive {
   background-image: url('../imagini_site/aperitive.jpg');
   background-size: cover;
 }
@@ -49,23 +54,24 @@
 /*meniu*/
 
 /*navbar*/
-.navbar-brand{
+.navbar-brand {
   font-family: "Comfortaa", sans-serif;
 }
 
 .navbar {
   font-family: "Playwrite AU SA", cursive;
   font-optical-sizing: auto;
-  background-color: #f0ece2;            /*efebe1;*/
+  background-color: #f0ece2;
+  /*efebe1;*/
 }
 
 .nav-item {
   font-family: "Playwrite AU SA", cursive;
   font-optical-sizing: auto;
-    font-size: 15px;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 1.2px;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
 }
 
 
@@ -74,15 +80,18 @@
     flex-direction: column;
     align-items: center;
   }
+
   .navbar-brand img {
     margin: auto;
   }
+
   .nav-toggler-wrapper {
     display: flex;
     align-items: center;
     gap: 0.5rem;
     margin-top: 10px;
   }
+
   .nav-text {
     display: inline;
   }
@@ -95,62 +104,63 @@
 }
 
 .hamburger {
-width: 30px;
-height: 3px;
-background-color: #000;
-position: relative;
-transition: all 0.3s ease-in-out;
-display: block;
+  width: 30px;
+  height: 3px;
+  background-color: #000;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  display: block;
 }
 
 .hamburger::before,
 .hamburger::after {
-content: '';
-position: absolute;
-width: 30px;
-height: 3px;
-background-color: #000;
-transition: all 0.3s ease-in-out;
-left: -0.05px;
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background-color: #000;
+  transition: all 0.3s ease-in-out;
+  left: -0.05px;
 }
 
 
 .hamburger::before {
-top: -10px;
+  top: -10px;
 }
 
 .hamburger::after {
-top: 10px;
+  top: 10px;
 }
 
 .custom-toggler.active .hamburger {
-background-color: transparent;
+  background-color: transparent;
 }
 
 .custom-toggler.active .hamburger::before {
-transform: rotate(45deg);
-top: 0;
+  transform: rotate(45deg);
+  top: 0;
 }
 
 .custom-toggler.active .hamburger::after {
-transform: rotate(-45deg);
-top: 0;
+  transform: rotate(-45deg);
+  top: 0;
 }
 
 .custom-toggler {
-border: none;
-background: transparent;
-padding: 0.5rem;
-z-index: 1051;
+  border: none;
+  background: transparent;
+  padding: 0.5rem;
+  z-index: 1051;
 }
 
 .navbar-toggler {
-box-shadow: none !important;
+  box-shadow: none !important;
 }
 
 .navbar-collapse {
   transition: all 0.3s ease;
 }
+
 /*/navbar*/
 
 
@@ -158,32 +168,32 @@ box-shadow: none !important;
 /*body*/
 body {
   font-family: Arial, sans-serif;
-  margin: 0;      
-  padding: 0;     
-  text-align: center;  
+  margin: 0;
+  padding: 0;
+  text-align: center;
   background-color: #ffffff;
   background: url('../pictures/floor-tile.png') no-repeat center center/cover;
-  background-size: 200px; 
+  background-size: 200px;
   background-repeat: repeat;
   font-family: "Playwrite AU SA", cursive;
   font-optical-sizing: auto;
 }
 
-.menu-item-types{
+.menu-item-types {
   font-family: "Playwrite AU SA", cursive;
   font-optical-sizing: auto;
   font-weight: 30px;
   font-style: normal;
 }
 
-.menu-item{
+.menu-item {
   font-family: "Playwrite AU SA", cursive;
   font-optical-sizing: auto;
   font-weight: 30px;
   font-style: normal;
 }
 
-.menu-section{
+.menu-section {
   font-family: "Playwrite AU SA", cursive;
   font-optical-sizing: auto;
   font-weight: 700px;
@@ -191,89 +201,94 @@ body {
   text-align: center;
 }
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
-      padding: 40px;
-    }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 40px;
+}
 
-    .categorie {
-      border-radius: 20px;
-      padding: 40px;
-      font-size: 24px;
-      color: white;
-      text-decoration: none;
-      box-shadow: 0 4px 8px rgba(0,0,0,0);
-      transition: transform 0.2s;
-      background-size: cover;
-      background-position: center;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 300px;
-      position: relative;
-    }
+.categorie {
+  border-radius: 20px;
+  padding: 40px;
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
+  transition: transform 0.2s;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+  position: relative;
+}
 
-    .categorie::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background-color: rgba(0, 0, 0, 0.1); /* overlay semi-transparent */
-      border-radius: 20px;
-      z-index: 0;
-    }
+.categorie::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  /* overlay semi-transparent */
+  border-radius: 20px;
+  z-index: 0;
+}
 
-    .categorie span {
-      position: relative;
-      z-index: 1;
-    }
+.categorie span {
+  position: relative;
+  z-index: 1;
+}
 
-    .categorie:hover {
-      transform: scale(1.05);
-    }
+.categorie:hover {
+  transform: scale(1.05);
+}
 
-    /* Fundaluri diferite pentru fiecare */
-    .pizza {
-      background-image: url('../WhatsApp\ Image\ 2025-04-07\ at\ 16.13.04_1ea344c4.jpg');
-    }
+/* Fundaluri diferite pentru fiecare */
+.pizza {
+  background-image: url('../WhatsApp\ Image\ 2025-04-07\ at\ 16.13.04_1ea344c4.jpg');
+}
 
-    .paste {
-      background-image: url('../paste.jpg');
-    }
+.paste {
+  background-image: url('../paste.jpg');
+}
 
-    .desert {
-      background-image: url('../desert.jpg');
-    }
+.desert {
+  background-image: url('../desert.jpg');
+}
 
-    .bauturi {
-      background-image: url('../bauturi.jpg');
-    }
+.bauturi {
+  background-image: url('../bauturi.jpg');
+}
 
-    /* Responsive */
-    @media (max-width: 600px) {
-      .categorie {
-        padding: 20px;
-        font-size: 18px;
-        min-height: 120px;
-      }
-    }
- * {
+/* Responsive */
+@media (max-width: 600px) {
+  .categorie {
+    padding: 20px;
+    font-size: 18px;
+    min-height: 120px;
+  }
+}
+
+* {
   font-family: "Playwrite AU SA", cursive;
   font-optical-sizing: auto;
- }
+}
 
 
- body::before {
+body::before {
   content: "";
   position: fixed;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background-color: rgba(0,0,0,0); 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0);
   z-index: -1;
 }
 
 body.dark-mode::before {
-  background-color: rgba(0,0,0,0.6); 
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 /*/body*/
@@ -358,16 +373,19 @@ body.dark-mode::before {
   }
 
   .footer-right {
-    text-align: center; /* Centrăm totul în footer-right */
+    text-align: center;
+    /* Centrăm totul în footer-right */
     margin-top: 1rem;
   }
 
   .footer-right .social-icons {
     display: flex;
-    justify-content: center; /* Centrăm emoji-urile */
-    gap: 15px; /* Distanță între emoji-uri */
+    justify-content: center;
+    /* Centrăm emoji-urile */
+    gap: 15px;
+    /* Distanță între emoji-uri */
   }
- 
+
   .footer-left-contact a {
     display: inline-block;
     margin: 5px 10px;
@@ -396,15 +414,20 @@ body.dark-mode::before {
 
 /*media*/
 @media (max-width: 768px) {
-  #low2 i, #low i {
-      font-size: 13px;
+
+  #low2 i,
+  #low i {
+    font-size: 13px;
   }
-  #low a, #low2 a {
-      font-size: 12px;
+
+  #low a,
+  #low2 a {
+    font-size: 12px;
   }
- 
-  
+
+
 }
+
 /*/media*/
 
 
@@ -427,34 +450,39 @@ body.dark-mode::before {
   background-color: rgba(0, 0, 0, 0.5);
   overflow: hidden;
   z-index: 1000;
-  
+
 }
+
 #popup::before {
   content: '';
   position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   /*background-image: url('pictures/logo_popup.jpg');
   background-size: cover;
   background-position: center;*/
-  /*filter: brightness(50%) blur(1px);*/ /* Dark + blur efect */
+  /*filter: brightness(50%) blur(1px);*/
+  /* Dark + blur efect */
   z-index: 0;
   font-family: "Playwrite AU SA", cursive;
   font-size: 1.5rem;
   color: white;
 }
+
 #popup * {
   position: relative;
   z-index: 1;
 }
 
-.menu-section{
+.menu-section {
   font-family: 'Dancing Script', cursive;
   font-size: 1.5rem;
   color: white;
   font-optical-sizing: auto;
   text-align: center;
-  
+
 }
 
 #popup p {
@@ -466,9 +494,9 @@ body.dark-mode::before {
   padding: 1rem;
 }
 
-.openBtn{
+.openBtn {
   background-color: none;
-  border:none;
+  border: none;
   display: inline-block;
   font-family: 'Dancing Script', cursive;
   font-size: 1.5rem;
@@ -479,29 +507,38 @@ body.dark-mode::before {
   text-align: center;
   padding-left: 0%;
   align-items: center;
+
   .container {
     position: relative;
-    max-width: 800px; /* Maximum width */
-    margin: 0 auto; /* Center it */
+    max-width: 800px;
+    /* Maximum width */
+    margin: 0 auto;
+    /* Center it */
     font-family: 'Dancing Script', cursive;
     font-size: 1.5rem;
     color: white;
-  font-optical-sizing: auto;
-    img{
+    font-optical-sizing: auto;
+
+    img {
       border-radius: 30px;
       filter: blur(0px);
     }
   }
-  
+
   .container .content {
-    position: absolute; /* Position the background text */
-    top: 0; /* At the bottom. Use top:0 to append it to the top */
-    
-    color: #181718; /* Grey text */
-    width: 100%; /* Full width */
-    padding: 10px; /* Some padding */
-    
-    p{
+    position: absolute;
+    /* Position the background text */
+    top: 0;
+    /* At the bottom. Use top:0 to append it to the top */
+
+    color: #181718;
+    /* Grey text */
+    width: 100%;
+    /* Full width */
+    padding: 10px;
+    /* Some padding */
+
+    p {
       margin-top: 0%;
       text-align: justify;
       text-align: center;
@@ -513,9 +550,11 @@ body.dark-mode::before {
       font-family: "Playwrite AU SA", cursive;
       font-size: 1.5rem;
       color: white;
-      
+
     }
-    font-family: "Playwrite AU SA", cursive;
+
+    font-family: "Playwrite AU SA",
+    cursive;
     font-size: 1.5rem;
     color: white;
   }
@@ -524,6 +563,7 @@ body.dark-mode::before {
 .openBtn:hover {
   transform: scale(1.05);
 }
+
 ul {
   list-style-type: none;
   text-align: center;
@@ -532,7 +572,7 @@ ul {
   color: white;
 }
 
-#closeBtn{
+#closeBtn {
   border-radius: 30px;
   align-items: center;
   font-family: inherit;
@@ -542,12 +582,9 @@ ul {
   padding: 0.5em 1.0em 0.3em 0.7em;
   color: white;
   background: #ad5389;
-  background: linear-gradient(
-  0deg,
-  rgba(77, 54, 208, 1) 0%,
-  rgba(132, 116, 254, 1) 100%
-  
-);
+  background: linear-gradient(0deg,
+      rgba(77, 54, 208, 1) 0%,
+      rgba(132, 116, 254, 1) 100%);
   margin-left: 0%;
   font-family: 'Dancing Script', cursive;
   font-size: 1.5rem;
@@ -556,7 +593,8 @@ ul {
 
 
 #topBtn {
-  display: none; /* Ascuns inițial */
+  display: none;
+  /* Ascuns inițial */
   position: fixed;
   bottom: 20px;
   left: 20px;
@@ -569,7 +607,7 @@ ul {
   cursor: pointer;
   padding: 10px 15px;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.4);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
   font-family: 'Dancing Script', cursive;
   font-size: 1.5rem;
   color: white;
@@ -600,15 +638,14 @@ ul {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
-#searchicn{
+#searchicn {
   position: absolute;
   margin-top: 10px;
   margin-left: 80px;
 }
-#body-text{
+
+#body-text {
   font-family: "Playwrite AU SA", cursive;
   font-optical-sizing: auto;
-  
+
 }
-
-

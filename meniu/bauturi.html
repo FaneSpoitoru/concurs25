@@ -22,20 +22,20 @@
 <script>
     // Afișează butonul când dai scroll
     window.onscroll = function () {
-      const btn = document.getElementById("topBtn");
-      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-        btn.style.display = "block";
-      } else {
-        btn.style.display = "none";
-      }
+        const btn = document.getElementById("topBtn");
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+            btn.style.display = "block";
+        } else {
+            btn.style.display = "none";
+        }
     };
-  
+
     // Scroll sus când se apasă
     function scrollToTop() {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     }
-  </script>
-  
+</script>
+
 <!-- Google Translate -->
 <script type="text/javascript">
     function googleTranslateElementInit() {
@@ -45,8 +45,8 @@
             layout: google.translate.TranslateElement.InlineLayout.SIMPLE
         }, 'google_translate_element');
     }
-  </script>
-  <script type="text/javascript"
+</script>
+<script type="text/javascript"
     src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 <body>
@@ -96,179 +96,175 @@
 
     <section class="menu-section">
         <i class="fa-solid fa-magnifying-glass" id="searchicn"></i>
-        <input type="text" id="searchInput" placeholder="Caută în meniu..." class="form-control mb-4" >
+        <input type="text" id="searchInput" placeholder="Caută în meniu..." class="form-control mb-4">
         <script>
             document.getElementById("searchInput").addEventListener("keyup", function () {
-              const query = this.value.toLowerCase();
-              const sections = document.querySelectorAll(".menu-item-types");
-          
-              sections.forEach(section => {
-                let anyVisible = false;
-                const listItems = section.querySelectorAll("li");
-          
-                listItems.forEach(li => {
-                  const button = li.querySelector(".openBtn");
-                  const text = button.textContent.toLowerCase();
-          
-                  if (text.includes(query)) {
-                    li.style.display = "block";
-                    anyVisible = true;
-                  } else {
-                    li.style.display = "none";
-                  }
+                const query = this.value.toLowerCase();
+                const sections = document.querySelectorAll(".menu-item-types");
+
+                sections.forEach(section => {
+                    let anyVisible = false;
+                    const listItems = section.querySelectorAll("li");
+
+                    listItems.forEach(li => {
+                        const button = li.querySelector(".openBtn");
+                        const text = button.textContent.toLowerCase();
+
+                        if (text.includes(query)) {
+                            li.style.display = "block";
+                            anyVisible = true;
+                        } else {
+                            li.style.display = "none";
+                        }
+                    });
+
+                    // Ascunde lista și titlul dacă nu există rezultate în acea secțiune
+                    section.style.display = anyVisible ? "block" : "none";
+                    const heading = section.previousElementSibling;
+                    if (heading && heading.tagName.startsWith("H")) {
+                        heading.style.display = anyVisible ? "block" : "none";
+                    }
                 });
-          
-                // Ascunde lista și titlul dacă nu există rezultate în acea secțiune
-                section.style.display = anyVisible ? "block" : "none";
-                const heading = section.previousElementSibling;
-                if (heading && heading.tagName.startsWith("H")) {
-                  heading.style.display = anyVisible ? "block" : "none";
-                }
-              });
             });
-          </script>
+        </script>
 
-    <div class="grid">
-        <h1>🧃 Băuturi răcoritoare</h1><br>
-        <br>
-        <button class="categorie openBtn menu-item-types menu-item" 
-    data-popup-content="San Pellegrino 0,25 l – 3,70 € / 0,75 l – 7,60 € "
-    style="background-image: url('../imagini_site/pizza.jpg'); background-size: cover; background-position: center;  margin-top: 30px;">
-<div class="content">
-    <p>san Pellegrino</p>
-</div>
-</button>
-<button class="categorie openBtn menu-item-types menu-item" 
-data-popup-content="Aqua Panna 0,25 l – 3,70 € / 0,75 l – 7,60 € "
-style="background-image: url('../imagini_site/pizza1.jpg'); background-size: cover; background-position: center;  margin-top: 30px;">
-<div class="content">
-<p>aqua panna</p>
-</div>
-</button>
-<button class="categorie openBtn menu-item-types menu-item" 
-    data-popup-content="Coca-Cola / Zero / Fanta / Sprite 0,33 l – 4,20 €"
-    style="background-image: url('../imagini_site/pizza2.jpg'); background-size: cover; background-position: center;  margin-top: 30px;">
-<div class="content">
-    <p>Coca-Cola / Zero / Fanta / Sprite</p>
-</div>
-</button>
-<button class="categorie openBtn menu-item-types menu-item" 
-    data-popup-content="Granini 0,33 l: Apfel Schorle, maracuja, rubarbă, cireșe – 4,40 €"
-    style="background-image: url('../imagini_site/pizza3.jpg'); background-size: cover; background-position: center; margin-top: 30px;">
-<div class="content">
-    <p>Granini</p>
-</div>
-</button>
-<h1>☕ Băuturi calde D’amici</h1>
-<br>
-<button class="categorie openBtn menu-item-types menu-item" 
-    data-popup-content="Cafea Crema  – 3,30 € "
-    style="background-image: url('../imagini_site/pizza4.jpg'); background-size: cover; background-position: center; margin-top: 30px;">
-<div class="content">
-    <p>Cafea Crema</p>
-</div>
-</button>
-<button class="categorie openBtn menu-item-types menu-item" 
-    data-popup-content="Cappuccino  – 3,50 € "
-    style="background-image: url('../imagini_site/pizza6.jpg'); background-size: cover; background-position: center; margin-top: 50px;">
-<div class="content">
-    <p>Cappuccino</p>
-</div>
-</button>
-<button class="categorie openBtn menu-item-types menu-item" 
-    data-popup-content="Espresso – 2,50 € / dublu – 4,20 €"
-    style="background-image: url('../imagini_site/pizza6.jpg'); background-size: cover; background-position: center; margin-top: 50px;">
-<div class="content">
-    <p>Espresso</p>
-</div>
-</button>
-<button class="categorie openBtn menu-item-types menu-item" 
-    data-popup-content="Latte Macchiato – 3,80 €"
-    style="background-image: url('../imagini_site/pizza7.jpg'); background-size: cover; background-position: center;  margin-top: 50px;">
-<div class="content">
-    <p>Latte Macchiato</p>
-</div>
-</button>
-<button class="categorie openBtn menu-item-types menu-item" 
-data-popup-content="Baby Cino: spumă de lapte 0,1l – 1,10 €"
-style="background-image: url('../imagini_site/pizza8.jpg'); background-size: cover; background-position: center;  margin-top: 50px;">
-<div class="content">
-<p>Baby Cino</p>
-</div>
-</button>
-<button class="categorie openBtn menu-item-types menu-item" 
-    data-popup-content="Cafea cu lapte – 3,80 € "
-    style="background-image: url('../imagini_site/pizza9.jpg'); background-size: cover; background-position: center;  margin-top: 50px;">
-<div class="content">
-    <p>Cafea cu lapte</p>
-</div>
-</button>
-<h1>🍷 Vinuri</h1>
-<br>
-<button class="categorie openBtn menu-item-types menu-item" 
-    data-popup-content="Prosecco 0,1 l – 5,50 € / 0,75 l – 28,00 € "
-    style="background-image: url('../imagini_site/pizza10.jpg'); background-size: cover; background-position: center; margin-top: 50px;">
-<div class="content">
-    <p>Prosecco</p>
-</div>
-</button>
-<button class="categorie openBtn menu-item-types menu-item" 
-    data-popup-content="Lugana 0,2 l – 8,90 € / 0,75 l – 31,00 €"
-    style="background-image: url('../imagini_site/pizza11.jpg'); background-size: cover; background-position: center; margin-top: 50px;">
-<div class="content">
-    <p>Lugana</p>
-</div>
-</button>
-<button class="categorie openBtn menu-item-types menu-item" 
-    data-popup-content="Primitivo di Manduria 0,2 l – 8,90 € / 0,75 l – 31,00 €"
-    style="background-image: url('../imagini_site/pizza11.jpg'); background-size: cover; background-position: center; margin-top: 50px;">
-<div class="content">
-    <p>Primitivo di Manduria</p>
-</div>
-</button>
-<button class="categorie openBtn menu-item-types menu-item" 
-    data-popup-content="Pinot Grigio 0,2 l – 7,00 € / 0,75 l – 22,00 € "
-    style="background-image: url('../imagini_site/pizza11.jpg'); background-size: cover; background-position: center; margin-top: 50px;">
-<div class="content">
-    <p>Pinot Grigio</p>
-</div>
-</button>
-<button class="categorie openBtn menu-item-types menu-item" 
-    data-popup-content="Vinul casei alb/roșu 0,2 l – 6,50 € "
-    style="background-image: url('../imagini_site/pizza11.jpg'); background-size: cover; background-position: center; margin-top: 50px;">
-<div class="content">
-    <p>Vinul casei alb/roșu</p>
-</div>
-</button>
-<button class="categorie openBtn menu-item-types menu-item" 
-    data-popup-content="Rosato Aldegheri 0,75 l – 22,00 € "
-    style="background-image: url('../imagini_site/pizza11.jpg'); background-size: cover; background-position: center; margin-top: 50px;">
-<div class="content">
-    <p>Rosato Aldegheri</p>
-</div>
-</button>
+        <div class="grid">
+            <h1>🧃 Băuturi răcoritoare</h1><br>
+            <br>
+            <button class="categorie openBtn menu-item-types menu-item"
+                data-popup-content="San Pellegrino 0,25 l – 3,70 € / 0,75 l – 7,60 € "
+                style="background-image: url('../imagini_site/pizza.jpg'); background-size: cover; background-position: center;  margin-top: 30px;">
+                <div class="content">
+                    <p>san Pellegrino</p>
+                </div>
+            </button>
+            <button class="categorie openBtn menu-item-types menu-item"
+                data-popup-content="Aqua Panna 0,25 l – 3,70 € / 0,75 l – 7,60 € "
+                style="background-image: url('../imagini_site/pizza1.jpg'); background-size: cover; background-position: center;  margin-top: 30px;">
+                <div class="content">
+                    <p>aqua panna</p>
+                </div>
+            </button>
+            <button class="categorie openBtn menu-item-types menu-item"
+                data-popup-content="Coca-Cola / Zero / Fanta / Sprite 0,33 l – 4,20 €"
+                style="background-image: url('../imagini_site/pizza2.jpg'); background-size: cover; background-position: center;  margin-top: 30px;">
+                <div class="content">
+                    <p>Coca-Cola / Zero / Fanta / Sprite</p>
+                </div>
+            </button>
+            <button class="categorie openBtn menu-item-types menu-item"
+                data-popup-content="Granini 0,33 l: Apfel Schorle, maracuja, rubarbă, cireșe – 4,40 €"
+                style="background-image: url('../imagini_site/pizza3.jpg'); background-size: cover; background-position: center; margin-top: 30px;">
+                <div class="content">
+                    <p>Granini</p>
+                </div>
+            </button>
+            <h1>☕ Băuturi calde D’amici</h1>
+            <br>
+            <button class="categorie openBtn menu-item-types menu-item" data-popup-content="Cafea Crema  – 3,30 € "
+                style="background-image: url('../imagini_site/pizza4.jpg'); background-size: cover; background-position: center; margin-top: 30px;">
+                <div class="content">
+                    <p>Cafea Crema</p>
+                </div>
+            </button>
+            <button class="categorie openBtn menu-item-types menu-item" data-popup-content="Cappuccino  – 3,50 € "
+                style="background-image: url('../imagini_site/pizza6.jpg'); background-size: cover; background-position: center; margin-top: 50px;">
+                <div class="content">
+                    <p>Cappuccino</p>
+                </div>
+            </button>
+            <button class="categorie openBtn menu-item-types menu-item"
+                data-popup-content="Espresso – 2,50 € / dublu – 4,20 €"
+                style="background-image: url('../imagini_site/pizza6.jpg'); background-size: cover; background-position: center; margin-top: 50px;">
+                <div class="content">
+                    <p>Espresso</p>
+                </div>
+            </button>
+            <button class="categorie openBtn menu-item-types menu-item" data-popup-content="Latte Macchiato – 3,80 €"
+                style="background-image: url('../imagini_site/pizza7.jpg'); background-size: cover; background-position: center;  margin-top: 50px;">
+                <div class="content">
+                    <p>Latte Macchiato</p>
+                </div>
+            </button>
+            <button class="categorie openBtn menu-item-types menu-item"
+                data-popup-content="Baby Cino: spumă de lapte 0,1l – 1,10 €"
+                style="background-image: url('../imagini_site/pizza8.jpg'); background-size: cover; background-position: center;  margin-top: 50px;">
+                <div class="content">
+                    <p>Baby Cino</p>
+                </div>
+            </button>
+            <button class="categorie openBtn menu-item-types menu-item" data-popup-content="Cafea cu lapte – 3,80 € "
+                style="background-image: url('../imagini_site/pizza9.jpg'); background-size: cover; background-position: center;  margin-top: 50px;">
+                <div class="content">
+                    <p>Cafea cu lapte</p>
+                </div>
+            </button>
+            <h1>🍷 Vinuri</h1>
+            <br>
+            <button class="categorie openBtn menu-item-types menu-item"
+                data-popup-content="Prosecco 0,1 l – 5,50 € / 0,75 l – 28,00 € "
+                style="background-image: url('../imagini_site/pizza10.jpg'); background-size: cover; background-position: center; margin-top: 50px;">
+                <div class="content">
+                    <p>Prosecco</p>
+                </div>
+            </button>
+            <button class="categorie openBtn menu-item-types menu-item"
+                data-popup-content="Lugana 0,2 l – 8,90 € / 0,75 l – 31,00 €"
+                style="background-image: url('../imagini_site/pizza11.jpg'); background-size: cover; background-position: center; margin-top: 50px;">
+                <div class="content">
+                    <p>Lugana</p>
+                </div>
+            </button>
+            <button class="categorie openBtn menu-item-types menu-item"
+                data-popup-content="Primitivo di Manduria 0,2 l – 8,90 € / 0,75 l – 31,00 €"
+                style="background-image: url('../imagini_site/pizza11.jpg'); background-size: cover; background-position: center; margin-top: 50px;">
+                <div class="content">
+                    <p>Primitivo di Manduria</p>
+                </div>
+            </button>
+            <button class="categorie openBtn menu-item-types menu-item"
+                data-popup-content="Pinot Grigio 0,2 l – 7,00 € / 0,75 l – 22,00 € "
+                style="background-image: url('../imagini_site/pizza11.jpg'); background-size: cover; background-position: center; margin-top: 50px;">
+                <div class="content">
+                    <p>Pinot Grigio</p>
+                </div>
+            </button>
+            <button class="categorie openBtn menu-item-types menu-item"
+                data-popup-content="Vinul casei alb/roșu 0,2 l – 6,50 € "
+                style="background-image: url('../imagini_site/pizza11.jpg'); background-size: cover; background-position: center; margin-top: 50px;">
+                <div class="content">
+                    <p>Vinul casei alb/roșu</p>
+                </div>
+            </button>
+            <button class="categorie openBtn menu-item-types menu-item"
+                data-popup-content="Rosato Aldegheri 0,75 l – 22,00 € "
+                style="background-image: url('../imagini_site/pizza11.jpg'); background-size: cover; background-position: center; margin-top: 50px;">
+                <div class="content">
+                    <p>Rosato Aldegheri</p>
+                </div>
+            </button>
 
-<h1>🍹 Cocktailuri & Digestive</h1>
-<br>
+            <h1>🍹 Cocktailuri & Digestive</h1>
+            <br>
 
-<button class="categorie openBtn menu-item-types menu-item" 
-    data-popup-content="Aperol Spritz / Limoncello Spritz – 7,50 €"
-    style="background-image: url('../imagini_site/pizza11.jpg'); background-size: cover; background-position: center; margin-top: 50px;">
-<div class="content">
-    <p>Aperol Spritz / Limoncello Spritz</p>
-</div>
-</button>
-<button class="categorie openBtn menu-item-types menu-item" 
-    data-popup-content="Grappa / Limoncello / Averna / Ramazzotti 0,4 cl – 4,50 €"
-    style="background-image: url('../imagini_site/pizza11.jpg'); background-size: cover; background-position: center; margin-top: 50px;">
-<div class="content">
-    <p>Grappa / Limoncello / Averna / Ramazzotti</p>
-</div>
-</button>
-  </div>
+            <button class="categorie openBtn menu-item-types menu-item"
+                data-popup-content="Aperol Spritz / Limoncello Spritz – 7,50 €"
+                style="background-image: url('../imagini_site/pizza11.jpg'); background-size: cover; background-position: center; margin-top: 50px;">
+                <div class="content">
+                    <p>Aperol Spritz / Limoncello Spritz</p>
+                </div>
+            </button>
+            <button class="categorie openBtn menu-item-types menu-item"
+                data-popup-content="Grappa / Limoncello / Averna / Ramazzotti 0,4 cl – 4,50 €"
+                style="background-image: url('../imagini_site/pizza11.jpg'); background-size: cover; background-position: center; margin-top: 50px;">
+                <div class="content">
+                    <p>Grappa / Limoncello / Averna / Ramazzotti</p>
+                </div>
+            </button>
+        </div>
 
-    
-          
+
+
     </section>
 
 
@@ -283,7 +279,7 @@ style="background-image: url('../imagini_site/pizza8.jpg'); background-size: cov
         const popup = document.getElementById('popup');
         const closeBtn = document.getElementById('closeBtn');
         const popupContent = document.getElementById('popupContent');
-    
+
         // Când se apasă un buton, deschide pop-up-ul cu conținutul corespunzător
         openBtns.forEach(button => {
             button.onclick = function () {
@@ -292,13 +288,13 @@ style="background-image: url('../imagini_site/pizza8.jpg'); background-size: cov
                 popup.style.display = 'block';
             }
         });
-    
+
         // Când apesi butonul de închidere, închide pop-up-ul
         closeBtn.onclick = function () {
             popup.style.display = 'none';
         }
     </script>
-    
+
 
 
     <button id="menuButton"
@@ -345,36 +341,36 @@ style="background-image: url('../imagini_site/pizza8.jpg'); background-size: cov
         });
     </script>
 
-<footer class="footer">
-    <div class="footer-left-wrapper">
-      <h2 class="nume">D`Amici</h2>
-      <div class="footer-left">
-        <nav class="footer-left-contact">
-          <a href="../meniu/pizza.html">pizza</a>
-          <a href="../meniu/paste.html">paste</a>
-          <a href="../meniu/salate.html">salate</a>
-          <a href="../meniu/aperitive.html">aperitive</a>
-        </nav>
-        <p class="drepturi">© <span id="year"></span> D`Amici. Toate drepturile rezervate.</p>
-      </div>
-    </div>
-    <div class="footer-right">
-      <div class="social-icons">
-        <a href="#"><i class="fab fa-pinterest"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-youtube"></i></a>
-        <a href="#"><i class="fab fa-whatsapp"></i></a>
-      </div>
-      <p>Support: Italy@d-amici.de</p>
-      <button id="darkModeToggle" class="btn btn-outline ms-2">🌓 Dark</button>
-    </div>
-  </footer>
-  <script>
-    const toggleButton = document.getElementById('darkModeToggle');
-    toggleButton.addEventListener('click', () => {
-      document.body.classList.toggle('dark-mode');
-    });
-  </script>
+    <footer class="footer">
+        <div class="footer-left-wrapper">
+            <h2 class="nume">D`Amici</h2>
+            <div class="footer-left">
+                <nav class="footer-left-contact">
+                    <a href="../meniu/pizza.html">pizza</a>
+                    <a href="../meniu/paste.html">paste</a>
+                    <a href="../meniu/salate.html">salate</a>
+                    <a href="../meniu/aperitive.html">aperitive</a>
+                </nav>
+                <p class="drepturi">© <span id="year"></span> D`Amici. Toate drepturile rezervate.</p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <p>Support: Italy@d-amici.de</p>
+            <button id="darkModeToggle" class="btn btn-outline ms-2">🌓 Dark</button>
+        </div>
+    </footer>
+    <script>
+        const toggleButton = document.getElementById('darkModeToggle');
+        toggleButton.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
     <script>
         document.getElementById("year").textContent = new Date().getFullYear();
     </script>

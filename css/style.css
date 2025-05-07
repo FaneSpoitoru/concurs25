@@ -13,10 +13,10 @@
 }
 
 .welcome-image {
-  width: 100%;            
-  max-width: 100%;      
-  display: block;         
-  margin: 0px auto;       
+  width: 100%;
+  max-width: 100%;
+  display: block;
+  margin: 0px auto;
 }
 
 /*/welcomeimage*/
@@ -24,7 +24,7 @@
 
 
 /*navbar*/
-.navbar-brand{
+.navbar-brand {
   font-family: "Playwrite AU SA", cursive;
   font-optical-sizing: auto;
 }
@@ -32,16 +32,16 @@
 
 .navbar {
   background-color: #efebe1;
-} 
+}
 
 .nav-item {
   font-family: "Playwrite AU SA", cursive;
   font-optical-sizing: auto;
-    font-size: 15px;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 1.2px;
-    text-align: center !important;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  text-align: center !important;
 }
 
 @media (max-width: 991.98px) {
@@ -49,15 +49,18 @@
     flex-direction: column;
     align-items: center;
   }
+
   .navbar-brand img {
     margin: auto;
   }
+
   .nav-toggler-wrapper {
     display: flex;
     align-items: center;
     gap: 0.5rem;
     margin-top: 10px;
   }
+
   .nav-text {
     display: inline;
   }
@@ -72,60 +75,61 @@
 .navbar-toggler {
   box-shadow: none !important;
 }
-  
+
 .navbar-collapse {
-    transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
-  
+
 .navbar-toggler {
-    background: transparent !important;
-    border: none !important;
-    padding: 0 !important;
-    margin: 0 !important;
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 .hamburger {
-    width: 30px;
-    height: 3px;
-    background-color: #000;
-    position: relative;
-    transition: all 0.3s ease-in-out;
-    display: block;
+  width: 30px;
+  height: 3px;
+  background-color: #000;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  display: block;
 }
-    
+
 .hamburger::before,
-    .hamburger::after {
-    content: '';
-    position: absolute;
-    width: 30px;
-    height: 3px;
-    background-color: #000;
-    transition: all 0.3s ease-in-out;
-    left: -0.05px;
-}
-    
-    
-.hamburger::before {
-    top: -10px;
-}
-    
 .hamburger::after {
-    top: 10px;
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background-color: #000;
+  transition: all 0.3s ease-in-out;
+  left: -0.05px;
 }
-    
+
+
+.hamburger::before {
+  top: -10px;
+}
+
+.hamburger::after {
+  top: 10px;
+}
+
 .custom-toggler.active .hamburger {
-    background-color: transparent;
+  background-color: transparent;
 }
-    
+
 .custom-toggler.active .hamburger::before {
-    transform: rotate(45deg);
-    top: 0;
+  transform: rotate(45deg);
+  top: 0;
 }
-    
+
 .custom-toggler.active .hamburger::after {
-    transform: rotate(-45deg);
-    top: 0;
+  transform: rotate(-45deg);
+  top: 0;
 }
+
 /*/navbar*/
 
 
@@ -134,13 +138,14 @@
 body {
   font-family: "Playwrite AU SA", cursive;
   font-optical-sizing: auto;
-  margin: 0;      
-  padding: 0;       
+  margin: 0;
+  padding: 0;
   background: url('../pictures/floor-tile.png')center center/cover;
-  background-size: 100px; 
+  background-size: 100px;
   background-repeat: repeat;
 }
-*{
+
+* {
   scroll-behavior: smooth;
 }
 
@@ -154,25 +159,40 @@ body {
 }
 
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+  from {
+    width: 0
+  }
+
+  to {
+    width: 100%
+  }
 }
 
 @keyframes blink {
-  0%, 100% { border-color: transparent }
-  50% { border-color: orange }
+
+  0%,
+  100% {
+    border-color: transparent
+  }
+
+  50% {
+    border-color: orange
+  }
 }
 
 body::before {
   content: "";
   position: fixed;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background-color: rgba(0,0,0,0); 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0);
   z-index: -1;
 }
 
 body.dark-mode::before {
-  background-color: rgba(0,0,0,0.6); 
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 /*/body*/
@@ -186,11 +206,11 @@ body.dark-mode::before {
   font-size: 20px;
 }
 
-.body-text{
+.body-text {
   font-family: "Playwrite AU SA", cursive;
   font-optical-sizing: auto;
   font-size: 20px;
-  word-spacing: 5px;  
+  word-spacing: 5px;
   text-align: left !important;
   padding: 0;
 }
@@ -282,16 +302,16 @@ body.dark-mode::before {
   }
 
   .footer-right {
-    text-align: center; 
+    text-align: center;
     margin-top: 1rem;
   }
 
   .footer-right .social-icons {
     display: flex;
-    justify-content: center; 
-    gap: 15px; 
+    justify-content: center;
+    gap: 15px;
   }
- 
+
   .footer-left-contact a {
     display: inline-block;
     margin: 5px 10px;
@@ -302,7 +322,7 @@ body.dark-mode::before {
     width: 100%;
   }
 
-  
+
   .footer-left-contact {
     border-left: none;
   }
@@ -319,7 +339,8 @@ body.dark-mode::before {
     padding-left: 10px !important;
     padding-right: 10px !important;
   }
-  .body-text{
+
+  .body-text {
     font-family: "Playwrite AU SA", cursive;
     font-optical-sizing: auto;
     font-size: 20px;
@@ -327,7 +348,7 @@ body.dark-mode::before {
     margin-right: 10px;
     text-align: left !important;
   }
-  
+
   .semnatura {
     font-family: "Playwrite AU SA", cursive;
     font-optical-sizing: auto;
@@ -336,8 +357,9 @@ body.dark-mode::before {
     font-size: 18px;
     margin-left: 7rem;
   }
-  
-  .body-text,h1 {
+
+  .body-text,
+  h1 {
     font-size: 20px;
     font-family: "Playwrite AU SA", cursive;
     font-optical-sizing: auto;
@@ -346,7 +368,7 @@ body.dark-mode::before {
     margin-left: 2rem !important;
   }
 
-  
+
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -357,7 +379,8 @@ body.dark-mode::before {
 
   }
 
-  .body-text,h1 {
+  .body-text,
+  h1 {
     font-family: "Playwrite AU SA", cursive;
     font-optical-sizing: auto;
     font-size: 23px;
@@ -367,9 +390,9 @@ body.dark-mode::before {
 }
 
 
-@media (min-width: 1024px) { 
+@media (min-width: 1024px) {
   #welcome img {
-      max-height: 900px; 
+    max-height: 900px;
   }
 
   .body-text {
@@ -378,33 +401,38 @@ body.dark-mode::before {
     font-size: 40px;
     word-spacing: 5px;
   }
+
   .semnatura {
     font-family: "Playwrite AU SA", cursive;
     font-optical-sizing: auto;
     font-size: 20px;
   }
-  
-  .body-text,h1 {
+
+  .body-text,
+  h1 {
     font-family: "Playwrite AU SA", cursive;
-  font-optical-sizing: auto;
+    font-optical-sizing: auto;
     font-size: 30px;
   }
-  
+
   .restaurant-description {
     font-size: 20px;
     line-height: 1.5;
     padding-left: 20px;
   }
+
   .restaurant-description {
     font-size: 20px;
     line-height: 1.5;
     padding-left: 300px !important;
     padding-right: 300px !important;
   }
+
   .restaurant-description {
     text-align: left !important;
   }
 }
+
 /*/media*/
 
 
@@ -412,34 +440,34 @@ body.dark-mode::before {
 
 
 /*butondarkmode*/
-  body.dark-mode {
-    background-color: #121212;
-    color: white;
-  }
+body.dark-mode {
+  background-color: #121212;
+  color: white;
+}
 
-  .dark-mode .navbar {
-    background-color: #1a1a1a !important;
-  }
+.dark-mode .navbar {
+  background-color: #1a1a1a !important;
+}
 
-  .dark-mode .card {
-    background-color: #2c2c2c;
-    color: white;
-    border: 1px solid #444;
-  }
+.dark-mode .card {
+  background-color: #2c2c2c;
+  color: white;
+  border: 1px solid #444;
+}
 
-  .dark-mode a {
-    color: #ffd700;
-  }
+.dark-mode a {
+  color: #ffd700;
+}
 
-  .dark-mode .btn {
-    border-color: #fff;
-    color: #fff;
-  }
+.dark-mode .btn {
+  border-color: #fff;
+  color: #fff;
+}
 
-  .dark-mode footer {
-    background-color: #1a1a1a;
-    color: white;
-  }
+.dark-mode footer {
+  background-color: #1a1a1a;
+  color: white;
+}
 
 
 

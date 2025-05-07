@@ -1,10 +1,11 @@
 /*welcomeimage*/
 .welcome-image {
-  width: 100%;         
-  max-width:100%;      
-  display: block;      
-  margin: 0px auto;    
+  width: 100%;
+  max-width: 100%;
+  display: block;
+  margin: 0px auto;
 }
+
 /*/welcomeimage*/
 
 
@@ -18,27 +19,28 @@
 
 
 /*navbar*/
-.navbar-brand{
+.navbar-brand {
   font-family: "Playwrite AU SA", cursive;
   font-optical-sizing: auto;
 }
 
-.navbar-brand{
+.navbar-brand {
   font-family: "Playwrite AU SA", cursive;
   font-optical-sizing: auto;
 }
 
 .navbar {
-  background-color: #f0ece2;            /*efebe1;*/
-} 
+  background-color: #f0ece2;
+  /*efebe1;*/
+}
 
 .nav-item {
   font-family: "Playwrite AU SA", cursive;
   font-optical-sizing: auto;
-    font-size: 15px;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 1.2px;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
 }
 
 @media (max-width: 991.98px) {
@@ -46,15 +48,18 @@
     flex-direction: column;
     align-items: center;
   }
+
   .navbar-brand img {
     margin: auto;
   }
+
   .nav-toggler-wrapper {
     display: flex;
     align-items: center;
     gap: 0.5rem;
     margin-top: 10px;
   }
+
   .nav-text {
     display: inline;
   }
@@ -69,60 +74,61 @@
 .navbar-toggler {
   box-shadow: none !important;
 }
-  
+
 .navbar-collapse {
-    transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
-  
+
 .navbar-toggler {
-    background: transparent !important;
-    border: none !important;
-    padding: 0 !important;
-    margin: 0 !important;
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 .hamburger {
-    width: 30px;
-    height: 3px;
-    background-color: #000;
-    position: relative;
-    transition: all 0.3s ease-in-out;
-    display: block;
+  width: 30px;
+  height: 3px;
+  background-color: #000;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  display: block;
 }
-    
+
 .hamburger::before,
-    .hamburger::after {
-    content: '';
-    position: absolute;
-    width: 30px;
-    height: 3px;
-    background-color: #000;
-    transition: all 0.3s ease-in-out;
-    left: -0.05px;
-}
-    
-    
-.hamburger::before {
-    top: -10px;
-}
-    
 .hamburger::after {
-    top: 10px;
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background-color: #000;
+  transition: all 0.3s ease-in-out;
+  left: -0.05px;
 }
-    
+
+
+.hamburger::before {
+  top: -10px;
+}
+
+.hamburger::after {
+  top: 10px;
+}
+
 .custom-toggler.active .hamburger {
-    background-color: transparent;
+  background-color: transparent;
 }
-    
+
 .custom-toggler.active .hamburger::before {
-    transform: rotate(45deg);
-    top: 0;
+  transform: rotate(45deg);
+  top: 0;
 }
-    
+
 .custom-toggler.active .hamburger::after {
-    transform: rotate(-45deg);
-    top: 0;
+  transform: rotate(-45deg);
+  top: 0;
 }
+
 /*/navbar*/
 
 
@@ -137,19 +143,24 @@
 
 
 /*body*/
-body {   
+body {
   font-family: "Playwrite AU SA", cursive;
-    font-optical-sizing: auto;
-  font-optical-sizing: auto; /* Fontul principal pentru conținut */
-  margin: 0;      /* Fără margini implicite */
-  padding: 0;     /* Fără padding */
-  text-align: center;  /* Centrează textul în pagină */
+  font-optical-sizing: auto;
+  font-optical-sizing: auto;
+  /* Fontul principal pentru conținut */
+  margin: 0;
+  /* Fără margini implicite */
+  padding: 0;
+  /* Fără padding */
+  text-align: center;
+  /* Centrează textul în pagină */
   background: url('../pictures/floor-tile.png') no-repeat center center/cover;
-  background-size: 200px; /* Ajustează dimensiunea dorită */
+  background-size: 200px;
+  /* Ajustează dimensiunea dorită */
   background-repeat: repeat;
 }
 
-*{
+* {
   font-family: "Playwrite AU SA", cursive;
   font-optical-sizing: auto;
   text-align: center;
@@ -158,13 +169,16 @@ body {
 body::before {
   content: "";
   position: fixed;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background-color: rgba(0,0,0,0); 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0);
   z-index: -1;
 }
 
 body.dark-mode::before {
-  background-color: rgba(0,0,0,0.6); 
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 /*/body*/
@@ -182,47 +196,11 @@ body.dark-mode::before {
 /*rezervare-form*/
 @media (max-width: 768px) {
   #rezervare-form {
-      width: 70%; 
+    width: 70%;
   }
 }
 
-#name{
-  border-radius: 30px;
-  background-color: #fcfcfc7e;
-  -webkit-backdrop-filter: blur(20px);
-  backdrop-filter: blur(20px);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-  margin: 10%;
-  padding-top: 0%;
-  width: 150px;
-  text-align: center;
-  height: 50px;
-}
-#date{
-  border-radius: 30px;
-  background-color: #fcfcfc7e;
-  -webkit-backdrop-filter: blur(20px);
-  backdrop-filter: blur(20px);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-  margin: 10%;
-  padding-top: 0%;
-  width: 150px;
-  text-align: center;
-  height: 50px;
-}
-#time{
-  border-radius: 30px;
-  background-color: #fcfcfc7e;
-  -webkit-backdrop-filter: blur(20px);
-  backdrop-filter: blur(20px);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-  margin: 10%;
-  padding-top: 0%;
-  width: 150px;
-  text-align: center;
-  height: 50px;
-}
-#phone{
+#name {
   border-radius: 30px;
   background-color: #fcfcfc7e;
   -webkit-backdrop-filter: blur(20px);
@@ -235,7 +213,7 @@ body.dark-mode::before {
   height: 50px;
 }
 
-#email{
+#date {
   border-radius: 30px;
   background-color: #fcfcfc7e;
   -webkit-backdrop-filter: blur(20px);
@@ -248,7 +226,46 @@ body.dark-mode::before {
   height: 50px;
 }
 
-#persoane{
+#time {
+  border-radius: 30px;
+  background-color: #fcfcfc7e;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  margin: 10%;
+  padding-top: 0%;
+  width: 150px;
+  text-align: center;
+  height: 50px;
+}
+
+#phone {
+  border-radius: 30px;
+  background-color: #fcfcfc7e;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  margin: 10%;
+  padding-top: 0%;
+  width: 150px;
+  text-align: center;
+  height: 50px;
+}
+
+#email {
+  border-radius: 30px;
+  background-color: #fcfcfc7e;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  margin: 10%;
+  padding-top: 0%;
+  width: 150px;
+  text-align: center;
+  height: 50px;
+}
+
+#persoane {
   border-radius: 30px;
   background-color: #fcfcfc7e;
   -webkit-backdrop-filter: blur(20px);
@@ -265,11 +282,11 @@ body.dark-mode::before {
   font-family: "Playwrite AU SA", cursive;
   font-optical-sizing: auto;
   border-radius: 30px;
-  background-color: rgba(252, 252, 252, 0.5); 
+  background-color: rgba(252, 252, 252, 0.5);
   backdrop-filter: blur(20px);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
   width: 500px;
-  padding: 20px; 
+  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -280,18 +297,18 @@ body.dark-mode::before {
 }
 
 
-#disponibilitate{
-  text-align: center;  
+#disponibilitate {
+  text-align: center;
 }
 
-#rezbtn{
+#rezbtn {
   background-color: #c2fbd7;
   border-radius: 100px;
-  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset, rgba(44, 187, 99, .15) 0 1px 2px, rgba(44, 187, 99, .15) 0 2px 4px, rgba(44, 187, 99, .15) 0 4px 8px, rgba(44, 187, 99, .15) 0 8px 16px, rgba(44, 187, 99, .15) 0 16px 32px;
   color: green;
   cursor: pointer;
   display: inline-block;
-  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
   padding: 7px 20px;
   text-align: center;
   text-decoration: none;
@@ -304,7 +321,7 @@ body.dark-mode::before {
 }
 
 #rezbtn:hover {
-  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  box-shadow: rgba(44, 187, 99, .35) 0 -25px 18px -14px inset, rgba(44, 187, 99, .25) 0 1px 2px, rgba(44, 187, 99, .25) 0 2px 4px, rgba(44, 187, 99, .25) 0 4px 8px, rgba(44, 187, 99, .25) 0 8px 16px, rgba(44, 187, 99, .25) 0 16px 32px;
   transform: scale(1.05) rotate(-1deg);
 }
 
@@ -314,11 +331,13 @@ body.dark-mode::before {
   color: #444;
   margin-top: 1rem;
 }
+
 .tel-link {
   color: #453c3c;
   text-decoration: none;
   font-weight: bold;
 }
+
 .tel-link:hover {
   text-decoration: underline;
   color: #c42e2e;
@@ -389,13 +408,15 @@ body.dark-mode::before {
 }
 
 .form-grid input {
-  flex: 1 1 calc(50% - 20px); /* Două coloane */
+  flex: 1 1 calc(50% - 20px);
+  /* Două coloane */
   max-width: 500px;
 }
 
 @media (max-width: 1024px) {
   .form-grid input {
-    flex: 1 1 100%; /* O singură coloană */
+    flex: 1 1 100%;
+    /* O singură coloană */
     max-width: 100%;
   }
 }
@@ -443,7 +464,7 @@ body.dark-mode::before {
   gap: 2rem;
   font-family: "Playwrite AU SA", cursive;
   font-optical-sizing: auto;
-} 
+}
 
 .nume {
   font-family: "Playwrite AU SA", cursive;
@@ -503,7 +524,7 @@ body.dark-mode::before {
 @media (max-width: 768px) {
   .footer {
     font-family: "Playwrite AU SA", cursive;
-  font-optical-sizing: auto;
+    font-optical-sizing: auto;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -511,7 +532,7 @@ body.dark-mode::before {
 
   .footer-left-wrapper {
     font-family: "Playwrite AU SA", cursive;
-  font-optical-sizing: auto;
+    font-optical-sizing: auto;
     flex-direction: column;
     align-items: center;
     border: none;
@@ -521,35 +542,38 @@ body.dark-mode::before {
   .footer-right,
   .nume {
     font-family: "Playwrite AU SA", cursive;
-  font-optical-sizing: auto;
+    font-optical-sizing: auto;
     width: 100%;
   }
 
   .footer-right {
     font-family: "Playwrite AU SA", cursive;
-  font-optical-sizing: auto;
-    text-align: center; /* Centrăm totul în footer-right */
+    font-optical-sizing: auto;
+    text-align: center;
+    /* Centrăm totul în footer-right */
     margin-top: 1rem;
   }
 
   .footer-right .social-icons {
     display: flex;
     font-family: "Playwrite AU SA", cursive;
-  font-optical-sizing: auto;
-    justify-content: center; /* Centrăm emoji-urile */
-    gap: 15px; /* Distanță între emoji-uri */
+    font-optical-sizing: auto;
+    justify-content: center;
+    /* Centrăm emoji-urile */
+    gap: 15px;
+    /* Distanță între emoji-uri */
   }
- 
+
   .footer-left-contact a {
     font-family: "Playwrite AU SA", cursive;
-  font-optical-sizing: auto;
+    font-optical-sizing: auto;
     display: inline-block;
     margin: 5px 10px;
   }
 
   .drepturi {
     font-family: "Playwrite AU SA", cursive;
-  font-optical-sizing: auto;
+    font-optical-sizing: auto;
     text-align: center;
     width: 100%;
   }
@@ -560,24 +584,27 @@ body.dark-mode::before {
   }
 }
 
-footer {    
-  color: rgb(0, 0, 0);      
-  text-align: center;         /* Text centrat */
-  padding: 20px;              /* Spațiere internă */
+footer {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  /* Text centrat */
+  padding: 20px;
+  /* Spațiere internă */
   font-family: "Playwrite AU SA", cursive;
-    font-optical-sizing: auto;
+  font-optical-sizing: auto;
 }
+
 /*/footer*/
 
-h2{
+h2 {
   margin: 0%;
 }
 
 .custom-toggler {
-border: none;
-background: transparent;
-padding: 0.5rem;
-z-index: 1051;
+  border: none;
+  background: transparent;
+  padding: 0.5rem;
+  z-index: 1051;
 }
 
 
@@ -610,7 +637,8 @@ z-index: 1051;
 .form-group label {
   font-family: "Playwrite AU SA", cursive;
   font-optical-sizing: auto;
-  width: 300px; /* eticheta în stânga */
+  width: 300px;
+  /* eticheta în stânga */
   margin-right: 10px;
   margin-left: 50px;
   font-weight: bold;
@@ -631,7 +659,7 @@ z-index: 1051;
 @media (max-width: 768px) {
   .form-group {
     font-family: "Playwrite AU SA", cursive;
-  font-optical-sizing: auto;
+    font-optical-sizing: auto;
     flex-direction: column;
     align-items: stretch;
     margin: 20px;
@@ -639,19 +667,20 @@ z-index: 1051;
 
   .form-group label {
     font-family: "Playwrite AU SA", cursive;
-  font-optical-sizing: auto;
+    font-optical-sizing: auto;
     text-align: left;
-    width: 200px; /* ca să nu stea fixate la 150px */
+    width: 200px;
+    /* ca să nu stea fixate la 150px */
     margin-right: 0;
     margin-bottom: 5px;
   }
 }
 
 
-@media (min-width: 1024px){
+@media (min-width: 1024px) {
   .form-group {
     font-family: "Playwrite AU SA", cursive;
-  font-optical-sizing: auto;
+    font-optical-sizing: auto;
     flex-direction: column;
     align-items: stretch;
     margin: 20px;
@@ -659,9 +688,9 @@ z-index: 1051;
 
   .form-group label {
     font-family: "Playwrite AU SA", cursive;
-  font-optical-sizing: auto;
+    font-optical-sizing: auto;
     text-align: left;
-    width: 200px; 
+    width: 200px;
     font-size: 30px;
     margin-right: 0;
     margin-bottom: 5px;

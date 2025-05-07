@@ -1,0 +1,58 @@
+{
+    "pizza_1":{
+        "nume": "Pizza Margherita",
+        "html": "<h3>Pizza Margherita</h3><p>Ingrediente: blat de pizza (200g), sos de roșii (50g), mozzarella (100g), busuioc proaspăt (5g)</p><p>Gramaj total: 350g</p><p>Informații nutriționale / 100g:<br>Valoare energetică: 900kJ / 215kcal<br>Glucide: 30g, din care zaharuri: 2g;<br>Proteine: 10g<br>Grăsimi: 8g, din care acizi grași saturați: 4g;<br>Fibre: 2.0g;<br>Sare: 1.5g</p><strong>Preț: 15,00 €</strong>"
+    },
+    "pizza_2":{
+        "nume":"Pizza cu sunca si ciuperci",
+        "html": "<h3>Pizza cu sunca si ciuperci</h3><p>Ingrediente: blat de pizza (200g), sos de roșii (50g), mozzarella (100g), șuncă (50g), ciuperci (50g)</p><p>Gramaj total: 450g</p><p>Informații nutriționale / 100g:<br>Valoare energetică: 950kJ / 227kcal<br>Glucide: 32g, din care zaharuri: 2g;<br>Proteine: 12g<br>Grăsimi: 9g, din care acizi grași saturați: 5g;<br>Fibre: 1.5g;<br>Sare: 1.6g</p><strong>Preț: 18,00 €</strong>"
+    },
+    "pizza_3":{
+        "nume":"Pizza cu salam",
+        "html": "<h3>Pizza cu salam</h3><p>Ingrediente: blat de pizza (200g), sos de roșii (50g), mozzarella (100g), salam (50g)</p><p>Gramaj total: 400g</p><p>Informații nutriționale / 100g:<br>Valoare energetică: 1000kJ / 240kcal<br>Glucide: 35g, din care zaharuri: 2g;<br>Proteine: 14g<br>Grăsimi: 10g, din care acizi grași saturați: 6g;<br>Fibre: 1.0g;<br>Sare: 1.8g</p><strong>Preț: 20,00 €</strong>"
+    },
+    "pizza_4":{
+        "nume":"Pizza cu ton",
+        "html": "<h3>Pizza cu ton</h3><p>Ingrediente: blat de pizza (200g), sos de roșii (50g), mozzarella (100g), ton (50g)</p><p>Gramaj total: 400g</p><p>Informații nutriționale / 100g:<br>Valoare energetică: 950kJ / 227kcal<br>Glucide: 30g, din care zaharuri: 2g;<br>Proteine: 13g<br>Grăsimi: 8g, din care acizi grași saturați: 4g;<br>Fibre: 1.5g;<br>Sare: 1.5g</p><strong>Preț: 22,00 €</strong>"
+    },
+    "pizza_5": {
+        "nume": "Pizza diavolla",
+        "html": "<h3>Pizza diavolla</h3><p>Ingrediente: blat de pizza (200g), sos de roșii (50g), mozzarella (100g), salam picant (50g)</p><p>Gramaj total: 400g</p><p>Informații nutriționale / 100g:<br>Valoare energetică: 950kJ / 227kcal<br>Glucide: 30g, din care zaharuri: 2g;<br>Proteine: 14g<br>Grăsimi: 8g, din care acizi grași saturați: 4g;<br>Fibre: 1.5g;<br>Sare: 1.5g</p><strong>Preț: 25,00 €</strong>"
+    },
+    "pizza_6":{
+        "nume":"pizza cu legume la gratar",
+        "html": "<h3>Pizza cu legume la gratar</h3><p>Ingrediente: blat de pizza (200g), sos de roșii (50g), mozzarella (100g), legume la grătar (50g)</p><p>Gramaj total: 400g</p><p>Informații nutriționale / 100g:<br>Valoare energetică: 950kJ / 227kcal<br>Glucide: 30g, din care zaharuri: 2g;<br>Proteine: 14g<br>Grăsimi: 8g, din care acizi grași saturați: 4g;<br>Fibre: 1.5g;<br>Sare: 1.5g</p><strong>Preț: 25,00 €</strong>"
+    },
+    "pizza_7":{
+        "nume":"Pizza cu fructe de mare",
+        "html": "<h3>Pizza cu fructe de mare</h3><p>Ingrediente: blat de pizza (200g), sos de roșii (50g), mozzarella (100g), fructe de mare (50g)</p><p>Gramaj total: 400g</p><p>Informații nutriționale / 100g:<br>Valoare energetică: 950kJ / 227kcal<br>Glucide: 30g, din care zaharuri: 2g;<br>Proteine: 14g<br>Grăsimi: 8g, din care acizi grași saturați: 4g;<br>Fibre: 1.5g;<br>Sare: 1.5g</p><strong>Preț: 25,00 €</strong>"
+    },
+    "pizza_8":{
+        "nume":"Pizza patru anotimpuri",
+        "html": "<h3>Pizza Patru Anotimpuri</h3><p>Ingrediente: blat de pizza (200g), sos de roșii, cașcaval, salam, ton, ciuperci, șuncă</p><p>Gramaj total: 370g</p><p>Informații nutriționale / 100g:<br>Valoare energetică: 1020kJ / 244kcal<br>Glucide: 26g, din care zaharuri: 3g;<br>Proteine: 11g<br>Grăsimi: 11g, din care acizi grași saturați: 5g;<br>Fibre: 2g;<br>Sare: 1.4g</p><strong>Preț: 15,50 €</strong>"
+    },
+    "pizza_9":{
+        "nume":"Pizza cu capriciosa",
+        "html": "<h3>Pizza cu capriciosa</h3><p>Ingrediente: blat de pizza (200g), sos de roșii (50g), mozzarella (100g), ciuperci (50g), măsline (20g), ardei gras (20g)</p><p>Gramaj total: 440g</p><p>Informații nutriționale / 100g:<br>Valoare energetică: 950kJ / 227kcal<br>Glucide: 30g, din care zaharuri: 2g;<br>Proteine: 14g<br>Grăsimi: 8g, din care acizi grași saturați: 4g;<br>Fibre: 1.5g;<br>Sare: 1.5g</p><strong>Preț: 25,00 €</strong>"
+    },
+    "pizza_10":{
+        "nume":"Pizza cu pere",
+        "html": "<h3>Pizza cu pere</h3><p>Ingrediente: blat de pizza (200g), sos de roșii (50g), mozzarella (100g), pere (50g)</p><p>Gramaj total: 400g</p><p>Informații nutriționale / 100g:<br>Valoare energetică: 950kJ / 227kcal<br>Glucide: 30g, din care zaharuri: 2g;<br>Proteine: 14g<br>Grăsimi: 8g, din care acizi grași saturați: 4g;<br>Fibre: 1.5g;<br>Sare: 1.5g</p><strong>Preț: 25,00 €</strong>"
+    },
+    "pizza_11":{
+        "nume":"Pizza parma si rucola",
+        "html":"<h3>Pizza parma si rucola</h3><p>Ingrediente: blat de pizza (200g), sos de roșii (50g), mozzarella (100g), prosciutto crudo (50g), rucola (20g)</p><p>Gramaj total: 420g</p><p>Informații nutriționale / 100g:<br>Valoare energetică: 950kJ / 227kcal<br>Glucide: 30g, din care zaharuri: 2g;<br>Proteine: 14g<br>Grăsimi: 8g, din care acizi grași saturați: 4g;<br>Fibre: 1.5g;<br>Sare: 1.5g</p><strong>Preț: 25,00 €</strong>"
+    },
+    "pizza_12":{
+        "nume":"Pizza cu spanac si usturoi",
+        "html": "<h3>Pizza cu spanac si usturoi</h3><p>Ingrediente: blat de pizza (200g), sos de roșii (50g), mozzarella (100g), spanac (50g), usturoi (5g)</p><p>Gramaj total: 405g</p><p>Informații nutriționale / 100g:<br>Valoare energetică: 950kJ / 227kcal<br>Glucide: 30g, din care zaharuri: 2g;<br>Proteine: 14g<br>Grăsimi: 8g, din care acizi grași saturați: 4g;<br>Fibre: 1.5g;<br>Sare: 1.5g</p><strong>Preț: 25,00 €</strong>"
+    },
+    "pizza_13":{
+        "nume":"Pizza cu somon si usturoi",
+        "html": "<h3>Pizza cu somon si usturoi</h3><p>Ingrediente: blat de pizza (200g), sos de roșii (50g), mozzarella (100g), somon afumat (50g), usturoi (5g)</p><p>Gramaj total: 405g</p><p>Informații nutriționale / 100g:<br>Valoare energetică: 950kJ / 227kcal<br>Glucide: 30g, din care zaharuri: 2g;<br>Proteine: 14g<br>Grăsimi: 8g, din care acizi grași saturați: 4g;<br>Fibre: 1.5g;<br>Sare: 1.5g</p><strong>Preț: 25,00 €</strong>"
+    },
+    "pizza_14":{
+        "nume":"Pizza cu creveti si rosii cherry",
+        "html": "<h3>Pizza cu creveti si rosii cherry</h3><p>Ingrediente: blat de pizza (200g), sos de roșii (50g), mozzarella (100g), creveti (50g), roșii cherry (50g)</p><p>Gramaj total: 450g</p><p>Informații nutriționale / 100g:<br>Valoare energetică: 950kJ / 227kcal<br>Glucide: 30g, din care zaharuri: 2g;<br>Proteine: 14g<br>Grăsimi: 8g, din care acizi grași saturați: 4g;<br>Fibre: 1.5g;<br>Sare: 1.5g</p><strong>Preț: 25,00 €</strong>"
+    }
+}

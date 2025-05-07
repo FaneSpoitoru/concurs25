@@ -2,230 +2,181 @@
 <html lang="ro">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>D` Amici</title>
-    <link rel="icon" href="../pictures\logo.png" type="image/x-icon">
+  <title>D` Amici</title>
+  <link rel="icon" href="../pictures\logo.png" type="image/x-icon">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="../css/meniu_real.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="../css/meniu_real.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&display=swap" rel="stylesheet">
 </head>
 
 <button onclick="scrollToTop()" id="topBtn" title="Mergi sus"><i class="fa-solid fa-up-long"></i> </button>
 
 
 <script>
-    // Afișează butonul când dai scroll
-    window.onscroll = function () {
-      const btn = document.getElementById("topBtn");
-      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-        btn.style.display = "block";
-      } else {
-        btn.style.display = "none";
-      }
-    };
-  
-    // Scroll sus când se apasă
-    function scrollToTop() {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+  // Afișează butonul când dai scroll
+  window.onscroll = function () {
+    const btn = document.getElementById("topBtn");
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+      btn.style.display = "block";
+    } else {
+      btn.style.display = "none";
     }
-  </script>
-  
+  };
+
+  // Scroll sus când se apasă
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
+
 <!-- Google Translate -->
 <script type="text/javascript">
-    function googleTranslateElementInit() {
-        new google.translate.TranslateElement({
-            pageLanguage: 'ro',
-            includedLanguages: 'ro,en,de,it,fr,es',
-            layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-        }, 'google_translate_element');
-    }
-  </script>
-  <script type="text/javascript"
-    src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'ro',
+      includedLanguages: 'ro,en,de,it,fr,es',
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+    }, 'google_translate_element');
+  }
+</script>
+<script type="text/javascript"
+  src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 <body>
 
 
 
-    <section id="welcome" class="text-center">
-        <img src="../pictures\pizzajpg.jpg" alt="Delicious Italian Cuisine" class="img-fluid">
-    </section>
+  <section id="welcome" class="text-center">
+    <img src="../pictures\pizzajpg.jpg" alt="Delicious Italian Cuisine" class="img-fluid">
+  </section>
 
 
 
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid navbar-mobile px-3">
-            <!-- Logo -->
-            <a class="navbar-brand mx-auto d-lg-block" href="index.html">
-                <img src="../pictures\logo-removebg-preview.png" alt="Logo" style="height: 80px; border: none;">
-            </a>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid navbar-mobile px-3">
+      <a class="navbar-brand mx-auto d-lg-block" href="index.html">
+        <img src="../pictures\logo-removebg-preview.png" alt="Logo" style="height: 80px; border: none;">
+      </a>
 
-            <div class="nav-toggler-wrapper d-lg-none text-center">
-                <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav">
-                    <span class="hamburger"></span>
-                </button>
-                <span class="nav-text">Navigație</span>
-            </div>
+      <div class="nav-toggler-wrapper d-lg-none text-center">
+        <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNav">
+          <span class="hamburger"></span>
+        </button>
+        <span class="nav-text">Navigație</span>
+      </div>
 
 
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item mx-3"><a class="nav-link" href="../meniu/pizza.html">pizza</a></li>
-                    <li class="nav-item mx-3"><a class="nav-link" href="../meniu/paste.html">paste</a></li>
-                    <li class="nav-item mx-3"><a class="nav-link" href="../meniu/salate.html">salata</a></li>
-                    <li class="nav-item mx-3"><a class="nav-link" href="../meniu/bauturi.html">bauturi</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../Despre.html">nimic</a></li>
-                </ul>
-            </div>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item mx-3"><a class="nav-link" href="../meniu/pizza.html">pizza</a></li>
+          <li class="nav-item mx-3"><a class="nav-link" href="../meniu/paste.html">paste</a></li>
+          <li class="nav-item mx-3"><a class="nav-link" href="../meniu/salate.html">salata</a></li>
+          <li class="nav-item mx-3"><a class="nav-link" href="../meniu/bauturi.html">bauturi</a></li>
+          <li class="nav-item"><a class="nav-link" href="../Despre.html">nimic</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="google_translate_element" style="position: absolute; bottom: 20px; left: 20px; z-index: 1000;"></div>
+  <br><br><br>
+  <section class="hero">
+    <h1>Bun venit la D` Amici!</h1>
+    <p>Bucură-te de preparate autentice italiene</p> <br><br>
+  </section>
+
+
+  <section class="menu-section">
+    <i class="fa-solid fa-magnifying-glass" id="searchicn"></i>
+    <input type="text" id="searchInput" placeholder="Caută în meniu..." class="form-control mb-4">
+    <script>
+      document.getElementById("searchInput").addEventListener("keyup", function () {
+        const query = this.value.toLowerCase();
+        const sections = document.querySelectorAll(".menu-item-types");
+
+        sections.forEach(section => {
+          let anyVisible = false;
+          const listItems = section.querySelectorAll("li");
+
+          listItems.forEach(li => {
+            const button = li.querySelector(".openBtn");
+            const text = button.textContent.toLowerCase();
+
+            if (text.includes(query)) {
+              li.style.display = "block";
+              anyVisible = true;
+            } else {
+              li.style.display = "none";
+            }
+          });
+
+          // Ascunde lista și titlul dacă nu există rezultate în acea secțiune
+          section.style.display = anyVisible ? "block" : "none";
+          const heading = section.previousElementSibling;
+          if (heading && heading.tagName.startsWith("H")) {
+            heading.style.display = anyVisible ? "block" : "none";
+          }
+        });
+      });
+    </script>
+
+    <script>
+
+      fetch('aperitive.json')
+        .then(response => response.json())
+        .then(data => {
+          document.querySelectorAll('.categorie.openBtn').forEach(btn => {
+            const id = btn.getAttribute('data-id');
+            if (data[id]) {
+              btn.setAttribute('data-popup-content', data[id].html);
+            }
+          });
+        });
+    </script>
+
+    <div class="grid">
+
+      <button class="categorie openBtn"  data-id="aperitiv_1"
+        style="background-image: url('../imagini_site/paste.jpg'); background-size: cover; background-position: center;">
+        <div class="content">
+          <p>Bruschetta clasică</p>
         </div>
-    </nav>
-
-    <div id="google_translate_element" style="position: absolute; bottom: 20px; left: 20px; z-index: 1000;"></div>
-    <br><br><br>
-    <section class="hero">
-        <h1>Bun venit la D` Amici!</h1>
-        <p>Bucură-te de preparate autentice italiene</p> <br><br>
-    </section>
-
-
-    <section class="menu-section">
-        <i class="fa-solid fa-magnifying-glass" id="searchicn"></i>
-        <input type="text" id="searchInput" placeholder="Caută în meniu..." class="form-control mb-4" >
-        <script>
-            document.getElementById("searchInput").addEventListener("keyup", function () {
-              const query = this.value.toLowerCase();
-              const sections = document.querySelectorAll(".menu-item-types");
-          
-              sections.forEach(section => {
-                let anyVisible = false;
-                const listItems = section.querySelectorAll("li");
-          
-                listItems.forEach(li => {
-                  const button = li.querySelector(".openBtn");
-                  const text = button.textContent.toLowerCase();
-          
-                  if (text.includes(query)) {
-                    li.style.display = "block";
-                    anyVisible = true;
-                  } else {
-                    li.style.display = "none";
-                  }
-                });
-          
-                // Ascunde lista și titlul dacă nu există rezultate în acea secțiune
-                section.style.display = anyVisible ? "block" : "none";
-                const heading = section.previousElementSibling;
-                if (heading && heading.tagName.startsWith("H")) {
-                  heading.style.display = anyVisible ? "block" : "none";
-                }
-              });
-            });
-          </script>
-          
-          
-          <div class="grid">
-
-            <button class="categorie openBtn" 
-            data-popup-content="Bruschetta Clasică
-            <p>Ingrediente: pâine crocantă, roșii cherry (80g), oregano proaspăt (2g), ulei de măsline extravirgin (10ml), oțet balsamic (5ml), usturoi (1g), sare, piper</p>
-            Gramaj total: 360g
-            <p>Informații nutriționale / 100g:<br>
-            Valoare energetică: 567.8kJ / 135.38kcal<br>
-            Glucide: 15.16g, din care zaharuri: 0.86g;
-            Proteine: 4.31g
-            Grăsimi: 5.93g, din care acizi grași saturați: 0.43g;
-            Fibre: 0.31g;
-            Sare: 0.16g</p>"
-            style="background-image: url('../imagini_site/paste.jpg'); background-size: cover; background-position: center;">
-            <div class="content">
-                <p>Bruschetta clasică</p>
-            </div>
-            </button>
-
-           
-
-
-            
-
-            <button class="categorie openBtn" 
-            data-popup-content="Caprese
-            <p>Ingrediente: roșii (80g), mozzarella (100g), rucola (30g), oțet balsamic (10ml)</p>
-            Gramaj total: 220g
-            <p>Informații nutriționale / 100g:<br>
-            Valoare energetică: 703kJ / 168kcal<br>
-            Glucide: 4.0g, din care zaharuri: 3.5g;<br>
-            Proteine: 9.5g<br>
-            Grăsimi: 12.5g, din care acizi grași saturați: 7.5g;<br>
-            Fibre: 1.0g;<br>
-            Sare: 0.6g</p>
-            <strong>Preț: 10,50 €</strong>"
-            style="background-image: url('../imagini_site/paste10.jpg'); background-size: cover; background-position: center;">
-            <div class="content">
-            <p>Caprese</p>
-            </div>
-            </button>
-            <button class="categorie openBtn" 
-                  data-popup-content="Bruschetta cu pere
-                  <p>Ingrediente: pere (90g), rucola (20g), parmezan (20g), sos de smântână (20ml), pâine crocantă (100g)</p>
-                  Gramaj total: 250g
-                  <p>Informații nutriționale / 100g:<br>
-                  Valoare energetică: 850kJ / 203kcal<br>
-                  Glucide: 23g, din care zaharuri: 5g;<br>
-                  Proteine: 6g<br>
-                  Grăsimi: 9g, din care acizi grași saturați: 5g;<br>
-                  Fibre: 1.5g;<br>
-                  Sare: 0.8g</p>
-                  <strong>Preț: 12,00 €</strong>"
-                  style="background-image: url('../imagini_site/paste2.jpg'); background-size: cover; background-position: center;">
-              <div class="content">
-                  <p>Bruschetta</p>
-              </div>
-            </button>
-            <button class="categorie openBtn" 
-                  data-popup-content="Carpaccio
-                  <p>Ingrediente: mușchi de vită (100g), rucola (30g), parmezan (20g), ulei de măsline (10ml)</p>
-                  Gramaj total: 160g
-                  <p>Informații nutriționale / 100g:<br>
-                  Valoare energetică: 750kJ / 179kcal<br>
-                  Glucide: 1g, din care zaharuri: 0.5g;<br>
-                  Proteine: 20g<br>
-                  Grăsimi: 11g, din care acizi grași saturați: 4g;<br>
-                  Fibre: 0.5g;<br>
-                  Sare: 0.5g</p>
-                  <strong>Preț: 14,50 €</strong>"
-                  style="background-image: url('../imagini_site/paste3.jpg'); background-size: cover; background-position: center;">
-              <div class="content">
-                  <p>carpaccio</p>
-              </div>
-            </button>
-            <button class="categorie openBtn" 
-                  data-popup-content="Antipasto Misto
-                  <p>Ingrediente: focaccia de casă (100g), roșii (50g), mozzarella (50g), rucola (30g), măsline (20g), ardei copți (30g), ciuperci (40g), legume mixte (80g)</p>
-                  Gramaj total: 400g
-                  <p>Informații nutriționale / 100g:<br>
-                  Valoare energetică: 720kJ / 172kcal<br>
-                  Glucide: 20g, din care zaharuri: 2g;<br>
-                  Proteine: 7g<br>
-                  Grăsimi: 8g, din care acizi grași saturați: 2.5g;<br>
-                  Fibre: 2g;<br>
-                  Sare: 1g</p>
-                  <strong>Preț: 16,90 €</strong>
-                  "
-                  style="background-image: url('../imagini_site/paste4.jpg'); background-size: cover; background-position: center;">
-              <div class="content">
-                  <p>antipasto</p>
-              </div>
-            </button>
-                </div>
+      </button>
+      <button class="categorie openBtn" data-id="aperitiv_2"
+        style="background-image: url('../imagini_site/paste10.jpg'); background-size: cover; background-position: center;">
+        <div class="content">
+          <p>Caprese</p>
+        </div>
+      </button>
+      <button class="categorie openBtn"  data-id="aperitiv_3"
+        style="background-image: url('../imagini_site/paste2.jpg'); background-size: cover; background-position: center;">
+        <div class="content">
+          <p>Bruschetta</p>
+        </div>
+      </button>
+      <button class="categorie openBtn" data-id="aperitiv_4"
+        style="background-image: url('../imagini_site/paste3.jpg'); background-size: cover; background-position: center;">
+        <div class="content">
+          <p>carpaccio</p>
+        </div>
+      </button>
+      <button class="categorie openBtn" data-id="aperitiv_5"
+        style="background-image: url('../imagini_site/paste4.jpg'); background-size: cover; background-position: center;">
+        <div class="content">
+          <p>antipasto</p>
+        </div>
+      </button>
+    </div>
 
     <div id="popup">
-        <p id="popupContent">.</p>
-        <button id="closeBtn">Închide</button>
+      <p id="popupContent">.</p>
+      <button id="closeBtn">Închide</button>
     </div>
 
     <script>
@@ -234,79 +185,79 @@
       const popup = document.getElementById('popup');
       const closeBtn = document.getElementById('closeBtn');
       const popupContent = document.getElementById('popupContent');
-  
+
       // Când se apasă un buton, deschide pop-up-ul cu conținutul corespunzător
       openBtns.forEach(button => {
-          button.onclick = function () {
-              // Setează conținutul pop-up-ului din atributul 'data-popup-content'
-              popupContent.innerHTML = button.getAttribute('data-popup-content'); // Folosește innerHTML pentru a permite HTML
-              popup.style.display = 'block';
-          }
+        button.onclick = function () {
+          // Setează conținutul pop-up-ului din atributul 'data-popup-content'
+          popupContent.innerHTML = button.getAttribute('data-popup-content'); // Folosește innerHTML pentru a permite HTML
+          popup.style.display = 'block';
+        }
       });
-  
+
       // Când apesi butonul de închidere, închide pop-up-ul
       closeBtn.onclick = function () {
-          popup.style.display = 'none';
+        popup.style.display = 'none';
       }
-  </script>
+    </script>
 
 
 
     <button id="menuButton"
-        style="position: fixed; bottom: 20px; right: 20px; width: 50px; height: 50px; border-radius: 50%; background-color: #ffffff; color: white; font-size: 30px; border: none; display: flex; justify-content: center; align-items: center; cursor: pointer; z-index: 1001;">
-        💬
+      style="position: fixed; bottom: 20px; right: 20px; width: 50px; height: 50px; border-radius: 50%; background-color: #ffffff; color: white; font-size: 30px; border: none; display: flex; justify-content: center; align-items: center; cursor: pointer; z-index: 1001;">
+      💬
     </button>
 
     <div id="menuPopup"
-        style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: white; border: 2px solid #333; padding: 20px; width: 80%; max-width: 500px; z-index: 1000;">
-        <button id="closeChatButton"
-            style="position: absolute; top: 10px; right: 10px; background-color: red; color: white; border: none; width: 30px; height: 30px; font-size: 18px; display: flex; justify-content: center; align-items: center; cursor: pointer;">X</button>
+      style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: white; border: 2px solid #333; padding: 20px; width: 80%; max-width: 500px; z-index: 1000;">
+      <button id="closeChatButton"
+        style="position: absolute; top: 10px; right: 10px; background-color: red; color: white; border: none; width: 30px; height: 30px; font-size: 18px; display: flex; justify-content: center; align-items: center; cursor: pointer;">X</button>
 
-        <iframe src="https://www.stack-ai.com/chat/67e8112f91b55a6611b0a192-6vGKGug1tpQiMzfl8PgYMt" width="100%"
-            height="400px" frameborder="0"></iframe>
+      <iframe src="https://www.stack-ai.com/chat/67e8112f91b55a6611b0a192-6vGKGug1tpQiMzfl8PgYMt" width="100%"
+        height="400px" frameborder="0"></iframe>
     </div>
 
     <div id="overlay"
-        style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.7); z-index: 999;">
+      style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.7); z-index: 999;">
     </div>
 
-  
 
-<footer class="footer">
-    <div class="footer-left-wrapper">
-      <h2 class="nume">D`Amici</h2>
-      <div class="footer-left">
-        <nav class="footer-left-contact">
-          <a href="../meniu/pizza.html">Pizza</a>
-          <a href="../meniu/paste.html">Paste</a>
-          <a href="../meniu/salate.html">Salata</a>
-          <a href="../meniu/bauturi.html">Bauturi</a>
-        </nav>
-        <p class="drepturi">© <span id="year"></span> D`Amici. Toate drepturile rezervate.</p>
+
+    <footer class="footer">
+      <div class="footer-left-wrapper">
+        <h2 class="nume">D`Amici</h2>
+        <div class="footer-left">
+          <nav class="footer-left-contact">
+            <a href="../meniu/pizza.html">Pizza</a>
+            <a href="../meniu/paste.html">Paste</a>
+            <a href="../meniu/salate.html">Salata</a>
+            <a href="../meniu/bauturi.html">Bauturi</a>
+          </nav>
+          <p class="drepturi">© <span id="year"></span> D`Amici. Toate drepturile rezervate.</p>
+        </div>
       </div>
-    </div>
-    <div class="footer-right">
-      <div class="social-icons">
-        <a href="#"><i class="fab fa-pinterest"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-youtube"></i></a>
-        <a href="#"><i class="fab fa-whatsapp"></i></a>
+      <div class="footer-right">
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-pinterest"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <p>Support: Italy@d-amici.de</p>
+        <button id="darkModeToggle" class="btn btn-outline ms-2">🌓 Dark</button>
       </div>
-      <p>Support: Italy@d-amici.de</p>
-      <button id="darkModeToggle" class="btn btn-outline ms-2">🌓 Dark</button>
-    </div>
-  </footer>
+    </footer>
 
 
-  <script>
-    const toggleButton = document.getElementById('darkModeToggle');
-    toggleButton.addEventListener('click', () => {
-      document.body.classList.toggle('dark-mode');
-    });
-  </script>
-  
     <script>
-        document.getElementById("year").textContent = new Date().getFullYear();
+      const toggleButton = document.getElementById('darkModeToggle');
+      toggleButton.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+      });
+    </script>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
     </script>
     <script src="../js/meniu.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

@@ -1,0 +1,23 @@
+{
+    "salata1": {
+      "nume": "Salată Capriccioasă",
+      "html": "<h3>Salată Capriccioasă</h3> <p>Ingrediente: salată verde (50g), roșii cherry (40g), șuncă presată (50g), mozzarella (40g), măsline negre (20g), dressing italian (20ml)</p><p>Gramaj total: 220g</p><p>Informații nutriționale / 100g:<br>Valoare energetică: 620kJ / 148kcal<br>Glucide: 5g, din care zaharuri: 2g;<br>Proteine: 9g<br>Grăsimi: 10g, din care acizi grași saturați: 3g;<br>Fibre: 1.5g;<br>Sare: 1.2g</p><strong>Preț: 11,00 €</strong>"
+    },
+    "salata2": {
+      "nume": "Salată cu somon",
+      "html": "<h3>Salată cu somon</h3><p>Ingrediente: salată iceberg (60g), somon afumat (60g), avocado (40g), castraveți (30g), semințe de susan (5g), dressing de lămâie (15ml)</p><p>Gramaj total: 210g</p><p>Informații nutriționale / 100g:<br>Valoare energetică: 750kJ / 179kcal<br>Glucide: 3g, din care zaharuri: 1g;<br>Proteine: 12g<br>Grăsimi: 13g, din care acizi grași saturați: 2g;<br>Fibre: 2.1g;<br>Sare: 1.3g</p><strong>Preț: 13,50 €</strong>"
+    },
+    "salata3": {
+      "nume": "Salată cu ton si cascaval",
+      "html": "<h3>Salată cu ton si cascaval</h3><p>Ingrediente: salată mixtă (50g), ton în ulei (50g), cașcaval (40g), roșii (30g), ardei gras (20g), dressing de iaurt (20ml)</p><p>Gramaj total: 210g</p><p>Informații nutriționale / 100g:<br>Valoare energetică: 680kJ / 162kcal<br>Glucide: 4g, din care zaharuri: 1g;<br>Proteine: 11g<br>Grăsimi: 11g, din care acizi grași saturați: 5g;<br>Fibre: 1.8g;<br>Sare: 1.0g</p><strong>Preț: 12,00 €</strong>"
+    },
+    "salata4": {
+      "nume": "Salată mixtă",
+      "html": "<h3>Salată mixtă</h3><p>Ingrediente: salată verde (50g), roșii (40g), castraveți (30g), morcov ras (20g), porumb (20g), dressing de iaurt (20ml)</p><p>Gramaj total: 210g</p><p>Informații nutriționale / 100g:<br>Valoare energetică: 400kJ / 95kcal<br>Glucide: 8g, din care zaharuri: 2g;<br>Proteine: 4g<br>Grăsimi: 5g, din care acizi grași saturați: 1g;<br>Fibre: 2.0g;<br>Sare: 0.8g</p><strong>Preț: 9,00 €</strong>"
+    },
+    "salata5": {
+      "nume": "Salată cu pui",
+      "html": "<h3>Salată cu pui</h3><p>Ingrediente: salată mixtă (50g), piept de pui la grătar (60g), roșii (30g), castraveți (30g), dressing de muștar (20ml)</p><p>Gramaj total: 210g</p><p>Informații nutriționale / 100g:<br>Valoare energetică: 700kJ / 167kcal<br>Glucide: 5g, din care zaharuri: 1g;<br>Proteine: 14g<br>Grăsimi: 10g, din care acizi grași saturați: 3g;<br>Fibre: 1.5g;<br>Sare: 1.0g</p><strong>Preț: 12,50 €</strong>"
+    }
+}
+  

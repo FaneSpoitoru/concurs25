@@ -20,11 +20,12 @@
 }
 
 .welcome-image {
-  width: 100%;            
-  max-width: 100%;      
-  display: block;         
-  margin: 0px auto;       
+  width: 100%;
+  max-width: 100%;
+  display: block;
+  margin: 0px auto;
 }
+
 /*/welcomeimage*/
 
 
@@ -37,27 +38,28 @@
 
 
 /*navbar*/
-.navbar-brand{
+.navbar-brand {
   font-family: "Playwrite AU SA", cursive;
   font-optical-sizing: auto;
 }
 
-.navbar-brand{
+.navbar-brand {
   font-family: "Playwrite AU SA", cursive;
   font-optical-sizing: auto;
 }
 
 .navbar {
-  background-color: #f0ece2;            /*efebe1;*/
-} 
+  background-color: #f0ece2;
+  /*efebe1;*/
+}
 
 .nav-item {
   font-family: "Playwrite AU SA", cursive;
   font-optical-sizing: auto;
-    font-size: 15px;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 1.2px;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
 }
 
 @media (max-width: 991.98px) {
@@ -65,15 +67,18 @@
     flex-direction: column;
     align-items: center;
   }
+
   .navbar-brand img {
     margin: auto;
   }
+
   .nav-toggler-wrapper {
     display: flex;
     align-items: center;
     gap: 0.5rem;
     margin-top: 10px;
   }
+
   .nav-text {
     display: inline;
   }
@@ -88,60 +93,61 @@
 .navbar-toggler {
   box-shadow: none !important;
 }
-  
+
 .navbar-collapse {
-    transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
-  
+
 .navbar-toggler {
-    background: transparent !important;
-    border: none !important;
-    padding: 0 !important;
-    margin: 0 !important;
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 .hamburger {
-    width: 30px;
-    height: 3px;
-    background-color: #000;
-    position: relative;
-    transition: all 0.3s ease-in-out;
-    display: block;
+  width: 30px;
+  height: 3px;
+  background-color: #000;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  display: block;
 }
-    
+
 .hamburger::before,
-    .hamburger::after {
-    content: '';
-    position: absolute;
-    width: 30px;
-    height: 3px;
-    background-color: #000;
-    transition: all 0.3s ease-in-out;
-    left: -0.05px;
-}
-    
-    
-.hamburger::before {
-    top: -10px;
-}
-    
 .hamburger::after {
-    top: 10px;
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background-color: #000;
+  transition: all 0.3s ease-in-out;
+  left: -0.05px;
 }
-    
+
+
+.hamburger::before {
+  top: -10px;
+}
+
+.hamburger::after {
+  top: 10px;
+}
+
 .custom-toggler.active .hamburger {
-    background-color: transparent;
+  background-color: transparent;
 }
-    
+
 .custom-toggler.active .hamburger::before {
-    transform: rotate(45deg);
-    top: 0;
+  transform: rotate(45deg);
+  top: 0;
 }
-    
+
 .custom-toggler.active .hamburger::after {
-    transform: rotate(-45deg);
-    top: 0;
+  transform: rotate(-45deg);
+  top: 0;
 }
+
 /*/navbar*/
 
 
@@ -156,12 +162,12 @@
 body {
   font-family: "Playwrite AU SA", cursive;
   font-optical-sizing: auto;
-  margin: 0;      
-  padding: 0;     
-  text-align: center;  
+  margin: 0;
+  padding: 0;
+  text-align: center;
   background: url('../pictures/floor-tile.png') center center/cover;
-  background-size: 200px; 
-  background-repeat: repeat; 
+  background-size: 200px;
+  background-repeat: repeat;
 }
 
 * {
@@ -170,28 +176,33 @@ body {
   text-align: center;
 }
 
-body{
-  cursor: url("https://cdn.custom-cursor.com/db/cursor/pointer_1426.png"),auto;
+body {
+  cursor: url("https://cdn.custom-cursor.com/db/cursor/pointer_1426.png"), auto;
 }
-body:hover{
-  cursor: url("https://cdn.custom-cursor.com/db/cursor/pointer_1426.png"),auto;
+
+body:hover {
+  cursor: url("https://cdn.custom-cursor.com/db/cursor/pointer_1426.png"), auto;
 }
 
 * {
-  cursor: url("https://cdn.custom-cursor.com/db/cursor/pointer_1426.png"),auto;
+  cursor: url("https://cdn.custom-cursor.com/db/cursor/pointer_1426.png"), auto;
 }
 
 body::before {
   content: "";
   position: fixed;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background-color: rgba(0,0,0,0); 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0);
   z-index: -1;
 }
 
 body.dark-mode::before {
-  background-color: rgba(0,0,0,0.6); 
+  background-color: rgba(0, 0, 0, 0.6);
 }
+
 /*/body*/
 
 
@@ -208,7 +219,8 @@ body.dark-mode::before {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 10px;
-  max-width: 100%; /* Maximizează galeria pe întreaga lățime */
+  max-width: 100%;
+  /* Maximizează galeria pe întreaga lățime */
   margin: auto;
   padding: 20px;
 }
@@ -230,8 +242,10 @@ body.dark-mode::before {
 }
 
 .galerie img {
-  width: calc(33.33% - 10px); /* 3 imagini pe rând */
-  min-width: 120px; /* Se micșorează, dar nu mai mic de 120px */
+  width: calc(33.33% - 10px);
+  /* 3 imagini pe rând */
+  min-width: 120px;
+  /* Se micșorează, dar nu mai mic de 120px */
   height: 300px;
   object-fit: cover;
 }
@@ -283,14 +297,17 @@ header {
 /* Media query pentru ecrane mari */
 @media (min-width: 1200px) {
   .galerie {
-    max-width: 80%; /* Galerie pe întreaga lățime */
-    padding: 20px 100px; /* Spațiu de 100px pe margini */
+    max-width: 80%;
+    /* Galerie pe întreaga lățime */
+    padding: 20px 100px;
+    /* Spațiu de 100px pe margini */
   }
 
   .galerie img {
-    width: calc(33.33% - 20px); /* 3 imagini pe rând, dar să fie mari */
+    width: calc(33.33% - 20px);
+    /* 3 imagini pe rând, dar să fie mari */
   }
-  
+
 }
 
 /*/galerie*/
@@ -312,10 +329,11 @@ header {
   border-radius: 10px;
 }
 
-#copy{
+#copy {
   text-align: center;
 }
-#name{
+
+#name {
   border-radius: 30px;
   background-color: #fcfcfc7e;
   -webkit-backdrop-filter: blur(20px);
@@ -326,7 +344,8 @@ header {
   width: 150px;
   text-align: center;
 }
-#message{
+
+#message {
   padding: 0%;
   margin-left: 5%;
   border-radius: 30px;
@@ -339,9 +358,10 @@ header {
   width: 150px;
 }
 
-#imageUpload{
+#imageUpload {
   display: none;
 }
+
 .custom-file-upload {
   display: inline-block;
   padding: 10px 20px;
@@ -357,17 +377,18 @@ header {
   background-color: #e08e0b;
 }
 
-#reviews-section{
+#reviews-section {
   align-items: center;
-  
+
 }
 
-#reviewForm{
- 
+#reviewForm {
+
   text-align: center;
   width: 170px;
-  margin: 20px auto;  
+  margin: 20px auto;
 }
+
 #reviews {
   display: flex;
   flex-wrap: wrap;
@@ -376,34 +397,38 @@ header {
   padding: 20px;
 }
 
-#imaguser{
+#imaguser {
   border-radius: 50%;
   width: 50px;
   height: 50px;
   object-fit: cover;
   margin-bottom: 10px;
 }
-#dap{
+
+#dap {
   background-color: white;
   padding: 30px;
   border-radius: 10px;
   width: 90%;
   max-width: 500px;
 }
-#username{
+
+#username {
   font-weight: bold;
   font-size: 18px;
   margin-bottom: 5px;
-  white-space: nowrap;            
+  white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis; 
+  text-overflow: ellipsis;
 }
-#usermsg{
+
+#usermsg {
   width: 400px;
   text-align: center;
   padding-right: 15%;
 }
-h2{
+
+h2 {
   position: center;
   left: 50px;
 }
@@ -425,7 +450,8 @@ h2{
   background-color: white;
   padding: 20px;
   border-radius: 10px;
-  flex: 1 1 calc(33.333% - 40px); /* 3 pe rând cu spațiu între ele */
+  flex: 1 1 calc(33.333% - 40px);
+  /* 3 pe rând cu spațiu între ele */
   max-width: calc(33.333% - 40px);
   box-sizing: border-box;
 }
@@ -449,7 +475,7 @@ h2{
 
 /*buton*/
 #submitbtn {
-  
+
   text-transform: uppercase;
   letter-spacing: 2.5px;
   padding: 10px 10px;
@@ -475,6 +501,7 @@ h2{
 #submitbtn:active {
   transform: translateY(-1px);
 }
+
 /*/buton*/
 
 
@@ -553,7 +580,7 @@ h2{
 
   .footer-left-wrapper {
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
     border: none;
   }
 
@@ -564,16 +591,19 @@ h2{
   }
 
   .footer-right {
-    text-align: center; /* Centrăm totul în footer-right */
+    text-align: center;
+    /* Centrăm totul în footer-right */
     margin-top: 1rem;
   }
 
   .footer-right .social-icons {
     display: flex;
-    justify-content: center; /* Centrăm emoji-urile */
-    gap: 15px; /* Distanță între emoji-uri */
+    justify-content: center;
+    /* Centrăm emoji-urile */
+    gap: 15px;
+    /* Distanță între emoji-uri */
   }
- 
+
   .footer-left-contact a {
     display: inline-block;
     margin: 5px 10px;
@@ -588,7 +618,7 @@ h2{
   .footer-left-contact {
     border-left: none;
   }
- 
+
 }
 
 
@@ -599,23 +629,26 @@ h2{
     justify-content: center;
     padding: 10px;
   }
+
   .review {
     width: 90%;
     font-size: 14px;
     padding: 10px;
     margin-bottom: 10px;
-    #usermsg{
+
+    #usermsg {
       text-align: center;
       padding-left: 0%;
       padding-right: 0%;
       width: 200px;
     }
   }
-  #openReviewForm{
+
+  #openReviewForm {
     display: block;
     margin-left: auto;
-    
-    width:180px;
+
+    width: 180px;
   }
 }
 
@@ -677,7 +710,7 @@ h2{
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   justify-content: center;
   align-items: center;
 }
@@ -709,6 +742,7 @@ h2{
 #starRating .star.selected {
   color: gold;
 }
+
 .floating-btn {
   position: fixed;
   bottom: 30px;
@@ -718,7 +752,7 @@ h2{
   border: none;
   padding: 12px 20px;
   border-radius: 50px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   font-weight: bold;
   cursor: pointer;
   z-index: 9999;
@@ -749,8 +783,3 @@ h2{
   color: gold;
   position: center;
 }
-
-
-
-
-

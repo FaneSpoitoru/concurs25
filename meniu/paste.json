@@ -1,0 +1,46 @@
+{
+    "paste_1": {
+        "nume":"Lasagna Clasica",
+        "html" : "Lasagna Clasica<p>Ingrediente: foi de lasagna (100g), sos Bolognese original (carne de vită, roșii, ceapă, morcov, țelină) (150g), parmezan (20g), mozzarella (50g)</p>Gramaj total: 320g<p>Informații nutriționale / 100g:<br>Valoare energetică: 780kJ / 187kcal<br>Glucide: 22g, din care zaharuri: 3g;<br>Proteine: 10g<br>Grăsimi: 8g, din care acizi grași saturați: 3g;<br>Fibre: 1.5g;<br>Sare: 0.7g</p><strong>Preț: 14,50 €</strong>"
+    },
+    "paste_2": {
+        "nume":"penne bologneese",
+        "html": "Penne Bolognese<p>Ingrediente: penne (100g), sos Bolognese original (carne de vită, roșii, ceapă, morcov, țelină) (150g), parmezan (20g)</p>Gramaj total: 270g<p>Informații nutriționale / 100g:<br>Valoare energetică: 780kJ / 187kcal<br>Glucide: 22g, din care zaharuri: 3g;<br>Proteine: 10g<br>Grăsimi: 8g, din care acizi grași saturați: 3g;<br>Fibre: 1.5g;<br>Sare: 0.7g</p><strong>Preț: 14,50 €</strong>"
+    },
+    "paste_3": {
+        "nume":"Tragliatelle cu creveti",
+        "html": "Tagliatelle cu creveti<p>Ingrediente: tagliatelle (100g), creveți (50g), roșii cherry (50g), usturoi (5g), ulei de măsline (10g), pătrunjel (5g)</p>Gramaj total: 220g<p>Informații nutriționale / 100g:<br>Valoare energetică: 780kJ / 187kcal<br>Glucide: 22g, din care zaharuri: 3g;<br>Proteine: 10g<br>Grăsimi: 8g, din care acizi grași saturați: 3g;<br>Fibre: 1.5g;<br>Sare: 0.7g</p><strong>Preț: 14,50 €</strong>"
+    },
+    "paste_4": {
+        "nume":"Penne cu pui si ciuperci",
+        "html": "Penne cu pui și ciuperci<p>Ingrediente: penne (100g), piept de pui (50g), ciuperci (50g), smântână (20g), parmezan (20g)</p>Gramaj total: 240g<p>Informații nutriționale / 100g:<br>Valoare energetică: 780kJ / 187kcal<br>Glucide: 22g, din care zaharuri: 3g;<br>Proteine: 10g<br>Grăsimi: 8g, din care acizi grași saturați: 3g;<br>Fibre: 1.5g;<br>Sare: 0.7g</p><strong>Preț: 14,50 €</strong>"
+    }, 
+    "paste_5": {
+        "nume":"trigliatelle cu muschiulet",
+        "html": " Trigliatelle cu mușchiuleț<p>Ingrediente: tagliatelle (100g), mușchiuleț de porc (50g), roșii cherry (50g), usturoi (5g), ulei de măsline (10g), pătrunjel (5g)</p>Gramaj total: 220g<p>Informații nutriționale / 100g:<br>Valoare energetică: 780kJ / 187kcal<br>Glucide: 22g, din care zaharuri: 3g;<br>Proteine: 10g<br>Grăsimi: 8g, din care acizi grași saturați: 3g;<br>Fibre: 1.5g;<br>Sare: 0.7g</p><strong>Preț: 14,50 €</strong>"
+    },
+    "paste_6": {
+        "nume":"mezzelune cu somon",
+        "html": "Mezzelune cu somon<p>Ingrediente: mezzelune (100g), somon (50g), roșii cherry (50g), usturoi (5g), ulei de măsline (10g), pătrunjel (5g)</p>Gramaj total: 220g<p>Informații nutriționale / 100g:<br>Valoare energetică: 780kJ / 187kcal<br>Glucide: 22g, din care zaharuri: 3g;<br>Proteine: 10g<br>Grăsimi: 8g, din care acizi grași saturați: 3g;<br>Fibre: 1.5g;<br>Sare: 0.7g</p><strong>Preț: 14,50 €</strong>"
+    },
+    "paste_7": {
+        "nume":"Riavoli cu nuci si salvie",
+        "html": "Riavoli cu nuci și salvie<p>Ingrediente: riavoli (100g), nuci (20g), salvie (5g), ulei de măsline (10g)</p>Gramaj total: 135g<p>Informații nutriționale / 100g:<br>Valoare energetică: 780kJ / 187kcal<br>Glucide: 22g, din care zaharuri: 3g;<br>Proteine: 10g<br>Grăsimi: 8g, din care acizi grași saturați: 3g;<br>Fibre: 1.5g;<br>Sare: 0.7g</p><strong>Preț: 14,50 €</strong>"
+    },
+    "paste_8": {
+        "nume":"Tagliatelle cu fructe de mare",
+        "html": "Tagliatelle cu fructe de mare<p>Ingrediente: tagliatelle (100g), fructe de mare (50g), roșii cherry (50g), usturoi (5g), ulei de măsline (10g), pătrunjel (5g)</p>Gramaj total: 220g<p>Informații nutriționale / 100g:<br>Valoare energetică: 780kJ / 187kcal<br>Glucide: 22g, din care zaharuri: 3g;<br>Proteine: 10g<br>Grăsimi: 8g, din care acizi grași saturați: 3g;<br>Fibre: 1.5g;<br>Sare: 0.7g</p><strong>Preț: 14,50 €</strong>"
+    },
+    "paste_9": {
+        "nume":"tagliatelle cu somon",
+        "html": " Tagliatelle cu somon<p>Ingrediente: tagliatelle (100g), somon (50g), roșii cherry (50g), usturoi (5g), ulei de măsline (10g), pătrunjel (5g)</p>Gramaj total: 220g<p>Informații nutriționale / 100g:<br>Valoare energetică: 780kJ / 187kcal<br>Glucide: 22g, din care zaharuri: 3g;<br>Proteine: 10g<br>Grăsimi: 8g, din care acizi grași saturați: 3g;<br>Fibre: 1.5g;<br>Sare: 0.7g</p><strong>Preț: 14,50 €</strong>"
+    },
+    "paste_10": {
+        "nume":"Riavoli umplute",
+        "html": " Riavoli umplute<p>Ingrediente: riavoli (100g), ricotta (50g), spanac (20g), ulei de măsline (10g)</p>Gramaj total: 180g<p>Informații nutriționale / 100g:<br>Valoare energetică: 780kJ / 187kcal<br>Glucide: 22g, din care zaharuri: 3g;<br>Proteine: 10g<br>Grăsimi: 8g, din care acizi grași saturați: 3g;<br>Fibre: 1.5g;<br>Sare: 0.7g</p><strong>Preț: 14,50 €</strong>"
+    },
+    "paste_11": {
+        "nume":"Spaghettu aglio e olio",
+        "html": " Spaghetti Aglio e Olio<p>Ingrediente: spaghetti (100g), usturoi (5g), ulei de măsline (10g), ardei iute (5g), pătrunjel (5g)</p>Gramaj total: 125g<p>Informații nutriționale / 100g:<br>Valoare energetică: 780kJ / 187kcal<br>Glucide: 22g, din care zaharuri: 3g;<br>Proteine: 10g<br>Grăsimi: 8g, din care acizi grași saturați: 3g;<br>Fibre: 1.5g;<br>Sare: 0.7g</p><strong>Preț: 14,50 €</strong>"
+    }
+}
