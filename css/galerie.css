@@ -220,7 +220,7 @@ body.dark-mode::before {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 10px;
   max-width: 100%;
-  /* Maximizează galeria pe întreaga lățime */
+  
   margin: auto;
   padding: 20px;
 }
@@ -243,9 +243,9 @@ body.dark-mode::before {
 
 .galerie img {
   width: calc(33.33% - 10px);
-  /* 3 imagini pe rând */
+  
   min-width: 120px;
-  /* Se micșorează, dar nu mai mic de 120px */
+  
   height: 300px;
   object-fit: cover;
 }
@@ -298,14 +298,14 @@ header {
 @media (min-width: 1200px) {
   .galerie {
     max-width: 80%;
-    /* Galerie pe întreaga lățime */
+    
     padding: 20px 100px;
-    /* Spațiu de 100px pe margini */
+    
   }
 
   .galerie img {
     width: calc(33.33% - 20px);
-    /* 3 imagini pe rând, dar să fie mari */
+    
   }
 
 }
@@ -451,7 +451,7 @@ h2 {
   padding: 20px;
   border-radius: 10px;
   flex: 1 1 calc(33.333% - 40px);
-  /* 3 pe rând cu spațiu între ele */
+  
   max-width: calc(33.333% - 40px);
   box-sizing: border-box;
 }
@@ -592,16 +592,16 @@ h2 {
 
   .footer-right {
     text-align: center;
-    /* Centrăm totul în footer-right */
+    
     margin-top: 1rem;
   }
 
   .footer-right .social-icons {
     display: flex;
     justify-content: center;
-    /* Centrăm emoji-urile */
+    
     gap: 15px;
-    /* Distanță între emoji-uri */
+    
   }
 
   .footer-left-contact a {
@@ -614,7 +614,7 @@ h2 {
     width: 100%;
   }
 
-  /* Ascundem linia albă pe telefon */
+  
   .footer-left-contact {
     border-left: none;
   }
@@ -697,7 +697,7 @@ h2 {
   color: #f39c12;
 }
 
-/* Numele clientului */
+
 .client-name {
   font-weight: bold;
 }
