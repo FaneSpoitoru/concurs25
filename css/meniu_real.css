@@ -27,22 +27,22 @@
 }
 
 #pizza {
-  background-image: url("../imagini_site/pizza.jpg");
+  background-image: url("../pictures/pizza.webp");
   background-size: cover;
 }
 
 #pasta {
-  background-image: url("../imagini_site/pasta.avif");
+  background-image: url("../pictures/pasta.webp");
   background-size: cover;
 }
 
 #salad {
-  background-image: url("../imagini_site/salata.jpg");
+  background-image: url("../pictures/salata.webp");
   background-size: cover;
 }
 
 #drinks {
-  background-image: url("../imagini_site/bauturi.jpg");
+  background-image: url("../pictures/bauturi.webp");
   background-size: cover;
 }
 
