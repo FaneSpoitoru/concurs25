@@ -1,24 +1,11 @@
 /*welcomeimage*/
-
-#welcome {
-  margin: 0;
-  padding: 0;
-}
-
 #welcome img {
   width: 100%;
   display: block;
   margin: 0;
   padding: 0;
+  max-height: 800px;
 }
-
-.welcome-image {
-  width: 100%;
-  max-width: 100%;
-  display: block;
-  margin: 0px auto;
-}
-
 /*/welcomeimage*/
 
 
@@ -129,6 +116,8 @@
   transform: rotate(-45deg);
   top: 0;
 }
+
+
 
 /*/navbar*/
 
@@ -392,7 +381,7 @@ body.dark-mode::before {
 
 @media (min-width: 1024px) {
   #welcome img {
-    max-height: 900px;
+    max-height: 1100px;
   }
 
   .body-text {

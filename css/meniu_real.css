@@ -160,7 +160,6 @@
 .navbar-collapse {
   transition: all 0.3s ease;
 }
-
 /*/navbar*/
 
 
@@ -414,17 +413,6 @@ body.dark-mode::before {
 
 /*media*/
 @media (max-width: 768px) {
-
-  #low2 i,
-  #low i {
-    font-size: 13px;
-  }
-
-  #low a,
-  #low2 a {
-    font-size: 12px;
-  }
-
 
 }
 
